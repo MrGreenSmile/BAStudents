@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="https://i.namu.wiki/i/imodOD0izhYy7wQmyv7aDkuTbaJW-eg64MRxQneYJ0ebkk06Z3XUL-JduYj3nOG1haEvzoVIQt0BW4pFy8B6IQ.webp">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div>
+<a href="https://namu.wiki/w/%EC%B8%A0%EC%B9%B4%EC%B8%A0%ED%82%A4%20%EB%A6%AC%EC%98%A4" target="_blnak">https://namu.wiki/w/츠카츠키 리오</a>
+</div>
+<div>
+<div>
+<a href="https://namu.wiki/w/%EA%B2%BD%EA%B8%B0%EC%B2%9C%EB%85%84%EC%B2%B4" target="_blnak">경기천년체</a>
+</div>
+<a href="./test.html">dddd</a>
+</div>
+
+<div id="inform-button">상성+지형</div>
+<div id="information">
+<div id="inform-types">
+	<h2>공격/방어 타입</h2>
+	<img src="https://i.namu.wiki/i/1OQQ9kdjYMly89turjoYTg2cQ_iFJx-wkbmdIBgv8QzD3t5LJcpXDCPyeKeas0GXsgLjmnZ7P6Rh0fvk5vxv3Lg5IuO0kSQIANDT6kGZjxVjpItAaizD6INsjccn2w5_X6nOIadfLraeyT7OmEQljg.webp">
+	<div class="table">
+	<div class="weak">특효(Weak)</div><div>x200%</div>
+	<div class="effective">유리(Effective)</div><div>x150%</div>
+	<div class="normal">일반(Normal)</div><div>x100%</div>
+	<div class="resist">반감(Resist)</div><div>x50%</div>
+	</div>
+</div>
+<div id="inform-fields">
+	<h2>학생 적성</h2>
+	<div class="left">
+		<div>시가전</div>
+		<div>야외</div>
+		<div>실내</div>
+		<div><div><img src=""></div></div>
+		<div><div><img src=""></div></div>
+		<div><div><img src=""></div></div>
+	</div>
+	<div class="right">
+		<div>아이콘</div>
+		<div>명칭</div>
+		<div>공격력 보정</div>
+		<div>엄폐 무시/블럭 확률</div>
+
+		<div><img src=""></div>
+		<div>SS</div>
+		<div>x1.3</div>
+		<div>75%</div>
+		<div><img src=""></div>
+		<div>S</div>
+		<div>x1.2</div>
+		<div>60%</div>
+		<div><img src=""></div>
+		<div>A</div>
+		<div>x1.1</div>
+		<div>45%</div>
+		<div><img src=""></div>
+		<div>B</div>
+		<div>x1</div>
+		<div>30%</div>
+		<div><img src=""></div>
+		<div>C</div>
+		<div>x0.9</div>
+		<div>15%</div>
+		<div><img src=""></div>
+		<div>D</div>
+		<div>x0.8</div>
+		<div>0%</div>
+	</div>
+</div>
+</div>
+
+
+<div id="Cells">
+</div>
+
+
+<script src="./students.js" charset="utf-8"></script>
+<script src="./data.js" charset="utf-8"></script>
+<script>
+document.title = 'BA Students'
+
+let cells = document.getElementById('Cells')
+
+function clearAll(){
+console.log('cleared')
+}
+function borderer(){
+	let border_div = document.createElement('div')
+	border_div.className = "borderer"
+
+	return border_div
+}
+function sorter(){	
+	students.sort(function (a, b){
+		if(a.name < b.name){return -1}
+		if(a.name > b.name){return 1}
+		return 0
+	})
+}
+
+
+function skill_matizer(skill_type, student){
+	let mat_contain = document.createElement('div')
+	mat_contain.className = "skill_matterial"
+	let mastery_cell = document.createElement('div')
+	let mastery = document.createElement('img')
+	mastery.src = skill_books["비의서"]
+	let Books_cell = document.createElement('div')
+	let Books = document.createElement('img')
+	Books.src = skill_type === "EX" ? skill_books[student.school.split(' ')[0] + "_DB"] : skill_books[student.school.split(' ')[0] + "_Book"]
+	let mat1_cell = document.createElement('div')
+	let mat1 = document.createElement('img')
+	mat1.src = skill_matterial[student.matterials[0]]
+	let mat2_cell = document.createElement('div')
+	let mat2 = document.createElement('img')
+	mat2.src = skill_matterial[student.matterials[1]]
+
+	Books_cell.appendChild(Books)
+	mat1_cell.appendChild(mat1)
+	mat2_cell.appendChild(mat2)
+	if(skill_type === "norm"){
+		mastery_cell.appendChild(mastery)
+		mat_contain.appendChild(mastery_cell)
+	}
+	mat_contain.appendChild(Books_cell)
+	mat_contain.appendChild(mat1_cell)
+	mat_contain.appendChild(mat2_cell)
+
+	return mat_contain
+}
+function skill_cell(student, skill_title){
+	let skill_type = skill_title === "EX 스킬" ? "ex" :
+		skill_title === "기본 스킬" ? "basic" :
+		skill_title === "강화 스킬" ? "enhance" :
+		skill_title === "서브 스킬" ? "sub" : ""
+	let skill = document.createElement('div')
+	skill.className = "skill"
+	skill.id = student.name.split(' ')[1] + skill_title.split(' ')[0]
+	skill_ids.push(skill.id)
+
+	let skill_cell = document.createElement('div')
+	skill_cell.className = "skill_title"
+	skill_cell.innerText = skill_title
+
+	let skill_thumb_cont = document.createElement('div')
+	let skill_thumb = document.createElement('img')
+	skill_thumb.className = student.atk_type
+	skill_thumb.src = student.skills[skill_type].thumb
+	skill_thumb_cont.appendChild(skill_thumb)
+
+
+	let skill_contain = document.createElement('div')	//skill-contents
+	skill_contain.className = "skill_content"
+	let skill_name = document.createElement('div')
+	skill_name.innerText = student.skills[skill_type].name
+	skill_name.className = "skill_name"
+	if(skill_title === "EX 스킬"){
+		let ex_cost = document.createElement('div')
+		ex_cost.className = "ex-cost"
+		ex_cost.innerHTML = "Cost : <span>" + student.skills[skill_type].cost.toString() + "</span>"
+		skill_contain.appendChild(ex_cost)
+	}
+	skill_contain.appendChild(skill_name)
+	let skill_summary = document.createElement('div')
+	skill_summary.className = "skill_summary"
+	skill_summary.innerHTML = student.skills[skill_type].content.split('\n').map((par) => "<p>" + par + "</p>").join("")
+	if(skill_title === "EX 스킬"){
+		let ex_mat = skill_matizer("EX", students[i])
+		skill_contain.appendChild(ex_mat)
+	}else{
+		let norm_mat = skill_matizer("norm", students[i])
+		skill_contain.appendChild(norm_mat)
+	}
+	skill_contain.appendChild(skill_summary)
+	
+	if(student.skills["ex_tr"]){
+
+		let ex_cost = document.createElement('div')
+		ex_cost.className = "ex-cost"
+		ex_cost.innerHTML = "Cost : <span>" + student.skills["ex_tr"].cost.toString() + "</span>"
+		let ex_tr_name = document.createElement('div')
+		ex_tr_name.innerText = student.skills["ex_tr"].name
+		ex_tr_name.className = "skill_name"
+		let ex_tr_summary = document.createElement('div')
+		ex_tr_summary.innerHTML = student.skills["ex_tr"].content.split('\n').map((par) => "<p>" + par + "</p>").join("")
+		ex_tr_summary.className = "skill_summary"
+
+		skill_contain.appendChild(borderer())
+		skill_contain.appendChild(ex_cost)
+		skill_contain.appendChild(ex_tr_name)
+		skill_contain.appendChild(ex_tr_summary)
+	}
+	
+	skill.appendChild(skill_cell)
+	skill.appendChild(skill_thumb_cont)
+	skill.appendChild(skill_contain)
+
+	return skill
+}
+
+
+//sorter()
+
+let tag_ids = []
+let skill_ids = []
+let sig_ids = []
+let unique_ids = []
+for (var i=0; i<students.length; i++){
+    let cell = document.createElement('div')
+    cell.className = "cells"
+    cell.id = students[i].name.replace(" ", "_")
+
+    let thumb_div = document.createElement('div')			//thumbnail
+    let thumb = document.createElement('img')
+    thumb.src = students[i].thumb
+    thumb_div.className = "thumb"
+	thumb_div.id = students[i].name.split(' ')[1] + "_thumb"
+	tag_ids.push(thumb_div.id)
+    thumb_div.appendChild(thumb)
+
+
+
+    let summary = document.createElement('div')				//summary
+    summary.className = "summary"
+    let c_name = document.createElement('div')
+	c_name.className = students[i].fes ? "character_name fes-chara" : "character_name"
+    c_name.innerText = students[i].name
+    let c_tags = document.createElement('div')
+	c_tags.className = "hashtags"
+	c_tags.id = students[i].name.split(' ')[1] + "_hastag"
+    c_tags.innerText = students[i].tags.map(el => '#' + el).join('')
+
+    summary.appendChild(c_name)
+	thumb_div.appendChild(c_tags)
+    //summary.appendChild(c_tags)
+	
+	let aptitude = document.createElement('div')			//aptitude
+	aptitude.className = "aptitude"
+	let atk_dfn_type = document.createElement('div')		//attack & defence type
+	atk_dfn_type.className = "type"
+
+	let position_role = document.createElement('div')
+	position_role.innerText = students[i].role
+	let atk_title = document.createElement('div')
+	atk_title.innerText = "공격"
+	let dfn_title = document.createElement('div')
+	dfn_title.innerText = "방어"
+
+	let position_type = document.createElement('div')		//position
+	let atk_type = document.createElement('div')
+	let dfn_type = document.createElement('div')
+	position_type.innerText = students[i].position
+	atk_type.innerText = students[i].atk_type
+	dfn_type.innerText = students[i].dfn_type
+	position_type.className = "position"
+	atk_type.className = students[i].atk_type
+	dfn_type.className = students[i].dfn_type
+	
+	atk_dfn_type.appendChild(position_role)
+	atk_dfn_type.appendChild(atk_title)
+	atk_dfn_type.appendChild(dfn_title)
+	atk_dfn_type.appendChild(position_type)
+	atk_dfn_type.appendChild(atk_type)
+	atk_dfn_type.appendChild(dfn_type)
+	aptitude.appendChild(atk_dfn_type)
+
+	let student_field = students[i].field.split('/')		//fields
+
+	let fields = document.createElement('div')
+	fields.className = "fields"
+	let field_col1 = document.createElement('div')
+	let field_col2 = document.createElement('div')
+	let field_col3 = document.createElement('div')
+	field_col1.className = "field_col"
+	field_col2.className = "field_col"
+	field_col3.className = "field_col"
+	let field_col1_img = document.createElement('img')
+	let field_col2_img = document.createElement('img')
+	let field_col3_img = document.createElement('img')
+	field_col1_img.src = field_colm[0]
+	field_col2_img.src = field_colm[1]
+	field_col3_img.src = field_colm[2]
+	field_col1.appendChild(field_col1_img)
+	field_col2.appendChild(field_col2_img)
+	field_col3.appendChild(field_col3_img)
+
+	let field_street = document.createElement('div')
+	let field_outdoor = document.createElement('div')
+	let field_indoor = document.createElement('div')
+	field_street.className = "field_pref"
+	field_outdoor.className = "field_pref"
+	field_indoor.className = "field_pref"
+	let field_street_img = document.createElement('img')
+	let field_outdoor_img = document.createElement('img')
+	let field_indoor_img = document.createElement('img')
+	field_street_img.src = field_pref[student_field[0]]
+	field_outdoor_img.src = field_pref[student_field[1]]
+	field_indoor_img.src = field_pref[student_field[2]]
+	field_street.appendChild(field_street_img)
+	field_outdoor.appendChild(field_outdoor_img)
+	field_indoor.appendChild(field_indoor_img)
+	
+	fields.appendChild(field_col1)
+	fields.appendChild(field_col2)
+	fields.appendChild(field_col3)
+	fields.appendChild(field_street)
+	fields.appendChild(field_outdoor)
+	fields.appendChild(field_indoor)
+	aptitude.appendChild(fields)
+
+	summary.appendChild(aptitude)
+
+
+
+
+
+
+
+    let skills = document.createElement('div')				//skills
+    skills.className = "skills"
+
+	let skill_ex = skill_cell(students[i], "EX 스킬")
+	let skill_basic = skill_cell(students[i], "기본 스킬")
+	let skill_enhan = skill_cell(students[i], "강화 스킬")
+	let skill_sub = skill_cell(students[i], "서브 스킬")
+    //for(var j=0; j<students[i].skills.length; j++){
+	
+	skills.appendChild(skill_ex)
+	skills.appendChild(skill_basic)
+	skills.appendChild(skill_enhan)
+	skills.appendChild(skill_sub)
+    //}
+    //console.log(skill_ids)
+
+
+
+
+
+
+
+	let equipment_contain = document.createElement("div")		//equipments
+	equipment_contain.className = "equipment_contain"
+	let weapon_contain = document.createElement("div")
+	let signature_id = students[i].name.split(' ')[1] + "_전용장비"
+	weapon_contain.id = signature_id
+	weapon_contain.className = "weapon_contain"
+	sig_ids.push(signature_id)
+	let weapon_name = document.createElement('div')
+	weapon_name.className = "weapon_name"
+	weapon_name.innerText = students[i].weapon
+	let weapon_thumb_ico = document.createElement('img')
+	weapon_thumb_ico.src = weapon_thumb[students[i].weapon]
+	weapon_contain.appendChild(weapon_name)
+	weapon_contain.appendChild(weapon_thumb_ico)
+	equipment_contain.appendChild(weapon_contain)
+
+	let signature_contain = document.createElement('div')
+	signature_contain.className = "signature_contain"
+	let signature_thumb_cell = document.createElement('div')
+	signature_thumb_cell.className = "signature_thumb"
+	let signature_thumb = document.createElement('img')
+	signature_thumb.src = students[i].signature.thumb
+	signature_thumb_cell.appendChild(signature_thumb)
+	let signature_name = document.createElement('div')
+	signature_name.innerText = students[i].signature.name
+	let signature_summary = document.createElement('div')
+	signature_summary.innerHTML = students[i].signature.summary.split('\n').map((el) => "<p>" + el + "</p>").join('')
+
+	signature_contain.appendChild(signature_name)
+	signature_contain.appendChild(signature_thumb_cell)
+	signature_contain.appendChild(signature_summary)
+	weapon_contain.appendChild(signature_contain)
+
+
+
+	let equipments = document.createElement('div')
+	equipments.className = "equipments"
+	for(var v=0; v<students[i].equipments.length; v++){
+		let equip_cell = document.createElement("div")
+		let equip_name = document.createElement('div')
+		equip_name.className = "equip_name"
+		equip_name.innerText = students[i].equipments[v]
+		let equip_icon_cont = document.createElement('div')
+		let equip_icon = document.createElement('img')
+		equip_icon.src = equipment_icon[students[i].equipments[v]]
+		equip_icon_cont.appendChild(equip_icon)
+		equip_cell.appendChild(equip_name)
+		equip_cell.appendChild(equip_icon_cont)
+		equipments.appendChild(equip_cell)
+	}
+	if(students[i].uniqueItem.name != ""){
+		let unique_cell = document.createElement("div")
+		unique_cell.className = "unique_cell"
+		let unique_name = document.createElement('div')
+		unique_name.innerText = "애장품"
+		let unique_id = students[i].name.split(' ')[1] + "_애장품"
+		unique_cell.id = unique_id
+		unique_ids.push(unique_id)
+
+		let unique_icon_cont = document.createElement('div')
+		let unique_icon = document.createElement('img')
+		unique_icon.src = students[i].uniqueItem.thumb
+		unique_icon_cont.appendChild(unique_icon)
+		unique_cell.appendChild(unique_name)
+		unique_cell.appendChild(unique_icon_cont)
+
+		let unique_content = document.createElement('div')
+		unique_content.className = "unique_content"
+		let unique_itemName = document.createElement('div')
+		unique_itemName.className = "unique_name"
+		unique_itemName.innerText = students[i].uniqueItem.name
+		let unique_img_cont = document.createElement('div')
+		unique_img_cont.className = "unique_img_cont"
+		let unique_img = document.createElement('img')
+		unique_img.src = students[i].uniqueItem.thumb
+		unique_img_cont.appendChild(unique_img)
+		let unique_summary = document.createElement('div')
+		unique_summary.innerHTML = students[i].uniqueItem.summary.split('\n').map((el) => "<p>" + el + "</p>").join('')
+
+
+		unique_content.appendChild(unique_itemName)
+		unique_content.appendChild(unique_img_cont)
+		unique_content.appendChild(unique_summary)
+		unique_cell.appendChild(unique_content)
+		equipments.appendChild(unique_cell)
+	}
+	equipment_contain.appendChild(equipments)
+
+
+    cell.appendChild(thumb_div)
+    cell.appendChild(summary)
+    cell.appendChild(skills)
+	cell.appendChild(equipment_contain)
+    cells.appendChild(cell)
+}
+
+
+
+console.log(skill_ids)
+console.log(tag_ids)
+console.log(sig_ids)
+console.log(unique_ids)
+
+for(let ids of tag_ids){									//tag event
+	let cell_id = document.getElementById(ids)
+	let tags = cell_id.querySelector(".hashtags")
+
+	cell_id.addEventListener('mouseenter', (event) => {
+        tags.style.display = 'block';
+    })
+    cell_id.addEventListener('mouseleave', (event) => {
+        tags.style.display = 'none';
+    })
+}
+for(let ids of skill_ids){									//skill-content event
+    let skill_cell_one = document.getElementById(ids)
+    skill_cell_one.addEventListener('mouseenter', (event) => {
+        skill_cell_one.querySelector('.skill_content').style.display = 'block';
+    })
+    skill_cell_one.addEventListener('mouseleave', (event) => {
+        skill_cell_one.querySelector('.skill_content').style.display = 'none';
+    })
+}
+for(let ids of sig_ids){
+    let signature_detail = document.getElementById(ids)
+    signature_detail.addEventListener('mouseenter', (event) => {
+        signature_detail.querySelector('.signature_contain').style.display = 'block';
+    })
+    signature_detail.addEventListener('mouseleave', (event) => {
+        signature_detail.querySelector('.signature_contain').style.display = 'none';
+    })
+}
+
+for(let ids of unique_ids){
+    let signature_detail = document.getElementById(ids)
+    signature_detail.addEventListener('mouseenter', (event) => {
+        signature_detail.querySelector('.unique_content').style.display = 'block';
+    })
+    signature_detail.addEventListener('mouseleave', (event) => {
+        signature_detail.querySelector('.unique_content').style.display = 'none';
+    })
+}
+</script>
+
+<script src="./information.js"></script>
+</body>
+</html>
