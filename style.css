@@ -1,0 +1,467 @@
+@font-face{
+font-family:"GG_light";
+src:url("./TTF/경기천년제목_Light.ttf") format("truetype");
+}
+@font-face{
+font-family:"GG_medium";
+src:url("./TTF/경기천년제목_Medium.ttf") format("truetype");
+}
+@font-face{
+font-family:"GG_bold";
+src:url("./TTF/경기천년제목_Bold.ttf") format("truetype");
+}
+@font-face{
+font-family:"GG_dd";
+src:url("./TTF/경기천년제목V_Bold.ttf") format("truetype");
+}
+
+:root{
+--slop:10deg;
+--mslop:-10deg;
+}
+body{
+-ms-overflow-style:none;
+margin-bottom:300px;
+
+font-family:"GG_medium";
+font-size:20px;
+}
+::-webkit-scrollbar{
+display:none;
+}
+a{
+text-decoration-line:none;
+}
+img{
+display:block;
+}
+em{
+color:#0eb4fc;
+}
+
+
+#inform-button{
+width:100px;
+cursor:pointer;
+text-align:center;
+margin:20px 0 20px 0;
+}
+#information{
+display:flex;
+vertical-align:top;
+
+font-size:15px;
+border:1px solid blue;
+width:900px;
+
+position:absolute;
+z-index:4;
+background-color:white;
+}
+#information > div{
+margin:5px;
+}
+#inform-types{
+padding-right:10px;
+border-right:2px solid blue;
+}
+#inform-types img{
+width:500px;
+}
+#inform-types .table{
+display:grid;
+grid-template-columns:120px 50px;
+margin:10px;
+}
+#inform-types .table div{
+margin:5px;
+}
+#inform-types .weak{
+font-weight:bold;
+color:#faaf00;
+text-shadow:1px 0px #af4b19, 0px 1px #af4b19, -1px 0px #af4b19, 0px -1px #af4b19;
+}
+#inform-types .effective{
+font-weight:bold;
+color:#ffedc8;
+text-shadow:1px 0px #af4b19, 0px 1px #af4b19, -1px 0px #af4b19, 0px -1px #af4b19;
+}
+#inform-types .normal{
+font-weight:bold;
+}
+#inform-types .resist{
+font-weight:bold;
+color:#4db2ee;
+text-shadow:1px 0px #327094, 0px 1px #327094, -1px 0px #327094, 0px -1px #327094;
+}
+#inform-fields{
+width:360px;
+}
+#inform-fields img{
+width:50px;
+}
+#inform-fields .left{
+display:grid;
+grid-template-columns:repeat(3, 50px);
+
+text-align:center;
+place-items:center;
+margin:5px;
+}
+#inform-fields .left > div{
+border:1px solid black;
+width:100%;
+text-align:center;
+}
+#inform-fields .right{
+display:grid;
+grid-template-columns:50px 50px 100px 150px;
+grid-template-rows:20px 50px;
+margin:5px;
+}
+#inform-fields .right > div{
+border:1px solid black;
+}
+
+
+
+
+
+.cells{
+position:relative;
+display:flex;
+
+padding:5px;
+transform:skewX(var(--mslop));
+border:solid blue 1px;
+border-radius:5px;
+min-width:1500px;
+width:90%;
+}
+.cells:hover{
+z-index:3;
+}
+.cells > div{
+transform:skewX(var(--slop));
+}
+.summary{
+width:320px;
+padding:5px;
+}
+.aptitude{
+display:flex;
+align-items:flex-end;
+height:55px;
+}
+.thumb{
+position:relative;
+}
+.thumb img{
+width:100px;
+}
+.character_name{
+margin:0 0 0 5px;
+width:200px;
+}
+.fes-chara{
+color:#00ADFF;
+}
+.hashtags{
+position:absolute;
+z-index:1;
+display:none;
+
+top:100%;
+
+padding:2px;
+background-color:white;
+border:1px solid blue;
+border-radius:5px;
+white-space:nowrap;
+}
+
+
+.type{
+display:grid;
+grid-template-columns:75px 75px 75px;
+height:45px;
+
+transform:skewX(var(--mslop));
+border-spacing:0px;
+
+text-align:center;
+color:white;
+font-size:15px;
+}
+.type > div{
+padding:2px;
+border:1px solid white;
+}
+.type .position{
+background-color:#2c4563;
+}
+.type div:nth-child(3n+1){
+border-radius:5px 0 0 5px;
+}
+.type div:nth-child(3n+3){
+border-radius:0 5px 5px 0;
+}
+.type div:nth-child(-n+3){
+color:black;
+margin-bottom:1px;
+border:1px solid black;
+}
+.fields{
+display:grid;
+grid-template-columns:27px 27px 27px;
+transform:skewX(var(--mslop));
+
+font-size:15px;
+
+margin:0 5px 0 5px;
+}
+.field_col{
+background-color:#00ADFF;
+border-radius:5px 5px 0 0;
+}
+.field_pref{
+border-radius:0 0 5px 5px;
+}
+.fields div{
+border:1px solid blue;
+width:25px;
+overflow:hidden;
+margin-right:5px;
+}
+.fields img{
+width:100%;
+transform:skewX(var(--slop));
+}
+
+
+
+
+.skills{
+display:flex;
+
+z-index:-1;
+}
+.skill{
+position:relative;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+padding:0 5px 5px 5px;
+width:75px;
+height:75px;
+transform:skewX(var(--mslop));
+border:solid blue 1px;
+border-radius:5px;
+
+background-color: white;
+}
+.skill > div{
+transform:skewX(var(--slop));
+}
+.skill_title{
+height:24px;
+vertical-align:top;
+font-size:17px;
+
+z-index:-1;
+}
+.skill img{
+height:50px;
+width:50px;
+border-radius:50%;
+}
+.신비{
+background-color:#00498c;
+border:1px solid #00498c;
+}
+.특수장갑{
+background-color:#00498c;
+border:1px solid #00498c;
+}
+.폭발{
+background-color:#920008;
+border:1px solid #920008;
+}
+.경장갑{
+background-color:#920008;
+border:1px solid #920008;
+}
+.관통{
+background-color:#bb7d10;
+border:1px solid #bb7d10;
+}
+.중장갑{
+background-color:#bb7d10;
+border:1px solid #bb7d10;
+}
+.진동{
+background-color:#9a45a8;
+border:1px solid #9a45a8;
+}
+.탄력장갑{
+background-color:#9a45a8;
+border:1px solid #9a45a8;
+}
+
+.skill_content{
+display:none;
+position:absolute;
+
+margin-top:5px;
+width:300px;
+left:0;
+top:105%;
+z-index:1;
+
+padding:5px;
+border:1px solid blue;
+border-radius:5px;
+background-color:white;
+white-space:pre-wrap;
+text-indent:5px;
+}
+.skill_content p{
+margin:0;
+margin-bottom:5px;
+}
+.skill_name{
+color:black;
+margin-bottom:10px;
+}
+.ex-cost{
+float:right;
+font-size:17px;
+margin-right:10px;
+}
+.ex-cost span{
+color:#00ADFF;
+}
+.skill_matterial{
+display:flex;
+margin:0 0 10px 10px;
+}
+.skill_matterial img{
+width:60px;
+}
+.borderer{
+width:100%;
+margin:5px 0 5px 0;
+border:1px solid black;
+}
+.skill_summary{
+color:#808080;
+}
+
+
+
+.equipment_contain{
+white-space:nowrap;
+display:flex;
+}
+.weapon_contain{
+position:relative;
+border:1px solid blue;
+border-radius:5px;
+transform:skewX(var(--mslop));
+
+margin-left:10px;
+height:80px;
+}
+.weapon_name{
+position:absolute;
+margin:5px;
+}
+.weapon_contain img{
+height:80px;
+}
+.equipments{
+display:flex;
+font-size:17px;
+vertical-align:top;
+}
+.equipments > div{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+border:1px solid blue;
+border-radius:5px;
+transform:skewX(var(--mslop));
+width:75px;
+height:80px;
+}
+.equip_name{ 
+height:24px;
+}
+.equipments img{
+height:55px;
+transform:skewX(var(--slop));
+}
+.signature_contain{
+position:absolute;
+z-index:3;
+
+top:113%;
+left:0;
+display:none;
+transform:skewX(var(--slop));
+padding:5px;
+border:1px solid blue;
+border-radius:5px;
+background-color:white;
+width:400px;
+white-space:pre-wrap;
+text-indent:5px;
+}
+.signature_thumb{
+margin:10px 0 10px 0;
+text-align:center;
+}
+.signature_contain p{
+margin:0;
+margin-bottom:5px;
+}
+.unique_cell{
+position:relative;
+}
+.unique_content{
+position:absolute;
+top:110%;
+right:-50%;
+z-index:3;
+display:none;
+
+width:400px;
+padding:5px;
+transform:skewX(var(--slop));
+background-color:white;
+border:1px solid blue;
+border-radius:5px;
+white-space:pre-wrap;
+text-indent:5px;
+}
+.unique_name{
+font-size:20px;
+}
+.unique_img_cont{
+transform:skewX(var(--mslop));
+}
+.unique_content img{
+width:100px;
+height:100px;
+object-fit:cover;
+}
+.unique_content p{
+margin:0;
+margin-bottom:5px;
+font-size:20px;
+}
