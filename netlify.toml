@@ -1,7 +1,7 @@
-[build]
-	publish = "public"
-	command = "npm run build"
-[[redirects]]
-	from = "/*"
-	to = "/index.html"
-	status = 200
+build:
+	command: npm run build
+	commandOrigin: config
+	publish: /opt/build/repo/public
+	publishOrigin: config
+redirects:
+	from: /*
