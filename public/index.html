@@ -214,7 +214,7 @@ function skill_cell(student, skill_category){
 	let skill_thumb_cont = document.createElement('div')
 	let skill_thumb = document.createElement('img')
 	skill_thumb.className = student.atk_type
-	skill_thumb.src = "./assets/students/" + last_name_src + "/" + last_name_src + "_" + skill_category.split(' ')[0] + ".webp" //student.skills[skill_type].thumb
+	skill_thumb.src = "./assets/students/" + last_name_src + "/" + skill_category.split(' ')[0] + ".webp" //student.skills[skill_type].thumb
 	skill_thumb_cont.appendChild(skill_thumb)
 
 
@@ -296,7 +296,7 @@ for (var i=0; i<students.length; i++){
 
     let thumb_div = document.createElement('div')			//thumbnail
     let thumb = document.createElement('img')
-    thumb.src = "./assets/students/" + last_name_src + "/" + last_name_src + "_thumb.webp" //students[i].thumb
+    thumb.src = "./assets/students/" + last_name_src + "/" + "thumb.webp" //students[i].thumb
     thumb_div.className = "thumb"
 	thumb_div.id = last_name + "_thumb"
 	tag_ids.push(thumb_div.id)
@@ -443,7 +443,7 @@ for (var i=0; i<students.length; i++){
 	let signature_thumb_cell = document.createElement('div')
 	signature_thumb_cell.className = "signature_thumb"
 	let signature_thumb = document.createElement('img')
-	signature_thumb.src = "./assets/students/" + last_name_src + "/전용무기.webp"
+	signature_thumb.src = "./assets/students/" + last_name_src + "/고유무기.webp"
 	signature_thumb_cell.appendChild(signature_thumb)
 	let signature_name = document.createElement('div')
 	signature_name.innerText = students[i].signature.name
