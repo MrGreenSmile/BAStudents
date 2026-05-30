@@ -232,7 +232,7 @@ function skill_cell(student, skill_category){
 	skill_contain.appendChild(skill_name)
 	let skill_summary = document.createElement('div')
 	skill_summary.className = "skill_summary"
-	skill_summary.innerHTML = student.skills[skill_type][0].content.split('\n').map((par) => "<p>" + par + "</p>").join("")
+	skill_summary.innerHTML = student.skills[skill_type][0].content.replace(/\t/gi, "").split('\n').map((par) => "<p>" + par + "</p>").join("")
 	if(skill_category === "EX 스킬"){
 		let ex_mat = skill_materials_cell(student, "EX")
 		skill_contain.appendChild(ex_mat)
@@ -448,7 +448,7 @@ for (var i=0; i<students.length; i++){
 	let signature_name = document.createElement('div')
 	signature_name.innerText = students[i].signature.name
 	let signature_summary = document.createElement('div')
-	signature_summary.innerHTML = students[i].signature.summary.split('\n').map((el) => "<p>" + el + "</p>").join('')
+	signature_summary.innerHTML = students[i].signature.summary.replace(/\t/gi, "").split('\n').map((el) => "<p>" + el + "</p>").join('')
 
 	signature_contain.appendChild(signature_name)
 	signature_contain.appendChild(signature_thumb_cell)

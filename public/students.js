@@ -591,7 +591,7 @@ EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 �
 },{
 "name":"스나오오카미 시로코(수영복)",
 "school":"아비도스 종합고등학교", "club":"아비도스 학생회",
-"role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"경장갑", "field":"B/S/A", "fes":false,
+"role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"경장갑", "field":"B/S/D", "fes":false,
 "weapon":"AR", "equipments":["모자", "가방", "손목시계"], "matterials":["파에스토스 원반", "로혼치 사본"],
 "signature":{
 	"name":"BLACK FANG 465",
@@ -619,6 +619,98 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`아군의 코스트 회복력 <em>10.6%</em> 증가`
 	}]},
 	"tags":["디버프", "방어력 감소", "코스트 회복"],
+},{
+"name":"이자요이 노노미(수영복)",
+"school":"아비도스 종합고등학교", "club":"아비도스 학생회",
+"role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/D/B", "fes":false,
+"weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["에테르", "로혼치 사본"],
+"signature":{
+	"name":"미니 No.5",
+	"summary":`한여름에도 노노미 곁을 지키는 기관총.
+시원하게 쏟아내는 탄환이 더위 또한 날려버린다.
+`},
+"uniqueItem":{"name":"",
+"summary":`
+`},
+"skills":{
+	"ex":[{
+	"name":"시원해질 시간이에요~♣", "cost":6,
+	"content":`적 1인에게 공격력 <em>695%</em> 대미지
+	장탄수 100 소모 시까지 일반 공격 딜레이를 <em>2회</em> 무시하는 일반공격으로 변경
+	즉시 재장전`
+	}],"basic":[{
+	"name":"다 같이 신나게!",
+	"content":`<em>40초</em>마다 원형 범위 내의 아군에게 공격 속도 <em>11.4%</em> 증가 (<em>30</em>초간)`
+	}],"enhance":[{
+	"name":"기다릴 수 없어요~♧",
+	"content":`공격 속도 <em>14%</em>`
+	}],"sub":[{
+	"name":"차가울 거에요~!",
+	"content":`EX 스킬로 일반 공격이 변경된 상태에서 일반 공격으로 적 공격 시 공격력 <em>10.9%</em> 추가 대미지`
+	}]},
+	"tags":["메인딜", "예로니무스", "카이텐저 2페"],
+},{
+"name":"쿠로미 세리카(수영복)",
+"school":"아비도스 종합고등학교", "club":"아비도스 학생회",
+"role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
+"weapon":"AR", "equipments":["장갑", "가방", "손목시계"], "matterials":["에테르", "머리가 자라는 인형"],
+"signature":{
+	"name":"신시어리티",
+	"summary":`휴가 중의 리조트까지 따라온 세리카의 돌격소총.
+	휴가 중이라도 헤이해짐은 없다. 오히려 최고로 성실한 휴가를 즐기기 위해 최상의 상태를 유지한다.
+`},
+"uniqueItem":{"name":"",
+"summary":`
+`},
+"skills":{
+	"ex":[{
+	"name":"성난 파도", "cost":6,
+	"content":`원형 범위 내의 적에게 공격력 <em>636%</em> 대미지`
+	}],"basic":[{
+	"name":"퐁당퐁당, 퐁당!",
+	"content":`<em>35초</em>마다 원형 범위 내의 적에게 공격력 <em>101%</em> 대미지`
+	}],"enhance":[{
+	"name":"의욕 만만",
+	"content":`공격력 <em>14%</em>`
+	}],"sub":[{
+	"name":"앗, 차가워!",
+	"content":`아군의 치명 대미지 <em>9.1%</em> 증가`
+	}]},
+	"tags":["범위딜"],
+},{
+"name":"오쿠소라 아야네(수영복)",
+"school":"아비도스 종합고등학교", "club":"아비도스 학생회",
+"role":"TS", "position":"SPECIAL","atk_type":"관통", "dfn_type":"경장갑", "field":"D/S/B", "fes":false,
+"weapon":"HG", "equipments":["장갑", "가방", "손목시계"], "matterials":["볼프세크 강철", "안티키테라 장치"],
+"signature":{
+	"name":"상식적 수단 + 강습형 건쉽 '물구름 호'",
+	"summary":`사용되는 일이 없실 바라던 아야네의 권총.
+	하지만 그 꿈은 매번 어처구니 없는 일로 깨어진다.
+`},
+"uniqueItem":{"name":"",
+"summary":`
+`},
+"skills":{
+	"ex":[{
+	"name":"물구름 호, 출격합니다!", "cost":4,
+	"content":`아야네가 물구름 호에 탑승하여 전투에 등장
+	아야네 공격력의 <em>12.5%</em>를, 치명 수치의 <em>12.5%</em>를 물구름 호가 가진다. (<em>30초</em>간)
+	물구름 호는 <em>12초</em>마다 '호우 미사일'을 발사하여 적 1인에게 공격력 <em>297%</em> 대미지
+	(이 공격은 적의 방어력을 <em>68%</em> 무시)
+	(택티컬 서포트의 탑승물은 중복 등장 불가)
+	`
+	}],"basic":[{
+	"name":"공중지원",
+	"content":`<em>30초</em>마다 적 1인에게 공격력 <em>148%</em> 대미지
+	(이 공격은 적의 방어력을 <em>60%</em> 무시)`
+	}],"enhance":[{
+	"name":"자동조준",
+	"content":`치명 수치 <em>14%</em>`
+	}],"sub":[{
+	"name":"전황파악",
+	"content":`아군의 치명 대미지 <em>9.1%</em> 증가`
+	}]},
+	"tags":["방어력 무시"],
 }
 
 
