@@ -55,6 +55,13 @@ font-size:17px;
 .sorter-button{
 cursor:pointer;
 }
+.filter_container{
+display:flex;
+text-align:center;
+}
+.filter_container div{
+margin-right:10px;
+}
 #inform-button{
 width:100px;
 cursor:pointer;

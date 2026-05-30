@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="https://i.namu.wiki/i/imodOD0izhYy7wQmyv7aDkuTbaJW-eg64MRxQneYJ0ebkk06Z3XUL-JduYj3nOG1haEvzoVIQt0BW4pFy8B6IQ.webp">
+<link rel="icon" href="./assets/학생부.webp">
 <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -68,15 +68,17 @@
 
 <div class="sorter">
 <div>정렬</div>
-<div class="sorter-button" onclick="sorter()">이름순</div>
-
-<div class="sorter-button" onclick="students_filter(`fes`)">필터!</div>
+	<div class="sorter-button" onclick="sorter()">이름순</div>
+</div>
+<div class="filter_container">
+	<div class="sorter-button" onclick="filter_fes(`fes`)">페스</div>
+	<div class="sorter-button" onclick="filter_school(`밀레니엄`)">밀레니엄</div>
+	<div class="sorter-button" onclick="filter_school(`아비도스`)">아비도스</div>
 </div>
 
 
+<div id="Cells"></div>
 
-<div id="Cells">
-</div>
 
 <div id="footer">
 <div>
@@ -86,18 +88,16 @@
 <a href="./test.html">Test Page</a>
 </div>
 
+<br>
 <div>ⓒ2021 NEXON Korea Corp. & NEXON Games Co., Ltd. All Rights Reserved.</div>
 <div>
 
 <script src="./students.js" charset="utf-8"></script>
 <script src="./data.js" charset="utf-8"></script>
+<script src="./sorter.js" charset="utf-8"></script>
 <script>
 document.title = 'BA Students'
-let sort_index = true
-let filter_idx = false
 let filtered = students
-
-
 let cells = document.getElementById('Cells')
 
 
@@ -109,53 +109,6 @@ function clearAll(){
 console.log('cleared')
 }
 
-function students_filter(idx){
-	if(filter_idx){
-		filtered = students
-
-		filter_idx = false
-	}else{
-		filtered = students.filter(el => el.fes == true)
-
-		filter_idx = true
-	}
-
-	tag_ids = []
-	skill_ids = []
-	sig_ids = []
-	unique_ids = []
-
-	cells.innerHTML = ''
-	main(filtered)
-	eventer()
-
-	//filter_idx = true
-}
-function sorter(){
-	function sort1(n){
-		filtered.sort(function (a, b){
-			var a_name = a.name.split(' ')[1]
-			var b_name = b.name.split(' ')[1]
-
-			if(a_name < b_name){return n}
-			if(a_name > b_name){return -n}
-			else{return 0}
-			}
-		)
-	}
-
-	if(sort_index){
-		sort1(1)
-		sort_index = false
-	}else{
-		sort1(-1)
-		sort_index = true
-	}
-
-	cells.innerHTML = ''
-	main(filtered)
-	eventer()
-}
 
 
 
