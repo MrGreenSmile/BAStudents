@@ -57,7 +57,7 @@ let students = [
 	"name":"서기의 고집",
 	"content":`기본 스킬 사용 시 해로운 효과 유지력 <em>16.9%</em> 증가 (<em>13초</em>간)`
 	}]},
-	"tags":["서브딜", "집중공격"],
+	"tags":["집중공격", "고즈", "예소드"],
 },{
 "name":"하야세 유우카",
 "school":"밀레니엄 사이언스 스쿨", "club":"세미나",
@@ -86,7 +86,7 @@ let students = [
 	"name":"고속 암산",
 	"content":"엄폐 시 치유력 <em>75%</em> 회복 (쿨타임 <em>10초</em>)"
 	}]},
-	"tags":["탱커", "보호막"],
+	"tags":["탱커", "회피탱", "보호막"],
 },{
 "name":"쿠로사키 코유키",
 "school":"밀레니엄 사이언스 스쿨", "club":"세미나",
@@ -223,7 +223,7 @@ let students = [
 	"name":"서기의 예리함",
 	"content":`일반 공격 <em>10회</em>마다 관통 특효 <em>46.8%</em> 가산 (<em>10초</em>간)`
 	}]},
-	"tags":["호버크래프트", "메인딜", "추가타"],
+	"tags":["호버크래프트", "2페이즈", "메인딜"],
 },{
 "name":"쿠로사키 코유키(파자마)",
 "school":"밀레니엄 사이언스 스쿨", "club":"세미나",
@@ -591,7 +591,7 @@ EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 �
 },{
 "name":"스나오오카미 시로코(수영복)",
 "school":"아비도스 종합고등학교", "club":"아비도스 학생회",
-"role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"경장갑", "field":"B/S/A", "fes":true,
+"role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"경장갑", "field":"B/S/A", "fes":false,
 "weapon":"AR", "equipments":["모자", "가방", "손목시계"], "matterials":["파에스토스 원반", "로혼치 사본"],
 "signature":{
 	"name":"BLACK FANG 465",
@@ -619,5 +619,45 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`아군의 코스트 회복력 <em>10.6%</em> 증가`
 	}]},
 	"tags":["디버프", "방어력 감소", "코스트 회복"],
+}
+
+
+
+
+
+
+
+
+
+
+
+,{
+"name":"츠카츠키 리오(무장)",
+"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/B/D", "fes":false,
+"weapon":"HG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["디스코 콜간테", "보이니치 사본"],
+"signature":{
+	"name":"입안자",
+	"summary":`리오의 호신용 권총.
+합리적인 슈트의 보조 덕분에, 보다 정확한 사격이 가능해졌다.
+`},
+"uniqueItem":{"name":"",
+"summary":`
+`},
+"skills":{
+	"ex":[{
+	"name":"전뇌의 힘", "cost":4,
+	"content":`적 1인에게 공격력 <em>1356%</em> 대미지`
+	}],"basic":[{
+	"name":"파라미터 조정",
+	"content":`<em>35초</em>마다 치명 대미지 <em>21.9%</em> 증가 (<em>30초</em>간)`
+	}],"enhance":[{
+	"name":"진화 알고리즘",
+	"content":`공격력 <em>14%</em>`
+	}],"sub":[{
+	"name":"메타휴리스틱",
+	"content":`방어 타입이 경장갑인 대상 공격 시 <em>20%</em> 확률로 받는 특효 대미지량 <em>6.1%</em> 가산 (<em>13초</em>간) (쿨타임 <em>5초</em>)`
+	}]},
+	"tags":["메인딜", "예로니무스", "카이텐저 2페"],
 }
 ]
