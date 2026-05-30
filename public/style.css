@@ -55,13 +55,28 @@ font-size:17px;
 .sorter-button{
 cursor:pointer;
 }
+#filter-button{
+width:100px;
+cursor:pointer;
+text-align:center;
+margin:20px 0 20px 0;
+}
 .filter_container{
 display:flex;
-text-align:center;
+text-align:left;
+font-size:17px;
+
+border:1px solid blue;
+
+position:absolute;
+z-index:4;
+background-color:white;
 }
 .filter_container div{
-margin-right:10px;
+margin:5px;
 }
+
+
 #inform-button{
 width:100px;
 cursor:pointer;

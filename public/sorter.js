@@ -38,20 +38,6 @@ function filter_school(idx){
         current_school_idx = idx;
     }
     applyFilters();
-	/*
-	if(current_school_idx != ""){
-		current_school_idx = idx
-
-		applyFilters(idx);
-	}else{
-		filter4school = !filter4school;
-		current_school_idx = idx
-
-		applyFilters(idx);
-	}
-
-	console.log(current_school_idx)
-	*/
 }
 
 

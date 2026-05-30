@@ -17,10 +17,21 @@ inform_button.onclick = informer;
 let information = document.getElementById('information')
 information.style.display = 'none'
 function informer(){
-	console.log("clicked")
 	if(information.style.display === 'none'){
 		information.style.display = 'flex'
 	}else if(information.style.display === "flex"){
 		information.style.display = 'none'
+	}
+}
+
+let filter_button = document.getElementById("filter-button")
+filter_button.onclick = filter_view;
+let inform_filter = document.getElementById("inform-filter")
+inform_filter.style.display = 'none'
+function filter_view(){
+	if(inform_filter.style.display === 'none'){
+		inform_filter.style.display = 'flex'
+	}else if(inform_filter.style.display === "flex"){
+		inform_filter.style.display = 'none'
 	}
 }
