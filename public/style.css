@@ -75,6 +75,14 @@ background-color:white;
 .filter_container div{
 margin:5px;
 }
+.filter-button{
+margin:10px;
+}
+.filter-button.active{
+box-shadow:0 0 0 2px #007bff;
+border-radius: 4px;
+/*font-weight: bold;*/
+}
 
 
 #inform-button{
@@ -163,13 +171,15 @@ border:1px solid black;
 
 
 
-#Cells{
-margin-bottom:300px;
-}
 #footer{
 padding:10px;
-background-color:ced4da;
+background-color:#ced4da;
 font-size:15px;
+margin:-10px;
+min-width:1500px;
+}
+#Cells{
+margin-bottom:300px;
 }
 .cells{
 position:relative;

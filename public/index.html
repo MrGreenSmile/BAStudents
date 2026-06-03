@@ -67,19 +67,20 @@
 </div>
 
 <div class="sorter">
-<div>정렬</div>
+	<div class="sorter-button">정렬</div>
 	<div class="sorter-button" onclick="sorter()">이름순</div>
 </div>
 <div id="filter-button">필터</div>
 <div class="filter_container" id="inform-filter">
 	<div class="filter_column">
 	<div>페스</div>
-	<div class="sorter-button" onclick="filter_fes(`fes`)">페스</div>
+	<div class="sorter-button filter-button fes" onclick="filter_fes(`fes`)">페스</div>
 	</div>
 	<div class="filter_column">
 	<div>학교</div>
-	<div class="sorter-button" onclick="filter_school(`밀레니엄`)">밀레니엄</div>
-	<div class="sorter-button" onclick="filter_school(`아비도스`)">아비도스</div>
+	<div class="sorter-button filter-button school" onclick="filter_school(`밀레니엄`)">밀레니엄</div>
+	<div class="sorter-button filter-button school" onclick="filter_school(`아비도스`)">아비도스</div>
+	<div class="sorter-button filter-button school" onclick="filter_school(`게헨나`)">게헨나</div>
 	</div>
 </div>
 
@@ -97,7 +98,11 @@
 
 <br>
 <div>ⓒ2021 NEXON Korea Corp. & NEXON Games Co., Ltd. All Rights Reserved.</div>
-<div>
+</div>
+
+
+
+	
 
 <script src="./students.js" charset="utf-8"></script>
 <script src="./data.js" charset="utf-8"></script>

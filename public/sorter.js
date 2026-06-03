@@ -24,11 +24,24 @@ function applyFilters(idx = ''){
     eventer();
 }
 function filter_fes(idx){
+    const buttons = document.querySelectorAll('.sorter-button.fes');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+
     filter4fes = !filter4fes;
-    
+
+    if(filter4fes){
+        if(window.event && window.event.currentTarget){
+            window.event.currentTarget.classList.add('active');
+        }
+    }
     applyFilters();
 }
 function filter_school(idx){
+    const buttons = document.querySelectorAll('.sorter-button.school');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+
     if(current_school_idx === idx){
         filter4school = false;
         current_school_idx = "";
@@ -36,9 +49,15 @@ function filter_school(idx){
     else{
         filter4school = true;
         current_school_idx = idx;
+
+        if(window.event && window.event.currentTarget){
+            window.event.currentTarget.classList.add('active');
+        }
     }
     applyFilters();
 }
+
+
 
 
 function sorter(){
