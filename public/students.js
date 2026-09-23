@@ -1,6 +1,7 @@
 let students = [
-{"name":"츠카츠키 리오",
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+{"name":"츠카츠키 리오", "jp_name":"調月 リオ", "en_name":"Tsukatsuki Rio",
+"age":17, "birthday":"06/06", "height":171, "hobby":"디자인", "illust":["Mx2J"], "voice":["김푸름", "Lynn", "杨梦露(양멍루)"],
+"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":3,
 "role":"서포터", "position":"SPECIAL","atk_type":"신비", "dfn_type":"탄력장갑", "field":"A/D/S", "fes":true,
 "weapon":"HG", "equipments":["신발", "헤어핀", "손목시계"], "matterials":["디스코 콜간테", "수정 하니와"],
 "signature":{
@@ -31,8 +32,9 @@ let students = [
 	}]},
 	"tags":["퀵드로우", "공격력 증가"],
 },{
-"name":"우시오 노아",
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"우시오 노아", "jp_name":"生塩 ノア", "en_name":"Ushio Noa",
+"age":16, "birthday":"04/13", "height":161, "hobby":"독서, 암송", "illust":["Hwansang", "DoReMi"], "voice":["채림", "鈴代 紗弓(스즈시로 사유미)", "陈雨(첸위)"],
+"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":2,
 "role":"서포터", "position":"MIDDLE","atk_type":"신비", "dfn_type":"특수장갑", "field":"D/B/S", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "부적"], "matterials":["파에스토스 원반", "에테르"],
 "signature":{
@@ -59,8 +61,9 @@ let students = [
 	}]},
 	"tags":["집중공격", "고즈", "예소드"],
 },{
-"name":"하야세 유우카",
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"하야세 유우카", "jp_name":"早瀬 ユウカ", "en_name":"Hayase Yuuka",
+"age":16, "birthday":"03/14", "height":156, "hobby":"계산", "illust":["Hwansang"], "voice":["신나리", "春花 らん(하루카 란)", "小敢(샤오간)"],
+"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":2,
 "role":"탱커", "position":"FRONT","atk_type":"폭발", "dfn_type":"중장갑", "field":"B/B/A", "fes":false,
 "weapon":"SMG", "equipments":["신발", "배지", "부적"], "matterials":["님루드 렌즈", "안티키테라 장치"],
 "signature":{
@@ -643,7 +646,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`<em>40초</em>마다 원형 범위 내의 아군에게 공격 속도 <em>11.4%</em> 증가 (<em>30</em>초간)`
 	}],"enhance":[{
 	"name":"기다릴 수 없어요~♧",
-	"content":`공격 속도 <em>14%</em>`
+	"content":`공격 속도 <em>14%</em> 증가`
 	}],"sub":[{
 	"name":"차가울 거에요~!",
 	"content":`EX 스킬로 일반 공격이 변경된 상태에서 일반 공격으로 적 공격 시 공격력 <em>10.9%</em> 추가 대미지`
@@ -671,7 +674,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`<em>35초</em>마다 원형 범위 내의 적에게 공격력 <em>101%</em> 대미지`
 	}],"enhance":[{
 	"name":"의욕 만만",
-	"content":`공격력 <em>14%</em>`
+	"content":`공격력 <em>14%</em> 증가`
 	}],"sub":[{
 	"name":"앗, 차가워!",
 	"content":`아군의 치명 대미지 <em>9.1%</em> 증가`
@@ -712,8 +715,8 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	}]},
 	"tags":["방어력 무시"],
 },{
-"name":"츠카츠키 리오(무장)",
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"츠카츠키 리오(무장)", "jp_name":"調月 リオ", "en_name":"Tsukatsuki Rio",
+"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":3,
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/B/D", "fes":false,
 "weapon":"HG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["디스코 콜간테", "보이니치 사본"],
 "signature":{
@@ -733,7 +736,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`<em>35초</em>마다 치명 대미지 <em>21.9%</em> 증가 (<em>30초</em>간)`
 	}],"enhance":[{
 	"name":"진화 알고리즘",
-	"content":`공격력 <em>14%</em>`
+	"content":`공격력 <em>14%</em> 증가`
 	}],"sub":[{
 	"name":"메타휴리스틱",
 	"content":`방어 타입이 경장갑인 대상 공격 시 <em>20%</em> 확률로 받는 특효 대미지량 <em>6.1%</em> 가산 (<em>13초</em>간) (쿨타임 <em>5초</em>)`
@@ -761,7 +764,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`<em>20초</em>마다 공격력 <em>334%</em> 대미지 지뢰 3개 소환 (15초간)`
 	}],"enhance":[{
 	"name":"재미있게 놀자!",
-	"content":`공격력 <em>14%</em>`
+	"content":`공격력 <em>14%</em> 증가`
 	}],"sub":[{
 	"name":"신나게 가볼까?",
 	"content":`일반 공격 시 <em>25%</em> 확률로 명중 수치 <em>30.2%</em> 증가 (<em>30초</em>간) (쿨타임 <em>25초</em>)`
@@ -771,7 +774,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 "name":"리쿠하치마 아루",
 "school":"게헨나 학원", "club":"흥신소 68",
 "role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
-"weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["로혼치 사본", "토템폴"],
+"weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["로혼치 사본", "토템폴"],
 "signature":{
 	"name":"와인레드・어드마이어",
 	"summary":`아루가 평소에도 애지중지 아끼는 고풍스러운 디자인의 반자동 저격소총.
@@ -792,7 +795,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 <em>50%</em> 확률로 원형 범위 내의 적에게 공격력 <em>251%</em> 대미지`
 	}],"enhance":[{
 	"name":"사장님의 위엄",
-	"content":`치명 대미지 <em>14%</em>`
+	"content":`치명 대미지 <em>14%</em> 증가`
 	}],"sub":[{
 	"name":"무법자의 길",
 	"content":`EX 스킬 사용 중 치명 수치 <em>20.1%</em> 증가`
@@ -814,7 +817,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	<em>30%</em> 확률로 공포 (<em>3.6초</em>간)`}],
 	"enhance":[{
 	"name":"무서운 얼굴",
-	"content":`군중 제어 강화력 <em>14%</em>`}],
+	"content":`군중 제어 강화력 <em>14%</em> 증가`}],
 	"sub":[{
 	"name":"어쩔 수 없네",
 	"content":`군중 제어 상태인 적 공격 시 공격력 <em>74.8%</em> 추가 대미지`}
@@ -843,7 +846,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`<em>20초</em>마다 방어력 <em>18.9%</em> 증가 (<em>20초</em>간)`}],
 	"enhance":[{
 	"name":"히, 힘내겠습니다!",
-	"content":`최대 체력 <em>14%</em>`}],
+	"content":`최대 체력 <em>14%</em> 증가`}],
 	"sub":[{
 	"name":"으아아아아아-?!",
 	"content":`피격 시 <em>5%</em> 확률로 방어력 <em>18.1%</em> 증가 (<em>15초</em>간) (쿨타임 <em>10초</em>)`}
@@ -862,7 +865,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 "name":"리쿠하치마 아루(새해)",
 "school":"게헨나 학원", "club":"흥신소 68",
 "role":"딜러", "position":"BACK", "atk_type":"관통", "dfn_type":"특수장갑", "field":"D/B/S", "fes":false,
-"weapon":"SG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["토템폴", "로혼치 사본"],
+"weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["토템폴", "로혼치 사본"],
 "skills":{
 	"ex":[{
 	"name":"하드보일드풍 하네츠키 샷", "cost":6,
@@ -874,7 +877,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"content":`<em>30초</em>마다 원형 범위 내의 적에게 공격력 <em>169%</em> 대미지`}],
 	"enhance":[{
 	"name":"사장님의 고져스한 기품",
-	"content":`최대 체력 <em>14%</em>`}],
+	"content":`최대 체력 <em>14%</em> 증가`}],
 	"sub":[{
 	"name":"사장님의 퍼펙트한 용병술",
 	"content":`아군이 적 6명 처치 시 마다 악행 1개 적립, 악행은 최대 <em>3</em>까지 중첩, 악행 1개당 방어력 <em>26.8%</em> 감소`}
@@ -904,7 +907,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	소악마가 6중첩 상태일 경우 공격력 <em>117%</em> 추가 대미지`}],
 	"enhance":[{
 	"name":"좀 더 즐겁게 노는 방법",
-	"content":`공격력 <em>14%</em>`}],
+	"content":`공격력 <em>14%</em> 증가`}],
 	"sub":[{
 	"name":"소악마의 귀여운 꿍꿍이",
 	"content":`EX 스킬로 공격 시 대상이 3회 피해를 입을 때마다 소악마 1개 정립 (<em>56초</em>간)
@@ -920,5 +923,197 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투장 <
 	"summary":``
 },
 "tags":["광역", "서브딜", "고즈 1페"],
+},{
+"name":"오니카타 카요코(새해)",
+"school":"게헨나 학원", "club":"흥신소 68",
+"role":"서포터", "position":"MIDDLE", "atk_type":"신비", "dfn_type":"특수장갑", "field":"B/D/S", "fes":false,
+"weapon":"HG", "equipments":["신발", "헤어핀", "부적"], "matterials":["볼프세크 강철", "아틀란티스 메달"],
+"skills":{
+	"ex":[{
+	"name":"새해의 부적", "cost":2,
+	"content":`자신을 제외한 아군 1인에게 신비 특효 <em>48.8%</em> 가산 (<em>40초</em>간)
+	부적 부여`}],
+	"basic":[{
+	"name":"고양이의 시간",
+	"content":`<em>40초</em>마다 자신을 제외한 아군 1인에게 치명 수치 <em>20.8</em> 증가 (<em>25초</em>간)`}],
+	"enhance":[{
+	"name":"또 다른 오해",
+	"content":`공격력 <em>14%</em> 증가`}],
+	"sub":[{
+	"name":"보답 받는 인연",
+	"content":`아군이 치명 공격 <em>200회</em> 성공 시 자신에게 공격력 <em>13.1%</em> 증가
+	부적을 보유한 아군에게 신비 특효 <em>22%</em> 가산 (<em>50초</em>간)
+	이후 아군의 부적을 모두 제거`}
+]},
+"signature":{
+	"name":"데몬스 로어",
+	"summary":`카요코가 늘 휴대하고 다니는 권총.
+	사격할 때마다 엄청난 굉음을 내는 이 권총은 무례한 의뢰인을 쫒을 때뿐만 아니라, 새해의 액운을 쫒는 데에도 유용하게 쓰인다.
+`},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["신비 특효"],
+},{
+"name":"이구사 하루카(새해)",
+"school":"게헨나 학원", "club":"흥신소 68",
+"role":"서포터", "position":"SPECIAL", "atk_type":"폭발", "dfn_type":"경장갑", "field":"D/S/D", "fes":false,
+"weapon":"SG", "equipments":["신발", "가방", "손목시계"], "matterials":["만드라고라", "머리가 자라는 인형"],
+"skills":{
+	"ex":[{
+	"name":"누가 허락했죠…!?", "cost":4,
+	"content":`적 1인의 치명 저항력과 치명 대미지 저항률 <em>21.8%</em> 감소 (<em>50초</em>간)
+	추가로 공격력 <em>182%</em> 대미지`}],
+	"basic":[{
+	"name":"확실하게 인사하기",
+	"content":`<em>30초</em>마다 적 1인의 치명 대미지 저항률 <em>16.2%</em> 감소 (<em>20초</em>간)`}],
+	"enhance":[{
+	"name":"용서못해용서못해",
+	"content":`공격력 <em>14%</em> 증가`}],
+	"sub":[{
+	"name":"모두를 위한 마음",
+	"content":`아군의 코스트 회복력 <em>10.6%</em> 증가`}
+]},
+"signature":{
+	"name":"블로우 어웨이",
+	"summary":`'벌레 같은 것'을 쫒는 데 사용되는 하루카의 산탄총.
+	물론 진짜로 벌레를 처리하는 데에도 사용된다.
+`},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["치명 디버프", "코스트 버프"],
+},{
+"name":"리쿠하치마 아루(드레스)",
+"school":"게헨나 학원", "club":"흥신소 68",
+"role":"서포터", "position":"BACK", "atk_type":"관통", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
+"weapon":"SR", "equipments":["모자", "헤어핀", "목걸이"], "matterials":["이스탄불 로켓", "님루드 렌즈"],
+"skills":{
+	"ex":[{
+	"name":"흥미로운 제안", "cost":3,
+	"content":`자신을 제외한 아군 1인에게 치명 대미지 <em>47.7%</em> 증가 (<em>30초</em>간)`}],
+	"basic":[{
+	"name":"유익한 거래",
+	"content":`<em>50초</em>마다 자신을 제외한 체력이 가장 낮은 아군 1인에게 치유력 <em>79.8%</em> 회복`}],
+	"enhance":[{
+	"name":"드레스 업",
+	"content":`공격력 <em>14%</em> 증가`}],
+	"sub":[{
+	"name":"유리한 거래",
+	"content":`공격 시 <em>30%</em> 확률로 치명 저항력 <em>8%</em> 감소 (<em>13초</em>간) (출타임 <em>5초</em>)`}
+]},
+"signature":{
+	"name":"와인레드・어드마이어",
+	"summary":`특별한 임무에도 떼어놓지 않는 아루의 반자동 저격소총.
+고풍스러운 자리와도 딱 맞는 디자인이다.
+`},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["치명 대미지 버프", "서브힐"],
+},{
+"name":"아사기 무츠키(드레스)",
+"school":"게헨나 학원", "club":"흥신소 68", "grade":2,
+"role":"딜러", "position":"BACK","atk_type":"신비", "dfn_type":"중장갑", "field":"B/S/D", "fes":false,
+"weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["볼프세크 강철", "디스코 콜간테"],
+"skills":{
+	"ex":[{
+	"name":"폭연의 미뉴에트", "cost":6,
+	"content":`적 1인에게 공격력 <em>1740%</em> 대미지`}],
+	"basic":[{
+	"name":"발밑을 조심해!",
+	"content":`<em>30초</em>마다 원형 범위내의 적에게 치명 대미지 저항률 <em>14%</em> 감소 (<em>20초</em>간)
+	원형 범위 내의 적에게 <em>1초</em>마다 공격력 <em>26.7%</em> 대미지 (<em>10초</em>간)`}],
+	"enhance":[{
+	"name":"더~ 재밌어질 거라구?",
+	"content":`공격력 <em>14%</em> 증가`}],
+	"sub":[{
+	"name":"모두 같이 놀자!",
+	"content":`아군 스페셜 학생의 공격력 <em>14.2%</em> 증가`}
+]},
+"signature":{
+	"name":"트릭 오어 트릿",
+	"summary":`무츠키가 가지고 다니는 다목적 기관총.
+	재미있는 장난을 위해서라면 드레스 차림이라도 곁에서 떼 놓을 수 없다.
+`},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["일대일", "메인딜", "드럼통게 1페"],
+},{
+"name":"오니카타 카요코(드레스)",
+"school":"게헨나 학원", "club":"흥신소 68", "grade":3,
+"role":"딜러", "position":"MIDDLE", "atk_type":"관통", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
+"weapon":"HG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["킴바야 유물", "보이니치 사본"],
+"skills":{
+	"ex":[{
+	"name":"그림자 사격", "cost":5,
+	"content":`적 1인에게 공격력 <em>762%</em> 대미지 (이 공격은 적의 방어력을 <em>48%</em> 무시합니다.)
+	자신이 잠입 행동 상태일 경우, 이 공격은 확정 치명으로 변경, 이후 자신의 잠입 행동 상태를 해제
+	`}],
+	"basic":[{
+	"name":"되찾는 감각",
+	"content":`<em>25초</em>마다 치명 대미지 <em>13.5%</em> 증가 (<em>16초</em>간)
+	`}],
+	"enhance":[{
+	"name":"암살자의 눈",
+	"content":`치명 대미지 <em>14%</em> 증가`}],
+	"sub":[{
+	"name":"잠입 행동",
+	"content":`전술 입장 시 잠입 행동 상태가 되며, 공격을 받으면 잠입 행동 상태 해제
+	잠입 행동이 해제된 뒤 10초 동안 공격을 받지 않으면 다시 잠입 행동 상태로 변경
+	잠입 행동 상태일 경우 자신의 치명 대미지 <em>33.6%</em> 증가
+	`}
+]},
+"signature":{
+	"name":"데몬스 로어",
+	"summary":`카요코가 항상 소지하고 다니는 권총.
+	소음기가 달려 있어, 비밀스러운 잠입 임무에도 실용적이다.
+`},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["메인딜", "방어무시"],
+},{
+"name":"이구사 하루카(드레스)",
+"school":"게헨나 학원", "club":"흥신소 68", "grade":1,
+"role":"딜러", "position":"FRONT", "atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
+"weapon":"SG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["파에스토스 원반", "로마 12면체"],
+"skills":{
+	"ex":[{
+	"name":"이 몸을 바쳐서", "cost":4,
+	"content":`적 1인에게 공격력 <em>778%</em> 대미지 (이 공격은 적의 방어력을 <em>35%</em> 무시합니다)
+	자신에게 최대 체력의 <em>6.8%</em> 만큼 고정 대미지
+	(해당 스킬로 하루카(드레스)는 퇴각하지 않습니다)
+	`}],
+	"basic":[{
+	"name":"꽃이 피듯이",
+	"content":`<em>35초</em>마다 공격력 <em>20.7%</em> 증가 (<em>30초</em>간)
+	치유력 <em>68.2%</em> 회복 (현재 체력에 비례하여 회복량이 1~2배로 변경) (체력이 낮을 수록 회복량 증가)
+	`}],
+	"enhance":[{
+	"name":"잡초의 염원",
+	"content":`공격력 <em>14%</em> 증가`}],
+	"sub":[{
+	"name":"사라져주세요사라져주세요!",
+	"content":`피해를 입을 경우 용서 못해 1개 정립 (<em>30초</em>간) (쿨타임 <em>4초</em>
+	용서 못해는 최대 3개까지 중첩, 용서 못해 1개당 치명 대미지 <em>5.3%</em> 증가
+	`}
+]},
+"signature":{
+	"name":"블로우 어웨이",
+	"summary":`'벌레 같은 것'을 쫒는 데 사용되는 하루카의 산탄총.
+	물론 진짜로 벌레를 처리하는 데에도 사용된다.
+`},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["치명 디버프", "코스트 버프"],
 }
 ]
