@@ -10,7 +10,7 @@
 <a href="https://namu.wiki/w/%EB%A6%AC%EC%BF%A0%ED%95%98%EC%B9%98%EB%A7%88%20%EC%95%84%EB%A3%A8" target="_blnak">https://namu.wiki/w/리쿠하치마 아루</a>
 </div>
 <div>
-<a href="https://bluearchive.fandom.com/wiki/Hayase_Yuuka_(Gym_ver.)" target="_blank">fandom</div>
+<a href="https://bluearchive.fandom.com/wiki/Hayase_Yuuka_(Gym_ver.)" target="_blank">fandom</a>
 </div>
 
 <div id="inform-button">상성+지형</div>
@@ -108,6 +108,7 @@
 	
 
 <script src="./students.js" charset="utf-8"></script>
+<script src="./students_bio.js" charset="utf-8"></script>
 <script src="./data.js" charset="utf-8"></script>
 <script src="./sorter.js" charset="utf-8"></script>
 <script>
@@ -126,7 +127,6 @@ console.log('cleared')
 
 
 
-
 function borderer(){
 	let border_div = document.createElement('div')
 	border_div.className = "borderer"
@@ -141,7 +141,7 @@ function skill_materials_cell(student, skill_type){
 	mastery.src = "./assets/matterials/비의서.webp"
 	let Books_cell = document.createElement('div')
 	let Books = document.createElement('img')
-	Books.src = "./assets/matterials/" + (skill_type === "EX" ? skill_book[0] + " 전술 교육 BD_" + student.school.split(' ')[0] : skill_book[0] + " 기술 노트_" + student.school.split(' ')[0]) + ".webp"
+	Books.src = "./assets/matterials/" + (skill_type === "EX" ? skill_book[0] + " 전술 교육 BD_" + student.bio.school.split(' ')[0] : skill_book[0] + " 기술 노트_" + student.bio.school.split(' ')[0]) + ".webp"
 	let mat1_cell = document.createElement('div')
 	let mat1 = document.createElement('img')
 	mat1.src = "./assets/matterials/" + skill_matterial[student.matterials[0]][3] + ".webp"
@@ -167,9 +167,11 @@ function skill_cell(student, skill_category){
 		skill_category === "기본 스킬" ? "basic" :
 		skill_category === "강화 스킬" ? "enhance" :
 		skill_category === "서브 스킬" ? "sub" : ""
-	let last_name = student.name.split(' ')[1]
-	let last_name_src = last_name.replace("*", " ")
-	let skill_id = student.name.split(' ')[1] + "_" + skill_category.split(' ')[0]
+	let last_name = full_name = student.variant === "normal" ?	//student.name.split(' ')[1]
+		student.name : 
+		student.name + "(" + student.bio.variant[student.variant] + ")"
+	let last_name_src = last_name.split(' ')[1].replace("*", " ")
+	let skill_id = last_name + "_" + skill_category.split(' ')[0]
 	let skill = document.createElement('div')
 	skill.className = "skill"
 	skill.id = skill_id
@@ -255,7 +257,12 @@ function skill_cell(student, skill_category){
 //sorter()
 function main(students){
 for (var i=0; i<students.length; i++){
-	let last_name = students[i].name.split(' ')[1]
+	students_bio.map(st => st.name === students[i].name.split('(')[0] ? students[i]['bio'] = st : null)
+
+	let full_name = students[i].variant === "normal" ?
+		students[i].name : 
+		students[i].name + "(" + students[i].bio.variant[students[i].variant] + ")"
+	let last_name = full_name.split(' ')[1]//students[i].name.split(' ')[1]
 	let last_name_src = last_name.replace("*", " ")
 
     let cell = document.createElement('div')
@@ -486,6 +493,25 @@ for (var i=0; i<students.length; i++){
     cell.appendChild(skills)
 	cell.appendChild(equipment_contain)
     cells.appendChild(cell)
+
+
+
+
+
+	let en_name = document.createElement('div')
+	en_name.innerText = students[i].bio.en_name + '/'
+	cell.appendChild(en_name)
+	let new_name = document.createElement('div')
+	new_name.innerText = students[i].name + "(" + students[i].bio.variant[students[i].variant] + ')/'
+	cell.appendChild(new_name)
+	function dodos(st){
+		let temp_div = document.createElement('div')
+		temp_div.innerText = st.voice[0]
+		cell.appendChild(temp_div)
+	}
+	students_bio.map(st => st.name === students[i].name ? dodos(st) : null)
+	
+	
 }}
 
 
@@ -535,6 +561,7 @@ function eventer(){
 main(students)
 eventer()
 
+console.log(students)
 
 
 </script>
