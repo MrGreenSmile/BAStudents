@@ -1,7 +1,5 @@
 let students = [
-{"name":"츠카츠키 리오", "jp_name":"調月 リオ", "en_name":"Tsukatsuki Rio",
-"age":17, "birthday":"06/06", "height":171, "hobby":"디자인", "illust":["Mx2J"], "voice":["김푸름", "Lynn", "杨梦露(양멍루)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":3,
+{"name":"츠카츠키 리오", "variant":"normal",
 "role":"서포터", "position":"SPECIAL","atk_type":"신비", "dfn_type":"탄력장갑", "field":"A/D/S", "fes":true,
 "weapon":"HG", "equipments":["신발", "헤어핀", "손목시계"], "matterials":["디스코 콜간테", "수정 하니와"],
 "signature":{
@@ -33,9 +31,7 @@ let students = [
 	}]},
 	"tags":["퀵드로우", "공격력 증가"],
 },{
-"name":"우시오 노아", "jp_name":"生塩 ノア", "en_name":"Ushio Noa",
-"age":16, "birthday":"04/13", "height":161, "hobby":"독서, 암송", "illust":["Hwansang", "DoReMi"], "voice":["채림", "鈴代 紗弓(스즈시로 사유미)", "陈雨(첸위)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":2,
+"name":"우시오 노아", "variant":"normal",
 "role":"서포터", "position":"MIDDLE","atk_type":"신비", "dfn_type":"특수장갑", "field":"D/B/S", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "부적"], "matterials":["파에스토스 원반", "에테르"],
 "signature":{
@@ -62,9 +58,7 @@ let students = [
 	}]},
 	"tags":["집중공격", "고즈", "예소드"],
 },{
-"name":"하야세 유우카", "jp_name":"早瀬 ユウカ", "en_name":"Hayase Yuuka",
-"age":16, "birthday":"03/14", "height":156, "hobby":"계산", "illust":["Hwansang"], "voice":["신나리", "春花 らん(하루카 란)", "小敢(샤오간)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":2,
+"name":"하야세 유우카", "variant":"normal",
 "role":"탱커", "position":"FRONT","atk_type":"폭발", "dfn_type":"중장갑", "field":"B/B/A", "fes":false,
 "weapon":"SMG", "equipments":["신발", "배지", "부적"], "matterials":["님루드 렌즈", "안티키테라 장치"],
 "signature":{
@@ -92,9 +86,7 @@ let students = [
 	}]},
 	"tags":["탱커", "회피탱", "보호막"],
 },{
-"name":"쿠로사키 코유키", "jp_name":"黒崎 コユキ", "en_name":"Kurosaki Koyuki",
-"grade":1, "age":15, "birthday":"02/14", "height":149, "hobby":"운 시험하기, 탈출", "illust":["MISOM150"], "voice":["김보나", "乾 夏寧(이누이 나츠네)", "曾彤(쩡퉁)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"쿠로사키 코유키", "variant":"normal",
 "role":"딜러", "position":"BACK","atk_type":"신비", "dfn_type":"중장갑", "field":"S/D/B", "fes":false,
 "weapon":"MG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["보이니치 사본", "수정 하니와"],
 "signature":{
@@ -130,9 +122,7 @@ let students = [
 	}]},
 	"tags":["범위딜", "연타"],
 },{
-"name":"하야세 유우카(체육복)", "jp_name":"早瀬 ユウカ", "en_name":"Hayase Yuuka(Gym)",
-"grade":2, "age":16, "birthday":"03/14", "height":156, "hobby":"계산", "illust":["YutokaMizu"], "voice":["신나리", "春花 らん(하루카 란)", "小敢(샤오간)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"하야세 유우카", "variant":"gym",
 "role":"탱커", "position":"FRONT","atk_type":"신비", "dfn_type":"특수장갑", "field":"B/D/S", "fes":false,
 "weapon":"SMG", "equipments":["신발", "가방", "목걸이"], "matterials":["님루드 렌즈", "위니페소키 스톤"],
 "signature":{
@@ -163,9 +153,7 @@ let students = [
 	}]},
 	"tags":["탱커", "아군 이동"],
 },{
-"name":"하야세 유우카(파자마)", "jp_name":"早瀬 ユウカ", "en_name":"Hayase Yuuka(Pajamas)",
-"grade":2, "age":16, "birthday":"03/14", "height":156, "hobby":"계산", "illust":["Paruru"], "voice":["신나리", "春花 らん(하루카 란)", "小敢(샤오간)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"하야세 유우카", "variant":"pajamas",
 "role":"탱커", "position":"FRONT","atk_type":"폭발", "dfn_type":"중장갑", "field":"D/S/B", "fes":false,
 "weapon":"SMG", "equipments":["신발", "가방", "목걸이"], "matterials":["님루드 렌즈", "고대 전지"],
 "signature":{
@@ -194,9 +182,7 @@ let students = [
 	}]},
 	"tags":["탱커", "경장갑 방감"],
 },{
-"name":"우시오 노아(파자마)", "jp_name":"生塩 ノア", "en_name":"Ushio Noa(Pajamas)",
-"grade":2, "age":16, "birthday":"04/13", "height":161, "hobby":"독서, 암송", "illust":["Owa", "dydldidl"], "voice":["채림", "鈴代 紗弓(스즈시로 사유미)", "陈雨(첸위)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"우시오 노아", "variant":"pajamas",
 "role":"딜러", "position":"MIDDLE","atk_type":"관통", "dfn_type":"경장갑", "field":"B/S/D", "fes":false,
 "weapon":"HG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["머리가 자라는 인형", "파에스토스 원반"],
 "signature":{
@@ -233,9 +219,7 @@ let students = [
 	}]},
 	"tags":["호버크래프트", "2페이즈", "메인딜"],
 },{
-"name":"쿠로사키 코유키(파자마)", "jp_name":"黒崎 コユキ", "en_name":"Kurosaki Koyuki(Pajamas)",
-"grade":1, "age":15, "birthday":"02/14", "height":149, "hobby":"운 시험하기, 탈출", "illust":["Owa", "BlanChat"], "voice":["김보나", "乾 夏寧(이누이 나츠네)", "曾彤(쩡퉁)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나",
+"name":"쿠로사키 코유키", "variant":"pajamas",
 "role":"서포터", "position":"BACK","atk_type":"신비", "dfn_type":"경장갑", "field":"S/D/B", "fes":false,
 "weapon":"MG", "equipments":["신발", "배지", "손목시계"], "matterials":["고대 전지", "만드라고라"],
 "signature":{
@@ -265,9 +249,7 @@ let students = [
 	}]},
 	"tags":["시로&쿠로", "디버프 해제", "이속 버프"],
 },{
-"name":"스나오오카미 시로코", "jp_name":"砂狼 シロコ", "en_name":"Sunaookami Shiroko",
-"grade":2, "age":16, "birthday":"05/16", "height":156, "hobby":"조깅, 체력 단련, 사이클 라이딩", "illust":["Hwansang"], "voice":["이다은", "小倉 唯(오구라 유이)", "安 雪璃(안 유리)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"스나오오카미 시로코", "variant":"normal",
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"AR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["파에스토스 원반", "보이니치 사본"],
 "signature":{
@@ -295,9 +277,7 @@ let students = [
 	}]},
 	"tags":["연타", "타켓전환"],
 },{
-"name":"타카나시 호시노", "jp_name":"小鳥遊 ホシノ", "en_name":"Takanashi Hoshino",
-"grade":3, "age":17, "birthday":"01/02", "height":145, "hobby":"낮잠, 빈둥대기", "illust":["9ml"], "voice":["조경이", "花守 ゆみり(하나모리 유미리)", "刘雯(리우 웬)"],
-"school":"아비도스 종합고등학교", "club":"아비도스 학생회/대책위원회/대책위원회(아비도스 학생회)",
+"name":"타카나시 호시노", "variant":"normal",
 "role":"딜러", "position":"FRONT","atk_type":"관통", "dfn_type":"중장갑", "field":"D/S/B", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["네브라 디스크", "님루드 렌즈"],
 "signature":{
@@ -325,9 +305,7 @@ let students = [
 	}]},
 	"tags":["기절", "서브딜", "탱커"],
 },{
-"name":"쿠로미 세리카", "jp_name":"黒見 セリカ", "en_name":"Kuromi Serika",
-"grade":1, "age":15, "birthday":"06/25", "height":153, "hobby":"저금, 아르바이트", "illust":["Hwansang"], "voice":["김보나", "大橋 彩香(오오하시 아야카)", "宴宁(옌닝)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"쿠로미 세리카", "variant":"normal",
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"경장갑", "field":"A/D/A", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["파에스토스 원반", "에테르"],
 "signature":{
@@ -356,9 +334,7 @@ let students = [
 	}]},
 	"tags":["평타딜", "카이텐져", "서브딜"],
 },{
-"name":"이자요이 노노미", "jp_name":"十六夜 ノノミ", "en_name":"Izayoi Nonomi",
-"grade":2, "age":16, "birthday":"09/01", "height":160, "hobby":"쇼핑", "illust":["9ml"], "voice":["이보희", "三浦 千幸(미우라 치유키)", "幽舞越山(유무월산)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"이자요이 노노미", "variant":"normal",
 "role":"딜러", "position":"BACK","atk_type":"관통", "dfn_type":"경장갑", "field":"A/A/D", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["네브라 디스크", "에테르"],
 "signature":{
@@ -386,9 +362,7 @@ let students = [
 	}]},
 	"tags":["범위딜", "스테이지"],
 },{
-"name":"오쿠소라 아야네", "jp_name":"奥空 アヤネ", "en_name":"Okusora Ayane",
-"grade":1, "age":15, "birthday":"11/12", "height":153, "hobby":"가계부 쓰기, 골동품 수집", "illust":["Hwansang"], "voice":["방시우", "原田 彩楓(하라다 사야카)", "孙艳琦(쑨옌치)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"오쿠소라 아야네", "variant":"normal",
 "role":"힐러", "position":"SPECIAL","atk_type":"관통", "dfn_type":"경장갑", "field":"D/A/A", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "목걸이"], "matterials":["네브라 디스크", "볼프세크 강철"],
 "signature":{
@@ -415,9 +389,7 @@ let students = [
 	}]},
 	"tags":["범위힐"],
 },{
-"name":"쿠로미 세리카(새해)", "jp_name":"黒見 セリカ", "en_name":"Kuromi Serika(New Year)",
-"grade":1, "age":15, "birthday":"06/25", "height":153, "hobby":"저금, 아르바이트", "illust":["YutokaMizu"], "voice":["김보나", "大橋 彩香(오오하시 아야카)", "宴宁(옌닝)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"쿠로미 세리카", "variant":"new_year",
 "role":"서포터", "position":"SPECIAL","atk_type":"관통", "dfn_type":"특수장갑", "field":"C/C/S", "fes":false,
 "weapon":"HG", "equipments":["신발", "가방", "손목시계"], "matterials":["파에스토스 원반", "네브라 디스크"],
 "signature":{
@@ -445,9 +417,7 @@ let students = [
 	}]},
 	"tags":["실내 헤세드", "뉴비"],
 },{
-"name":"타카나시 호시노(무장)(방어형)", "jp_name":"小鳥遊 ホシノ", "en_name":"Takanashi Hoshino(Armed)(Defensive)",
-"grade":3, "age":17, "birthday":"01/02", "height":145, "hobby":"낮잠, 빈둥대기", "illust":["9ml"], "voice":["조경이", "花守 ゆみり(하나모리 유미리)", "刘雯(리우 웬)"],
-"school":"아비도스 종합고등학교", "club":"아비도스 학생회/대책위원회/대책위원회(아비도스 학생회)",
+"name":"타카나시 호시노", "variant":"armed/defensive",
 "role":"탱커", "position":"FRONT","atk_type":"신비", "dfn_type":"중장갑", "field":"A/S/D", "fes":true,
 "weapon":"SG", "equipments":["모자", "가방", "손목시계"], "matterials":["네브라 디스크", "이스탄불 로켓"],
 "signature":{
@@ -475,9 +445,7 @@ let students = [
 	}]},
 	"tags":["엄폐 상태", "위치이동", "호크마", "예소드2페"],
 },{
-"name":"타카나시 호시노(무장)(공격형)", "jp_name":"小鳥遊 ホシノ", "en_name":"Takanashi Hoshino(Armed)(Offensive)",
-"grade":3, "age":17, "birthday":"01/02", "height":145, "hobby":"낮잠, 빈둥대기", "illust":["9ml"], "voice":["조경이", "花守 ゆみり(하나모리 유미리)", "刘雯(리우 웬)"],
-"school":"아비도스 종합고등학교", "club":"아비도스 학생회/대책위원회/대책위원회(아비도스 학생회)",
+"name":"타카나시 호시노", "variant":"armed/offensive",
 "role":"딜러", "position":"FRONT","atk_type":"신비", "dfn_type":"중장갑", "field":"A/S/D", "fes":true,
 "weapon":"SG", "equipments":["모자", "가방", "손목시계"], "matterials":["네브라 디스크", "이스탄불 로켓"],
 "signature":{
@@ -507,9 +475,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["범위딜", "페로로질라"],
 },{
-"name":"스나오오카미 시로코(라이딩)", "jp_name":"砂狼 シロコ", "en_name":"Sunaookami Shiroko(Riding)",
-"grade":2, "age":16, "birthday":"05/16", "height":156, "hobby":"조깅, 체력 단련, 사이클 라이딩", "illust":["Mx2J"], "voice":["이다은", "小倉 唯(오구라 유이)", "安 雪璃(안 유리)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"스나오오카미 시로코", "variant":"riding",
 "role":"딜러", "position":"MIDDLE","atk_type":"신비", "dfn_type":"중장갑", "field":"S/B/D", "fes":false,
 "weapon":"AR", "equipments":["장갑", "배지", "손목시계"], "matterials":["파에스토스 원반", "안티키테라 장치"],
 "signature":{
@@ -537,9 +503,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["범위딜", "공격력 감소", "호크마"],
 },{
-"name":"스나오오카미 시로코*테러", "jp_name":"砂狼 シロコ", "en_name":"Sunaookami Shiroko(Terror)",
-"grade":3, "age":17, "birthday":"05/16", "height":165, "hobby":"조깅, 체력 단련, 사이클 라이딩", "illust":["Doremsan2j"], "voice":["이다은", "小倉 唯(오구라 유이)", "安 雪璃(안 유리)"],
-"school":"아비도스 종합고등학교/색채/아비도스 종합고등학교", "club":"대책위원회/아비도스 학생회",
+"name":"스나오오카미 시로코*테러", "variant":"normal",
 "role":"딜러", "position":"MIDDLE","atk_type":"신비", "dfn_type":"특수장갑", "field":"D/S/A", "fes":true,
 "weapon":"AR", "equipments":["모자", "배지", "손목시계"], "matterials":["로마 12면체", "토템폴"],
 "signature":{
@@ -579,9 +543,7 @@ EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 �
 	}]},
 	"tags":["연타", "메인딜"],
 },{
-"name":"타카나시 호시노(수영복)", "jp_name":"小鳥遊 ホシノ", "en_name":"Takanashi Hoshino(Swimsuit)",
-"grade":3, "age":17, "birthday":"01/02", "height":145, "hobby":"낮잠, 빈둥대기", "illust":["9ml"], "voice":["조경이", "花守 ゆみり(하나모리 유미리)", "刘雯(리우 웬)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"타카나시 호시노", "variant":"swimsuit",
 "role":"서포터", "position":"FRONT","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/A/D", "fes":true,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["네브라 디스크", "토템폴"],
 "signature":{
@@ -609,9 +571,7 @@ EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 �
 	}]},
 	"tags":["공격력 버프", "폭발 특효", "코스트 회복력"],
 },{
-"name":"스나오오카미 시로코(수영복)", "jp_name":"砂狼 シロコ", "en_name":"Sunaookami Shiroko(Swimsuit)",
-"grade":2, "age":16, "birthday":"05/16", "height":156, "hobby":"조깅, 체력 단련, 사이클 라이딩", "illust":["Mx2J"], "voice":["이다은", "小倉 唯(오구라 유이)", "安 雪璃(안 유리)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"스나오오카미 시로코", "variant":"swimsuit",
 "role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"경장갑", "field":"B/S/D", "fes":false,
 "weapon":"AR", "equipments":["모자", "가방", "손목시계"], "matterials":["파에스토스 원반", "로혼치 사본"],
 "signature":{
@@ -641,9 +601,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	}]},
 	"tags":["디버프", "방어력 감소", "코스트 회복"],
 },{
-"name":"이자요이 노노미(수영복)", "jp_name":"十六夜 ノノミ", "en_name":"Izayoi Nonomi(Swimsuit)",
-"grade":2, "age":16, "birthday":"09/01", "height":160, "hobby":"쇼핑", "illust":["9ml"], "voice":["이보희", "三浦 千幸(미우라 치유키)", "幽舞越山(유무월산)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"이자요이 노노미", "variant":"swimsuit",
 "role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/D/B", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["에테르", "로혼치 사본"],
 "signature":{
@@ -672,9 +630,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	}]},
 	"tags":["메인딜", "예로니무스", "카이텐저 2페"],
 },{
-"name":"쿠로미 세리카(수영복)", "jp_name":"黒見 セリカ", "en_name":"Kuromi Serika(Swimsuit)",
-"grade":1, "age":15, "birthday":"06/25", "height":153, "hobby":"저금, 아르바이트", "illust":["Mx2J"], "voice":["김보나", "大橋 彩香(오오하시 아야카)", "宴宁(옌닝)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"쿠로미 세리카", "variant":"swimsuit",
 "role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
 "weapon":"AR", "equipments":["장갑", "가방", "손목시계"], "matterials":["에테르", "머리가 자라는 인형"],
 "signature":{
@@ -701,9 +657,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	}]},
 	"tags":["범위딜"],
 },{
-"name":"오쿠소라 아야네(수영복)", "jp_name":"奥空 アヤネ", "en_name":"Okusora Ayane(Swimsuit)",
-"grade":1, "age":15, "birthday":"11/12", "height":153, "hobby":"가계부 쓰기, 골동품 수집", "illust":["7peach"], "voice":["방시우", "原田 彩楓(하라다 사야카)", "孙艳琦(쑨옌치)"],
-"school":"아비도스 종합고등학교", "club":"대책위원회/대책위원회(아비도스 학생회)",
+"name":"오쿠소라 아야네", "variant":"swimsuit",
 "role":"TS", "position":"SPECIAL","atk_type":"관통", "dfn_type":"경장갑", "field":"D/S/B", "fes":false,
 "weapon":"HG", "equipments":["장갑", "가방", "손목시계"], "matterials":["볼프세크 강철", "안티키테라 장치"],
 "signature":{
@@ -736,9 +690,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	}]},
 	"tags":["방어력 무시"],
 },{
-"name":"츠카츠키 리오(무장)", "jp_name":"調月 リオ", "en_name":"Tsukatsuki Rio(Armed)",
-"age":17, "birthday":"06/06", "height":171, "hobby":"디자인", "illust":["Paruru", "koo3473"], "voice":["김푸름", "Lynn", "杨梦露(양멍루)"],
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":3,
+"name":"츠카츠키 리오", "variant":"armed",
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/B/D", "fes":false,
 "weapon":"HG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["디스코 콜간테", "보이니치 사본"],
 "signature":{
@@ -765,9 +717,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	}]},
 	"tags":["메인딜", "예로니무스", "카이텐저 2페"],
 },{
-"name":"아사기 무츠키", "jp_name":"浅黄 ムツキ", "en_name":"Asagi Mutsuki",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":2, "age":16, "birthday":"07/29", "height":144, "hobby":"폭탄 수집",
-"illust":["DoReMi"], "voice":["장미", "大久保 瑠美(오오쿠보 루미)", "侯小菲(허우샤오페이)"],
+"name":"아사기 무츠키", "variant":"normal",
 "role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"경장갑", "field":"A/A/D", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["보이니치 사본", "에테르"],
 "signature":{
@@ -794,9 +744,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	}]},
 	"tags":["서브딜", "지뢰"],
 },{
-"name":"리쿠하치마 아루", "jp_name":"陸八魔 アル", "en_name":"Rikuhachima Aru",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":2, "age":16, "birthday":"03/12", "height":160, "hobby":"경영 공부",
-"illust":["DoReMi"], "voice":["권지애", "近藤 玲奈(콘도 레이나)", "谢莹(셰잉)"],
+"name":"리쿠하치마 아루", "variant":"normal",
 "role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["로혼치 사본", "토템폴"],
 "signature":{
@@ -826,9 +774,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	}]},
 	"tags":["메인딜", "폭발 보스전"],
 },{
-"name":"오니카타 카요코", "jp_name":"鬼方 カヨコ", "en_name":"Onikata Kayoko",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":3, "age":18, "birthday":"03/17", "height":157, "hobby":"음악 CD 수집",
-"illust":["DoReMi"], "voice":["김이안", "藤井 ゆきよ(후지이 유키요)", "陈婷婷(천팅팅)"],
+"name":"오니카타 카요코", "variant":"normal",
 "role":"서포터", "position":"MIDDLE", "atk_type":"폭발", "dfn_type":"중장갑", "field":"A/D/A", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "목걸이"], "matterials":["보이니치 사본", "볼프세크 강철"],
 "skills":{
@@ -862,9 +808,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["상태이상", "공포"],
 },{
-"name":"이구사 하루카", "jp_name":"伊草 ハルカ", "en_name":"Igusa Haruka",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":1, "age":15, "birthday":"05/13", "height":157, "hobby":"잡초 가꾸기",
-"illust":["DoReMi"], "voice":["정혜원", "石飛 恵里花(이시토비 에리카)", "刘可慧(류커후이)"],
+"name":"이구사 하루카", "variant":"normal",
 "role":"탱커", "position":"FRONT", "atk_type":"폭발", "dfn_type":"경장갑", "field":"D/B/A", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["만드라고라", "볼프세크 강철"],
 "skills":{
@@ -896,9 +840,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["탱커", "뉴비"],
 },{
-"name":"리쿠하치마 아루(새해)", "jp_name":"陸八魔 アル", "en_name":"Rikuhachima Aru(New Year)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":2, "age":16, "birthday":"03/12", "height":160, "hobby":"경영 공부",
-"illust":["DoReMi"], "voice":["권지애", "近藤 玲奈(콘도 레이나)", "谢莹(셰잉)"],
+"name":"리쿠하치마 아루", "variant":"new_year",
 "role":"딜러", "position":"BACK", "atk_type":"관통", "dfn_type":"특수장갑", "field":"D/B/S", "fes":false,
 "weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["토템폴", "로혼치 사본"],
 "skills":{
@@ -931,9 +873,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["헤세드 1페"],
 },{
-"name":"아사기 무츠키(새해)", "jp_name":"浅黄 ムツキ", "en_name":"Asagi Mutsuki(New Year)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":2, "age":16, "birthday":"07/29", "height":144, "hobby":"폭탄 수집",
-"illust":["DoReMi"], "voice":["장미", "大久保 瑠美(오오쿠보 루미)", "侯小菲(허우샤오페이)"],
+"name":"아사기 무츠키", "variant":"new_year",
 "role":"딜러", "position":"BACK","atk_type":"신비", "dfn_type":"중장갑", "field":"D/S/B", "fes":false,
 "weapon":"MG", "equipments":["장갑", "배지", "손목시계"], "matterials":["보이니치 사본", "안티키테라 장치"],
 "skills":{
@@ -967,9 +907,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["광역", "서브딜", "고즈 1페"],
 },{
-"name":"오니카타 카요코(새해)", "jp_name":"鬼方 カヨコ", "en_name":"Onikata Kayoko(New Year)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":3, "age":18, "birthday":"03/17", "height":157, "hobby":"음악 CD 수집",
-"illust":["DoReMi"], "voice":["김이안", "藤井 ゆきよ(후지이 유키요)", "陈婷婷(천팅팅)"],
+"name":"오니카타 카요코", "variant":"new_year",
 "role":"서포터", "position":"MIDDLE", "atk_type":"신비", "dfn_type":"특수장갑", "field":"B/D/S", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "부적"], "matterials":["볼프세크 강철", "아틀란티스 메달"],
 "skills":{
@@ -1004,9 +942,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["신비 특효"],
 },{
-"name":"이구사 하루카(새해)", "jp_name":"伊草 ハルカ", "en_name":"Igusa Haruka(New Year)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":1, "age":15, "birthday":"05/13", "height":157, "hobby":"잡초 가꾸기",
-"illust":["DoReMi"], "voice":["정혜원", "石飛 恵里花(이시토비 에리카)", "刘可慧(류커후이)"],
+"name":"이구사 하루카", "variant":"new_year",
 "role":"서포터", "position":"SPECIAL", "atk_type":"폭발", "dfn_type":"경장갑", "field":"D/S/D", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "손목시계"], "matterials":["만드라고라", "머리가 자라는 인형"],
 "skills":{
@@ -1039,9 +975,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["치명 디버프", "코스트 버프"],
 },{
-"name":"리쿠하치마 아루(드레스)", "jp_name":"陸八魔 アル", "en_name":"Rikuhachima Aru(Dress)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":2, "age":16, "birthday":"03/12", "height":160, "hobby":"경영 공부",
-"illust":["DoReMi"], "voice":["권지애", "近藤 玲奈(콘도 레이나)", "谢莹(셰잉)"],
+"name":"리쿠하치마 아루", "variant":"dress",
 "role":"서포터", "position":"BACK", "atk_type":"관통", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
 "weapon":"SR", "equipments":["모자", "헤어핀", "목걸이"], "matterials":["이스탄불 로켓", "님루드 렌즈"],
 "skills":{
@@ -1073,9 +1007,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["치명 대미지 버프", "서브힐"],
 },{
-"name":"아사기 무츠키(드레스)", "jp_name":"浅黄 ムツキ", "en_name":"Asagi Mutsuki(Dress)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":2, "age":16, "birthday":"07/29", "height":144, "hobby":"폭탄 수집",
-"illust":["DoReMi"], "voice":["장미", "大久保 瑠美(오오쿠보 루미)", "侯小菲(허우샤오페이)"],
+"name":"아사기 무츠키", "variant":"dress",
 "role":"딜러", "position":"BACK","atk_type":"신비", "dfn_type":"중장갑", "field":"B/S/D", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["볼프세크 강철", "디스코 콜간테"],
 "skills":{
@@ -1108,9 +1040,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["일대일", "메인딜", "드럼통게 1페"],
 },{
-"name":"오니카타 카요코(드레스)", "jp_name":"鬼方 カヨコ", "en_name":"Onikata Kayoko(Dress)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":3, "age":18, "birthday":"03/17", "height":157, "hobby":"음악 CD 수집",
-"illust":["DoReMi"], "voice":["김이안", "藤井 ゆきよ(후지이 유키요)", "陈婷婷(천팅팅)"],
+"name":"오니카타 카요코", "variant":"dress",
 "role":"딜러", "position":"MIDDLE", "atk_type":"관통", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"HG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["킴바야 유물", "보이니치 사본"],
 "skills":{
@@ -1145,9 +1075,7 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 },
 "tags":["메인딜", "방어무시"],
 },{
-"name":"이구사 하루카(드레스)", "jp_name":"伊草 ハルカ", "en_name":"Igusa Haruka(Dress)",
-"school":"게헨나 학원", "club":"흥신소 68", "grade":1, "age":15, "birthday":"05/13", "height":157, "hobby":"잡초 가꾸기",
-"illust":["DoReMi"], "voice":["정혜원", "石飛 恵里花(이시토비 에리카)", "刘可慧(류커후이)"],
+"name":"이구사 하루카", "variant":"dress",
 "role":"딜러", "position":"FRONT", "atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"SG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["파에스토스 원반", "로마 12면체"],
 "skills":{
