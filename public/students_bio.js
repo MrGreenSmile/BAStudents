@@ -2,11 +2,15 @@
 
 let students_bio = [
 {"name":"츠카츠키 리오", "jp_name":"調月 リオ", "en_name":"Tsukatsuki Rio",
-"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":3 "age":17, "birthday":"06/06", "height":171, "hobby":"디자인",
+"school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":3, "age":17, "birthday":"06/06", "height":171, "hobby":"디자인",
 "voice":["김푸름", "Lynn", "杨梦露(양멍루)"],
 "illust":{
 	"basic":["Mx2J"],
 	"armed":["Paruru", "koo3473"]
+	},
+"variant":{
+	"normal":"",
+	"armed":"무장",
 	}
 },{
 "name":"우시오 노아", "jp_name":"生塩 ノア", "en_name":"Ushio Noa",
@@ -15,6 +19,10 @@ let students_bio = [
 "illust":{
 	"basic":["Hwansang", "DoReMi"],
 	"pajamas":["Owa", "dydldidl"],
+	},
+"variant":{
+	"normal":"",
+	"pajamas":"파자마",
 	}
 },{
 "name":"하야세 유우카", "jp_name":"早瀬 ユウカ", "en_name":"Hayase Yuuka",
@@ -24,14 +32,24 @@ let students_bio = [
 	"basic":["Hwansang"],
 	"gym":["YutokaMizu"],
 	"pajamas":["Paruru"],
+	},
+"variant":{
+	"normal":"",
+	"gym":"체육복",
+	"pajamas":"파자마",
 	}
-}{
+},{
 "name":"쿠로사키 코유키", "jp_name":"黒崎 コユキ", "en_name":"Kurosaki Koyuki",
 "school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":1, "age":15, "birthday":"02/14", "height":149, "hobby":"운 시험하기, 탈출",
 "voice":["김보나", "乾 夏寧(이누이 나츠네)", "曾彤(쩡퉁)"],
 "illust":{
 	"basic":["MISOM150"],
 	"pajamas":["Owa", "BlanChat"],
+	},
+"variant":{
+	"normal":"",
+	"gym":"체육복",
+	"pajamas":"파자마",
 	}
 },{
 "name":"스나오오카미 시로코", "jp_name":"砂狼 シロコ", "en_name":"Sunaookami Shiroko",
@@ -41,6 +59,11 @@ let students_bio = [
 	"basic":["Hwansang"],
 	"riding":["Mx2J"],
 	"swimsuit":["Mx2J"],
+	},
+"variant":{
+	"normal":"",
+	"riding":"라이딩",
+	"swimsuit":"수영복",
 	}
 },{
 "name":"스나오오카미 시로코*테러", "jp_name":"砂狼 シロコ", "en_name":"Sunaookami Shiroko(Terror)",
@@ -48,6 +71,9 @@ let students_bio = [
 "voice":["이다은", "小倉 唯(오구라 유이)", "安 雪璃(안 유리)"],
 "illust":{
 	"basic":["Doremsan2j"]
+	},
+"variant":{
+	"normal":"",
 	}
 },{
 "name":"타카나시 호시노", "jp_name":"小鳥遊 ホシノ", "en_name":"Takanashi Hoshino",
@@ -57,6 +83,12 @@ let students_bio = [
 	"basic":["9ml"],
 	"armed":["9ml"],
 	"swimsuit":["9ml"],
+	},
+"variant":{
+	"normal":"",
+	"armed/defensive":"무장/방어형",
+	"armed/offensive":"무장/공격형",
+	"swimsuit":"수영복",
 	}
 },{
 "name":"쿠로미 세리카", "jp_name":"黒見 セリカ", "en_name":"Kuromi Serika",
@@ -66,6 +98,11 @@ let students_bio = [
 	"basic":["Hwansang"],
 	"new_year":["YutokaMizu"],
 	"swimsuit":["Mx2J"],
+	},
+"variant":{
+	"normal":"",
+	"new_year":"새해",
+	"swimsuit":"수영복",
 	}
 },{
 "name":"이자요이 노노미", "jp_name":"十六夜 ノノミ", "en_name":"Izayoi Nonomi",
@@ -74,6 +111,10 @@ let students_bio = [
 "illust":{
 	"basic":["9ml"],
 	"swimsuit":["9ml"],
+	},
+"variant":{
+	"normal":"",
+	"swimsuit":"수영복",
 	}
 },{
 "name":"오쿠소라 아야네", "jp_name":"奥空 アヤネ", "en_name":"Okusora Ayane",
@@ -83,6 +124,10 @@ let students_bio = [
 "illust":{
 	"basic":["Hwansang"],
 	"swimsuit":["7peach"],
+	},
+"variant":{
+	"normal":"",
+	"swimsuit":"수영복",
 	}
 },{
 "name":"아사기 무츠키", "jp_name":"浅黄 ムツキ", "en_name":"Asagi Mutsuki",
@@ -92,6 +137,11 @@ let students_bio = [
 	"basic":["DoReMi"],
 	"new_year":["DoReMi"],
 	"dress":["DoReMi"],
+	},
+"variant":{
+	"normal":"",
+	"new_year":"새해",
+	"dress":"드레스",
 	}
 },{
 "name":"리쿠하치마 아루", "jp_name":"陸八魔 アル", "en_name":"Rikuhachima Aru",
@@ -101,6 +151,11 @@ let students_bio = [
 	"basic":["DoReMi"],
 	"new_year":["DoReMi"],
 	"dress":["DoReMi"],
+	},
+"variant":{
+	"normal":"",
+	"new_year":"새해",
+	"dress":"드레스",
 	}
 },{
 "name":"오니카타 카요코", "jp_name":"鬼方 カヨコ", "en_name":"Onikata Kayoko",
@@ -110,6 +165,11 @@ let students_bio = [
 	"basic":["DoReMi"],
 	"new_year":["DoReMi"],
 	"dress":["DoReMi"],
+	},
+"variant":{
+	"normal":"",
+	"new_year":"새해",
+	"dress":"드레스",
 	}
 },{
 "name":"이구사 하루카", "jp_name":"伊草 ハルカ", "en_name":"Igusa Haruka",
@@ -119,6 +179,11 @@ let students_bio = [
 	"basic":["DoReMi"],
 	"new_year":["DoReMi"],
 	"dress":["DoReMi"],
+	},
+"variant":{
+	"normal":"",
+	"new_year":"새해",
+	"dress":"드레스",
 	}
 }
 ]
