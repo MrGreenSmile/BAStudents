@@ -11,7 +11,7 @@ function applyFilters(idx = ''){
         filtered = filtered.filter(el => el.fes === true);
     }
     if(filter4school){
-        filtered = filtered.filter(el => el.school.split(' ')[0] === current_school_idx);
+        filtered = filtered.filter(el => el.bio.school.split('/').at(-1).split(' ')[0] === current_school_idx);
     }
 
     tag_ids = [];
@@ -68,7 +68,15 @@ function sorter(){
 
 			if(a_name < b_name){return -n}
 			if(a_name > b_name){return n}
-			else{return 0}
+			//else{return 0}
+			else{
+				if(a.variant === 'normal' && b.variant !== "normal"){return -1}
+				if(a.variant !== 'normal' && b.variant === "normal"){return 1}
+				else{
+					if(a.variant < b.variant){return -n}
+					if(a.variant > b.variant){return n}
+					}
+				}
 			}
 		)
 	}
