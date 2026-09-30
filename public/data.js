@@ -1,11 +1,4 @@
 let skill_title = ['EX 스킬', '기본 스킬', '강화 스킬', '서브 스킬']
-let skill_books = {
-	"비의서":"https://i.namu.wiki/i/R7Rm47JQSVdqKNlpXsN5dI04MWibNfyZF5KuUAZFfk60-qVKVveEDbu0sU22weup0oMlw-DhjGOZ78pf0BwqbheJ3-rrJ8QYiVxebsNw4BZWiSzWIyvSaQLLcCydyAlESOW9MVEH0rAIWPokA0G8-w.webp",
-	"밀레니엄_DB":"https://i.namu.wiki/i/ZqFgME9Z1j6HfiPre-9nlA7pzDtlFbLQvPPoMsTVQcymf_cujCSLup0KHqFz6iGhk8I-bfLlx84_3LBsrkqlFQH2sOjxu70YSAciVxLwqDIHBlzxwyKWQx6Q9_Pf1iyTIblXewBBqcAWpp4VJr6FIw.webp",
-	"밀레니엄_Book":"https://i.namu.wiki/i/cnCynjnjdLfBzID1LtndhqKfolkwM6cMHHoVdRCDneCxWnL2eCc0EsXyC2R3gUqL4vydYK8KP4CAz2c9J_xQTLP_t2BVVF1YkYkTFH7bobJv7zply4WVnIH1qLuolgswNdlaHBrnfbJC0_BMMMJRvg.webp",
-	"아비도스_DB":"https://i.namu.wiki/i/mNZfFjmZjmMarR0Ia5dcH2Fv6DTRq6XlBXRg1iBVJc2IHmdmBLkf0NchWgsm1l75s0KbADpiNZ_bzSUTuG6ztS52r_wBoD5AMjzOPHS0EBvyRInrC5ziwmmaaWMMp7a1OHiqzIl8t9tH3Y3JIYm-sg.webp",
-	"아비도스_Book":"https://i.namu.wiki/i/BCufoD1I32X5fEBBgcBgZEHMkDnsIiLp8y3h9cnyeuV2r9DkTFoSGnJqD-wMpgBDXUtQiERjcbNSyEIDz9eFOz6kksnHFrnLp0pzv-1J4fWBaJr_fqxR11KZQqmZHtmI__SqMNZYZXVG2JJXfAAx1A.webp",
-}
 let skill_book = ["기초", "일반", "상급", "최상급"]
 
 let skill_matterial = {
