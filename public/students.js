@@ -58,16 +58,28 @@ let students = [
 	"ex":[{
 	"name":"기록의 생명은 속도랍니다", "cost":3,
 	"content":`지정한 적 1인에게 집중 공격 (<em>40초</em>간)
-방어력 <em>21.3%</em> 감소 (<em>40초</em>간)`
+	방어력 <em>{debuff}%</em> 감소 (<em>40초</em>간)`,
+		"values":{
+			"debuff":{"min":"21.3", "max":"40.5"}
+		}
 	}],"basic":[{
 	"name":"허점 발견!",
-	"content":`<em>30초</em>마다 적 1인에게 공격력 <em>399%</em> 대미지`
+	"content":`<em>30초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"399", "max":"758"}
+		}
 	}],"enhance":[{
 	"name":"서기의 여유",
-	"content":`최대 체력 <em>14%</em> 증가`
+	"content":`최대 체력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"서기의 고집",
-	"content":`기본 스킬 사용 시 해로운 효과 유지력 <em>16.9%</em> 증가 (<em>13초</em>간)`
+	"content":`기본 스킬 사용 시 해로운 효과 유지력 <em>{buff}%</em> 증가 (<em>13초</em>간)`,
+		"values":{
+			"buff":{"min":"16.9", "max":"32.1"}
+		}
 	}]},
 	"tags":["집중공격", "고즈", "예소드"],
 },{
@@ -86,16 +98,29 @@ let students = [
 "skills":{
 	"ex":[{
 	"name":"Q.E.D", "cost":3,
-	"content":"치유력 <em>190%</em> 보호막 (<em>15초</em>간)"
+	"content":"치유력 <em>{shield}%</em> 보호막 (<em>{duration}초</em>간)",
+		"values":{
+			"shield":{"min":"190", "max":"248"},
+			"duration":{"min":"15", "max":"25"}
+		}
 	}],"basic":[{
 	"name":"I.F.F",
-	"content":"<em>15초</em>마다 적 1인에게 공격력 <em>301%</em> 대미지"
+	"content":"<em>15초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지",
+		"values":{
+			"damage":{"min":"301", "max":"573"}
+		}
 	}],"enhance":[{
 	"name":"최적해 도출",
-	"content":"방어력 <em>14%</em> 증가"
+	"content":"방어력 <em>{buff}%</em> 증가",
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"고속 암산",
-	"content":"엄폐 시 치유력 <em>75%</em> 회복 (쿨타임 <em>10초</em>)"
+	"content":"엄폐 시 치유력 <em>{heal}%</em> 회복 (쿨타임 <em>10초</em>)",
+		"values":{
+			"heal":{"min":"75", "max":"142"}
+		}
 	}]},
 	"tags":["탱커", "회피탱", "보호막"],
 },{
