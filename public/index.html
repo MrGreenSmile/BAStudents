@@ -202,7 +202,10 @@ function skill_cell(student, skill_category){
 	skill_contain.appendChild(skill_name)
 	let skill_summary = document.createElement('div')
 	skill_summary.className = "skill_summary"
-	skill_summary.innerHTML = student.skills[skill_type][0].content.replace(/\t/gi, "").split('\n').map((par) => "<p>" + par + "</p>").join("")
+	skill_summary.innerHTML = student.skills[skill_type][0].content.replace(/\t/gi, "").replace(
+			/\{(\w+)\}/g,
+			(_, key) => student.skills[skill_type][0].values[key]["max"]
+		).split('\n').map((par) => "<p>" + par + "</p>").join("")
 	if(skill_category === "EX 스킬"){
 		let ex_mat = skill_materials_cell(student, "EX")
 		skill_contain.appendChild(ex_mat)
@@ -222,7 +225,10 @@ function skill_cell(student, skill_category){
 				ex_tr_name.innerText = student.skills[skill_type][v].name
 				ex_tr_name.className = "skill_name"
 				let ex_tr_summary = document.createElement('div')
-				ex_tr_summary.innerHTML = student.skills[skill_type][v].content.split('\n').map((par) => "<p>" + par + "</p>").join("")
+				ex_tr_summary.innerHTML = student.skills[skill_type][v].content.replace(
+					/\{(\w+)\}/g,
+					(_, key) => student.skills[skill_type][0].values[key]["max"]
+				).split('\n').map((par) => "<p>" + par + "</p>").join("")
 				ex_tr_summary.className = "skill_summary"
 
 				skill_contain.appendChild(borderer())
@@ -562,6 +568,7 @@ main(students)
 eventer()
 
 console.log(students)
+
 
 
 </script>
