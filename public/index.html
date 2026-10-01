@@ -170,7 +170,7 @@ function skill_cell(student, skill_category){
 	let last_name = full_name = student.variant === "normal" ?	//student.name.split(' ')[1]
 		student.name : 
 		student.name + "(" + student.bio.variant[student.variant] + ")"
-	let last_name_src = last_name.split(' ')[1].replace("*", " ")
+	let last_name_src = last_name.split(' ')[1].replace("*", "_").replace("/", ")(")
 	let skill_id = last_name + "_" + skill_category.split(' ')[0]
 	let skill = document.createElement('div')
 	skill.className = "skill"
@@ -268,8 +268,8 @@ for (var i=0; i<students.length; i++){
 	let full_name = students[i].variant === "normal" ?
 		students[i].name : 
 		students[i].name + "(" + students[i].bio.variant[students[i].variant] + ")"
-	let last_name = full_name.split(' ')[1]//students[i].name.split(' ')[1]
-	let last_name_src = last_name.replace("*", " ")
+	let last_name = full_name.split(' ')[1] //students[i].name.split(' ')[1]
+	let last_name_src = last_name.replace("*", "_").replace("/", ")(")
 
     let cell = document.createElement('div')
     cell.className = "cells"
