@@ -225,9 +225,9 @@ function skill_cell(student, skill_category){
 				ex_tr_name.innerText = student.skills[skill_type][v].name
 				ex_tr_name.className = "skill_name"
 				let ex_tr_summary = document.createElement('div')
-				ex_tr_summary.innerHTML = student.skills[skill_type][v].content.replace(
+				ex_tr_summary.innerHTML = student.skills[skill_type][v].content.replace(/\t/gi, "").replace(
 					/\{(\w+)\}/g,
-					(_, key) => student.skills[skill_type][0].values[key]["max"]
+					(_, key) => student.skills[skill_type][v].values[key]["max"]
 				).split('\n').map((par) => "<p>" + par + "</p>").join("")
 				ex_tr_summary.className = "skill_summary"
 
@@ -263,7 +263,7 @@ function skill_cell(student, skill_category){
 //sorter()
 function main(students){
 for (var i=0; i<students.length; i++){
-	students_bio.map(st => st.name === students[i].name.split('(')[0] ? students[i]['bio'] = st : null)
+	students_bio.map(st => st.name === students[i].name ? students[i]['bio'] = st : null)
 
 	let full_name = students[i].variant === "normal" ?
 		students[i].name : 
@@ -503,7 +503,7 @@ for (var i=0; i<students.length; i++){
 
 
 
-
+/*
 	let en_name = document.createElement('div')
 	en_name.innerText = students[i].bio.en_name + '/'
 	cell.appendChild(en_name)
@@ -516,8 +516,7 @@ for (var i=0; i<students.length; i++){
 		cell.appendChild(temp_div)
 	}
 	students_bio.map(st => st.name === students[i].name ? dodos(st) : null)
-	
-	
+*/	
 }}
 
 
