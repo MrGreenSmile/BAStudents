@@ -375,16 +375,28 @@ let students = [
 "skills":{
 	"ex":[{
 	"name":"드론 소환 : 화력 지원", "cost":2,
-	"content":`적 1인에게 공격력 <em>400%</em> 대미지`
+	"content":`적 1인에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"400", "max":"760"},
+		}
 	}],"basic":[{
 	"name":"수류탄 투척",
-	"content":`<em>25초</em>마다 원형 범위 내의 적에게 공격력 <em>193%</em> 대미지`
+	"content":`<em>25초</em>마다 원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"193", "max":"368"},
+		}
 	}],"enhance":[{
 	"name":"약점 노리기",
-	"content":`치명 수치 <em>14%</em> 증가`
+	"content":`치명 수치 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"},
+		}
 	}],"sub":[{
 	"name":"고속 연사",
-	"content":`일반 공격 시 <em>20%</em> 확률로 공격속도 <em>30.2%</em> 증가. (<em>30초</em>간) (쿨타임 <em>25초</em>)`
+	"content":`일반 공격 시 <em>20%</em> 확률로 공격속도 <em>{buff}%</em> 증가. (<em>30초</em>간) (쿨타임 <em>25초</em>)`,
+		"values":{
+			"buff":{"min":"30.2", "max":"57.4"},
+		}
 	}]},
 	"tags":["연타", "타켓전환"],
 },{
@@ -403,16 +415,31 @@ let students = [
 "skills":{
 	"ex":[{
 	"name":"전술 진압", "cost":4,
-	"content":`부채꼴 범위 내의 적에게 공격력 <em>435%</em> 대미지`
+	"content":`부채꼴 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+		{additional_effect}
+		`,
+		"values":{
+			"damage":{"min":"435", "max":"697"},
+			"additional_effect":{"min":"", "max":"기절 (<em>1.4초</em>간)"}
+		}
 	}],"basic":[{
 	"name":"응급 치료",
-	"content":`체력 <em>30%</em> 이하 시 치유력 <em>100%</em> 지속 회복 (<em>20초</em>간) (전투 당 <em>1회</em>)`
+	"content":`체력 <em>30%</em> 이하 시 치유력 <em>{heal}%</em> 지속 회복 (<em>20초</em>간) (전투 당 <em>1회</em>)`,
+		"values":{
+			"heal":{"min":"100", "max":"191"}
+		}
 	}],"enhance":[{
 	"name":"대책 위원회의 부장",
-	"content":`방어력 <em>14%</em> 증가`
+	"content":`방어력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"진압 숙련",
-	"content":`EX 스킬 사용 중 치유력 <em>108%</em> 보호막`
+	"content":`EX 스킬 사용 중 치유력 <em>{shield}%</em> 보호막`,
+		"values":{
+			"shield":{"min":"108", "max":"205"}
+		}
 	}]},
 	"tags":["기절", "서브딜", "탱커"],
 },{
@@ -432,18 +459,30 @@ let students = [
 	"ex":[{
 	"name":"걸리적거리잖아!", "cost":2,
 	"content":`즉시 재장전
-공격력 <em>35.6%</em> 증가 (<em>30초</em>간)`
+		공격력 <em>{buff}%</em> 증가 (<em>30초</em>간)`,
+		"values":{
+			"buff":{"min":"35.6", "max":"67.7"}
+		}
 	}],"basic":[{
 	"name":"조준 사격",
-	"content":`<em>25초</em>마다 적 1인에게 공격력 <em>223%</em> 대미지`
+	"content":`<em>25초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"223", "max":"425"}
+		}
 	}],"enhance":[{
 	"name":"알바생의 근성",
-	"content":`공격력 <em>14%</em> 증가`
+	"content":`공격력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"대책위의 분노",
-	"content":`EX 스킬 사용 시 공격속도 <em>20.1%</em> 증가 (<em>30초</em>간)`
+	"content":`EX 스킬 사용 시 공격속도 <em>{buff}%</em> 증가 (<em>30초</em>간)`,
+		"values":{
+			"buff":{"min":"20.1", "max":"38.3"}
+		}
 	}]},
-	"tags":["평타딜", "카이텐져", "서브딜"],
+	"tags":["평타딜", "카이텐져", "서브딜", "공속"],
 },{
 "name":"이자요이 노노미", "variant":"normal",
 "role":"딜러", "position":"BACK","atk_type":"관통", "dfn_type":"경장갑", "field":"A/A/D", "fes":false,
@@ -460,16 +499,28 @@ let students = [
 "skills":{
 	"ex":[{
 	"name":"혼날 시간이에요~♣", "cost":5,
-	"content":`부채꼴 범위 내의 적에게 공격력 <em>432%</em> 대미지`
+	"content":`부채꼴 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"432", "max":"821"}
+		}
 	}],"basic":[{
 	"name":"짜안~☆",
-	"content":`<em>30초</em>마다 공격력 <em>21.8%</em> 증가 (<em>20초</em>간)`
+	"content":`<em>30초</em>마다 공격력 <em>{buff}%</em> 증가 (<em>20초</em>간)`,
+		"values":{
+			"buff":{"min":"21.8", "max":"41.4"}
+		}
 	}],"enhance":[{
 	"name":"떽~이에요!",
-	"content":`치명 대미지 <em>14%</em> 증가`
+	"content":`치명 대미지 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"깨끗하게 청소해요~♧",
-	"content":`공격 시 대형 대상에게 공격력 <em>6.7%</em> 추가 대미지`
+	"content":`공격 시 대형 대상에게 공격력 <em>{buff}%</em> 추가 대미지`,
+		"values":{
+			"buff":{"min":"6.7", "max":"12.8"}
+		}
 	}]},
 	"tags":["범위딜", "스테이지"],
 },{
@@ -487,16 +538,28 @@ let students = [
 "skills":{
 	"ex":[{
 	"name":"특급 송달 : 전투 지원품", "cost":4,
-	"content":`원형 범위 내의 아군에게 치유력 <em>118%</em> 회복`
+	"content":`원형 범위 내의 아군에게 치유력 <em>{heal}%</em> 회복`,
+		"values":{
+			"heal":{"min":"118", "max":"224"}
+		}
 	}],"basic":[{
 	"name":"학습 지원",
-	"content":`<em>30초</em>마다 원형 범위 내의 아군에게 치명 저항력 <em>15.5%</em> 증가`
+	"content":`<em>30초</em>마다 원형 범위 내의 아군에게 치명 저항력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"15.5", "max":"29.4"}
+		}
 	}],"enhance":[{
 	"name":"자기 계발",
-	"content":`치유력 <em>14%</em> 증가`
+	"content":`치유력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"사기 충전",
-	"content":`아군의 최대 체력 <em>9.1%</em> 증가`
+	"content":`아군의 최대 체력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"9.1", "max":"17.3"}
+		}
 	}]},
 	"tags":["범위힐"],
 },{
@@ -506,25 +569,54 @@ let students = [
 "signature":{
 	"name":"신시어리티",
 	"summary":`세리카가 아르바이트를 나갈 때 늘 휴대하는 돌격소총.
-무녀 아르바이트 또한 예외가 아닌지라, 새해맞이 행사장에서 난동을 피우는 문제아들을 조용히 만드는 데에도 쓰인다.
-`},
+무녀 아르바이트 또한 예외가 아닌지라, 새해맞이 행사장에서 난동을 피우는 문제아들을 조용히 만드는 데에도 쓰인다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>무녀 알바생의 고집</em>을 <em>무녀 알바생의 고집+</em> 강화",
+			"skill":{"idx":"enhance", "name":"무녀 알바생의 고집+",
+				"content":`공격력 <em>{buff1}</em>
+					추가로 공격력 <em>{buff2>%</em> 증가
+				`,
+				"values":{
+					"buff1":{"min":"248", "max":"470"},
+					"buff2":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
+			"field":"C/C/SS"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"아르바이트에 방해야!", "cost":3,
-	"content":`아치형 범위 내의 적에게 공격력 <em>247%</em> 대미지
-치명 대미지 <em>21.3%</em> 감소 (<em>30초</em>간)`
+	"content":`아치형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+치명 대미지 <em>{debuff}%</em> 감소 (<em>30초</em>간)`,
+		"values":{
+			"damage":{"min":"247", "max":"395"},
+			"debuff":{"min":"21.3", "max":"27.7"},
+		}
 	}],"basic":[{
 	"name":"모두! 무녀가 응원해 줄게!",
-	"content":`<em>40초</em>마다 원형 범위 내의 아군에게 공격력 <em>8.6%</em> 증가 (<em>30초</em>간)`
+	"content":`<em>40초</em>마다 원형 범위 내의 아군에게 공격력 <em>{buff}%</em> 증가 (<em>30초</em>간)`,
+		"values":{
+			"buff":{"min":"8.6", "max":"16.4"}
+		}
 	}],"enhance":[{
 	"name":"무녀 알바생의 고집",
-	"content":`공격력 <em>14%</em> 증가`
+	"content":`공격력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"무녀 알바생의 집념",
-	"content":`아군의 치명 대미지 저항률 <em>9.1%</em> 증가`
+	"content":`아군의 치명 대미지 저항률 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"9.1", "max":"17.3"}
+		}
 	}]},
 	"tags":["실내 헤세드", "뉴비"],
 },{
@@ -534,25 +626,58 @@ let students = [
 "signature":{
 	"name":"호루스의 눈 + 진압 방패 '아이언 호루스'",
 	"summary":`호시노가 애용하는 심플한 디자인의 산탄총.
-호시노가 운용하는 무장 시스템의 핵심을 담당하고 있다.
-`},
+호시노가 운용하는 무장 시스템의 핵심을 담당하고 있다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>근거리 전투체계</em> 및 <em>전술 시야 확장</em>을 <em>근거리 전투체계+</em> 및 <em>전술 시야 확장+</em>으로 강화",
+			"skill":{"idx":"enhance", "name":"근거리 전투체계+",
+				"content":`
+					공격력 <em>{buff01}</em>, 최대 체력 <em>{buff02}</em> 증가
+					추가로 공격력 <em>{buff1}%</em>, 최대 체력 <em>{buff2}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"117", "max":"169"},
+					"buff02":{"min":"3830", "max":"5554"},
+					"buff1":{"min":"11.2", "max":"16.2"},
+					"buff2":{"min":"11.2", "max":"16.2"},
+				}
+			}},
+		"t3":{"summary":"야외 지형 전투력을 SS로 강화", 
+			"field":"A/SS/D"
+			},
+		"t4":{"summary":"신비 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"방어태세 강화", "cost":4,
-	"content":`지정한 위치로 이동 후 엄폐물의 역할을 하는 방패를 들어올려 엄폐 상태 부여 및 공격력 <em>82.5%</em> 증가 (<em>40초</em>간)
-호시노(무장) 최대 체력의 <em>39.5%</em>를 엄폐물이 추가로 가집니다. (엄폐물의 망어 타입은 호시노(무장)과 동일합니다.)`
+	"content":`지정한 위치로 이동 후 엄폐물의 역할을 하는 방패를 들어올려 엄폐 상태 부여 및 공격력 <em>{buff}%</em> 증가 (<em>40초</em>간)
+호시노(무장) 최대 체력의 <em>{shield}%</em>를 엄폐물이 추가로 가집니다. (엄폐물의 망어 타입은 호시노(무장)과 동일합니다.)`,
+		"values":{
+			"buff":{"min":"82.5", "max":"156"},
+			"shield":{"min":"39.5", "max":"69.1"},
+		}
 	}],"basic":[{
 	"name":"플레이트 교체",
-	"content":`<em>40초</em>마다 방탄 플레이트를 장착하여 받는 대미지량 <em>12.7%</em> 감소 (방탄 플레이트는 <em>25회</em> 피격 시 해제)`
+	"content":`<em>40초</em>마다 방탄 플레이트를 장착하여 받는 대미지량 <em>{buff}%</em> 감소 (방탄 플레이트는 <em>25회</em> 피격 시 해제)`,
+		"values":{
+			"buff":{"min":"12.7", "max":"24.1"}
+		}
 	}],"enhance":[{
 	"name":"근거리 전투체계",
-	"content":`공격력 <em>11.2%</em>, 최대 체력 <em>11.2%</em> 증가`
+	"content":`공격력 <em>{buff1}%</em>, 최대 체력 <em>{buff2}%</em> 증가`,
+		"values":{
+			"buff1":{"min":"11.2", "max":"16.2"},
+			"buff2":{"min":"11.2", "max":"16.2"},
+		}
 	}],"sub":[{
 	"name":"유효한 전술",
-	"content":`공격 시 <em>20%</em> 확률로 방어력 <em>10.1%</em> 감소 (<em>20초</em>간) (쿨타임 <em>5초</em>)`
+	"content":`공격 시 <em>20%</em> 확률로 방어력 <em>{debuff}%</em> 감소 (<em>20초</em>간) (쿨타임 <em>5초</em>)`,
+		"values":{
+			"debuff":{"min":"10.1", "max":"19.3"}
+		}
 	}]},
 	"tags":["엄폐 상태", "위치이동", "호크마", "예소드2페"],
 },{
@@ -562,27 +687,59 @@ let students = [
 "signature":{
 	"name":"호루스의 눈 + 보조 권총",
 	"summary":`호시노가 평소 사용하는 산탄총과 소중히 간직하고 있던 권총의 조합.
-적극적인 공세로 적의 방어를 돌파할 때 운용한다.
-`},
+적극적인 공세로 적의 방어를 돌파할 때 운용한다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>근거리 전투체계</em> 및 <em>전술 시야 확장</em>을 <em>근거리 전투체계+</em> 및 <em>전술 시야 확장+</em>으로 강화",
+			"skill":{"idx":"enhance", "name":"전술 시야 확장+",
+				"content":`
+					공격력 <em>{buff01}</em> 증가
+					추가로 일반 공격 사거리 <em>300</em>, 치명 대미지 <em>{buff}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"390", "max":"741"},
+					"buff1":{"min":"11.2", "max":"21.2"},
+				}
+			}},
+		"t3":{"summary":"야외 지형 전투력을 SS로 강화", 
+			"field":"A/SS/D"
+			},
+		"t4":{"summary":"신비 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"집중 돌파", "cost":6,
-	"content":`적 1인에게 공격력 <em>78.5%</em> 대미지
-원형 범위 내의 적에게 공격력 <em>264%</em> 대미지`
+	"content":`적 1인에게 공격력 <em>{damage1}%</em> 대미지
+원형 범위 내의 적에게 공격력 <em>{damage2}%</em> 대미지`,
+		"values":{
+			"damage1":{"min":"78.5", "max":"149"},
+			"damage2":{"min":"264", "max":"503"}
+		}
 	}],"basic":[{
 	"name":"권총 속사",
-	"content":`패스트 로딩 용 잔탄 수가 0이 될 시, 적 1인에게 공격력 <em>211%</em> 대미지`
+	"content":`패스트 로딩 용 잔탄 수가 0이 될 시, 적 1인에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"211", "max":"400"}
+		}
 	}],"enhance":[{
 	"name":"전술 시야 확장",
-	"content":`일반 공격 사거리 <em>300</em>, 치명 대미지 <em>11.2%</em> 증가`
+	"content":`일반 공격 사거리 <em>300</em>, 치명 대미지 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"11.2", "max":"21.2"}
+		}
 	}],"sub":[{
 	"name":"제압 사격",
-	"content":`모든 공격이 적의 방어력을 <em>60%</em> 무시
-공격력 <em>7.4%</em> 증가
-EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 공격은 부채꼴 범위 내의 적에게 공격력 <em>79%</em> 대미지`
+	"content":`모든 공격이 적의 방어력을 <em>{through}%</em> 무시
+공격력 <em>{buff}%</em> 증가
+EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 공격은 부채꼴 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"through":{"min":"60", "max":"85"},
+			"buff":{"min":"7.4", "max":"14"},
+			"damage":{"min":"79", "max":"150"}
+		}
 	}]},
 	"tags":["범위딜", "페로로질라"],
 },{
@@ -592,27 +749,57 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 "signature":{
 	"name":"WHITE FANG 465",
 	"summary":`시로코가 애용하는 돌격소총.
-야외에서의 장거리 이동에도 문제가 없도록 다양한 정비와 개조가 이루어져 있다.
-`},
+야외에서의 장거리 이동에도 문제가 없도록 다양한 정비와 개조가 이루어져 있다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>속사</em>를 <em>속사+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"속사+",
+				"content":`
+					공격속도 <em>{buff01}</em> 증가
+					추가로 공격속도 <em>{buff}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1400", "max":"2660"},
+					"buff1":{"min":"14", "max":"26.6"},
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/B/D"
+			},
+		"t4":{"summary":"신비 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"라이딩 그레네이드", "cost":4,
-	"content":`원형 범위 내의 적에게 공격력 <em>431%</em> 대미지
-공격력 <em>38.4%</em> 감소 (<em>10초</em>간)`
+	"content":`원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+공격력 <em>{debuff}%</em> 감소 (<em>10초</em>간)`,
+		"values":{
+			"damage":{"min":"431", "max":"690"},
+			"debuff":{"min":"38.4", "max":"50"}
+		}
 	}],"basic":[{
 	"name":"집중 사격",
-	"content":`<em>40초</em>마다 직선 범위 내의 적에게 공격력 <em>194%</em> 대미지`
+	"content":`<em>40초</em>마다 직선 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"194", "max":"369"}
+		}
 	}],"enhance":[{
 	"name":"속사",
-	"content":`공격속도 <em>14%</em> 증가`
+	"content":`공격속도 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"간파 사격",
-	"content":`해로운 효과가 있는 적 공격 시 공격력 <em>3.8%</em> 추가 대미지`
+	"content":`해로운 효과가 있는 적 공격 시 공격력 <em>{damage}%</em> 추가 대미지`,
+		"values":{
+			"damage":{"min":"3.8", "max":"7.3"}
+		}
 	}]},
-	"tags":["범위딜", "공격력 감소", "호크마"],
+	"tags":["범위딜", "공격력 감소", "호크마", "추가대미지"],
 },{
 "name":"스나오오카미 시로코*테러", "variant":"normal",
 "role":"딜러", "position":"MIDDLE","atk_type":"신비", "dfn_type":"특수장갑", "field":"D/S/A", "fes":true,
@@ -620,8 +807,25 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 "signature":{
 	"name":"BLACK FANG 465",
 	"summary":`시로코가 애용하는 돌격소총.
-오랫동안 사용해 온 듯 군데군데 수리된 흔적들이 남아있지만, 꼼꼼하게 정비해 왔기 때문에 사용하는 데는 아무런 문제가 없다.
-`},
+오랫동안 사용해 온 듯 군데군데 수리된 흔적들이 남아있지만, 꼼꼼하게 정비해 왔기 때문에 사용하는 데는 아무런 문제가 없다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>정밀한 조준</em>를 <em>정밀한 조준+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"정밀한 조준+",
+				"content":`
+					치명 대미지 <em>{buff01}</em> 증가
+					추가로 공격력 <em>{buff}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"2000", "max":"3800"},
+					"buff1":{"min":"14", "max":"26.6"},
+				}
+			}},
+		"t3":{"summary":"야외 지형 전투력을 SS로 강화", 
+			"field":"D/SS/A"
+			},
+		"t4":{"summary":"신비 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
@@ -629,28 +833,43 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"ex":[{
 	"name":"화력 강화", "cost":3,
 	"content":`드론 소환 (<em>40초</em>간)
-드론이 유지되는 동안 일반 공격이 공격력 <em>120%</em> 대미지를 주도록 변경
-치명 수치 <em>42%</em>, 치명 대미지 <em>71%</em> 증가 (<em>40초</em>간)
-자신에게 최대 체력의 <em>20%</em> 만큼 대미지 (해당 스킬로 시로코*테러는 퇴각하지 않습니다.)`
+		드론이 유지되는 동안 일반 공격이 공격력 <em>120%</em> 대미지를 주도록 변경
+		치명 수치 <em>{buff1}%</em>, 치명 대미지 <em>{buff2}%</em> 증가 (<em>40초</em>간)
+		자신에게 최대 체력의 <em>20%</em> 만큼 대미지 (해당 스킬로 시로코*테러는 퇴각하지 않습니다.)`,
+		"values":{
+			"buff1":{"min":"42", "max":"67.3"},
+			"buff2":{"min":"71", "max":"134"}
+		}
 	}],"basic":[{
 	"name":"수류탄 투척 · 개(改)",
-	"content":`<em>40초</em>마다 적 1인에게 공격력 <em>370%</em> 대미지
-EX 스킬 사용 시 드론 소환 : 교차 사격으로 스킬이 변경됩니다.
-`
+	"content":`<em>40초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+		EX 스킬 사용 시 드론 소환 : 교차 사격으로 스킬이 변경됩니다.`,
+		"values":{
+			"damage":{"min":"370", "max":"704"}
+		}
 	},{
 	"name":"드론 소환 : 교차 사격",
 	"content":`
-EX 스킬 사용 시 적 1인에게 공격력 <em>474%</em> 대미지
-EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 변경됩니다.
-`
+		EX 스킬 사용 시 적 1인에게 공격력 <em>{damage}%</em> 대미지
+		EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 변경됩니다.
+		`,
+		"values":{
+			"damage":{"min":"474", "max":"902"}
+		}
 	}],"enhance":[{
 	"name":"정밀한 조준",
-	"content":`공격력 <em>14%</em> 증가`
+	"content":`공격력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"침착한 호흡",
-	"content":`신비 특효 <em>25.92%</em> 가산
+	"content":`신비 특효 <em>{buff}%</em> 가산
 시로코*테러의 현재 체력이 <em>1%</em> 이하 시 <em>15초</em> 동안 퇴각 유예 적용 (쿨타임 <em>90초</em>)
-퇴각 유예 동안 체력을 전부 회복하지 못하면 즉시 퇴각`
+퇴각 유예 동안 체력을 전부 회복하지 못하면 즉시 퇴각`,
+		"values":{
+			"buff":{"min":"25.92", "max":"49.25"}
+		}
 	}]},
 	"tags":["연타", "메인딜"],
 },{
@@ -660,25 +879,59 @@ EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 �
 "signature":{
 	"name":"호루스의 눈",
 	"summary":`여름 바다에 맞게끔 조율하여 가져온 호시노의 산탄총.
-숲에 길을 열거나 벌레를 쫒는 등, 다양한 용도로 쓰기 좋게 손질되어 있다.
-`},
+숲에 길을 열거나 벌레를 쫒는 등, 다양한 용도로 쓰기 좋게 손질되어 있다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>더위 참기</em>를 <em>더위 참기+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"더위 참기+",
+				"content":`
+					방어력 <em>{buff01}</em>, 공격력 <em>{buff02}</em> 증가
+					추가로 방어력 <em>{buff1}%</em>, 공격력 <em>{buff2}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"160", "max":"232"},
+					"buff02":{"min":"192", "max":"278"},
+					"buff1":{"min":"11.2", "max":"16.2"},
+					"buff2":{"min":"11.2", "max":"16.2"},
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/A/D"
+			},
+		"t4":{"summary":"폭발 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"수상 지원", "cost":6,
-	"content":`자신을 중심으로 원형 범위 내에 있는 아군의 공격력 <em>26.5%</em> 증가, 폭발 특효 <em>68.5%</em> 가산 (<em>50초</em>간)`
+	"content":`자신을 중심으로 원형 범위 내에 있는 아군의 공격력 <em>{buff1}%</em> 증가, 폭발 특효 <em>{buff2}%</em> 가산 (<em>50초</em>간)`,
+		"values":{
+			"buff1":{"min":"26.5", "max":"38.5"},
+			"buff2":{"min":"68.3", "max":"99"}
+		}
 	}],"basic":[{
 	"name":"수상 습격",
-	"content":`<em>40초</em>마다 적 1인에게 공격력 <em>283%</em> 대미지
-치유력 <em>75%</em> 만큼 자신 회복`
+	"content":`<em>40초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+		치유력 <em>{heal}%</em> 만큼 자신 회복`,
+		"values":{
+			"damage":{"min":"283", "max":"454"},
+			"heal":{"min":"75", "max":"97.6"}
+		}
 	}],"enhance":[{
 	"name":"더위 참기",
-	"content":`방어력 <em>11.2%</em>, 공격력 <em>11.2%</em> 증가`
+	"content":`방어력 <em>{buff1}%</em>, 공격력 <em>{buff2}%</em> 증가`,
+		"values":{
+			"buff1":{"min":"11.2", "max":"16.2"},
+			"buff2":{"min":"11.2", "max":"16.2"}
+		}
 	}],"sub":[{
 	"name":"해변의 즐거움",
-	"content":`EX 스킬이 지속되는 동안 코스트 회복력 <em>360</em> 증가`
+	"content":`EX 스킬이 지속되는 동안 코스트 회복력 <em>{cost}</em> 증가`,
+		"values":{
+			"cost":{"min":"360", "max":"684"}
+		}
 	}]},
 	"tags":["공격력 버프", "폭발 특효", "코스트 회복력"],
 },{
@@ -688,27 +941,56 @@ EX 스킬의 드론이 사라지면 수류탄 투척 · 개(改)로 스킬이 �
 "signature":{
 	"name":"BLACK FANG 465",
 	"summary":`바다에서도 애용되는 시로코의 돌격소총.
-평소보다 신경 쓴 정비 덕에, 물기나 소금기에도 문제없다.
-`},
+평소보다 신경 쓴 정비 덕에, 물기나 소금기에도 문제없다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>묘하게 들뜬</em>를 <em>묘하게 들뜬+</em>으로 강화",
+			"skill":{"idx":"enhance", "name":"묘하게 들뜬+",
+				"content":`
+					공격력 <em>{buff01}</em> 증가
+					추가로 공격력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"365", "max":"694"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"야외 지형 전투력을 SS로 강화", 
+			"field":"B/SS/D"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"월척이다", "cost":3,
-	"content":`적 1인에게 방어력 <em>18%</em> 감소 (<em>30초</em>간)
-추가로 공격력 <em>588%</em> 대미지`
+	"content":`적 1인에게 방어력 <em>{debuff}%</em> 감소 (<em>30초</em>간)
+		추가로 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"debuff":{"min":"18", "max":"34.2"},
+			"damage":{"min":"588", "max":"1117"}
+		}
 	}],"basic":[{
 	"name":"'마침 여기'",
-	"content":`전투 시작 시 자신을 제외한 아군 치명 수치 <em>11.5%</em> 증가 (<em>60초</em>간)
-EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <em>1회</em>)
-`
+	"content":`전투 시작 시 자신을 제외한 아군 치명 수치 <em>{buff}%</em> 증가 (<em>60초</em>간)
+		EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <em>1회</em>)`,
+		"values":{
+			"buff":{"min":"11.5", "max":"21.9"}
+		}
 	}],"enhance":[{
 	"name":"묘하게 들뜬",
-	"content":`공격력 <em>14%</em> 증가`
+	"content":`공격력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"단련된 체력",
-	"content":`아군의 코스트 회복력 <em>10.6%</em> 증가`
+	"content":`아군의 코스트 회복력 <em>{cost}%</em> 증가`,
+		"values":{
+			"cost":{"min":"10.6", "max":"20.2"}
+		}
 	}]},
 	"tags":["디버프", "방어력 감소", "코스트 회복"],
 },{
@@ -718,26 +1000,56 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 "signature":{
 	"name":"미니 No.5",
 	"summary":`한여름에도 노노미 곁을 지키는 기관총.
-시원하게 쏟아내는 탄환이 더위 또한 날려버린다.
-`},
+시원하게 쏟아내는 탄환이 더위 또한 날려버린다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>기다릴 수 없어요~♧</em>를 <em>기다릴 수 없어요~♧+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"기다릴 수 없어요~♧+",
+				"content":`
+					방어 관통 수치 <em>{buff01}</em> 증가
+					추가로 공격속도 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"360", "max":"684"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/D/B"
+			},
+		"t4":{"summary":"폭발 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"시원해질 시간이에요~♣", "cost":6,
-	"content":`적 1인에게 공격력 <em>695%</em> 대미지
-	장탄수 100 소모 시까지 일반 공격 딜레이를 <em>2회</em> 무시하는 일반공격으로 변경
-	즉시 재장전`
+	"content":`적 1인에게 공격력 <em>{damage}%</em> 대미지
+	장탄수 100 소모 시까지 일반 공격 딜레이를 <em>{cancel}</em> 무시하는 일반공격으로 변경
+	즉시 재장전`,
+		"values":{
+			"damage":{"min":"695", "max":"1113"},
+			"cancel":{"min":"2", "max":"4"}
+		}
 	}],"basic":[{
 	"name":"다 같이 신나게!",
-	"content":`<em>40초</em>마다 원형 범위 내의 아군에게 공격 속도 <em>11.4%</em> 증가 (<em>30</em>초간)`
+	"content":`<em>40초</em>마다 원형 범위 내의 아군에게 공격 속도 <em>{buff}%</em> 증가 (<em>30</em>초간)`,
+		"values":{
+			"buff":{"min":"11.4", "max":"21.6"}
+		}
 	}],"enhance":[{
 	"name":"기다릴 수 없어요~♧",
-	"content":`공격 속도 <em>14%</em> 증가`
+	"content":`공격 속도 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"차가울 거에요~!",
-	"content":`EX 스킬로 일반 공격이 변경된 상태에서 일반 공격으로 적 공격 시 공격력 <em>10.9%</em> 추가 대미지`
+	"content":`EX 스킬로 일반 공격이 변경된 상태에서 일반 공격으로 적 공격 시 공격력 <em>{additionanl_damage}%</em> 추가 대미지`,
+		"values":{
+			"additionanl_damage":{"min":"10.9", "max":"20.9"}
+		}
 	}]},
 	"tags":["메인딜", "예로니무스", "카이텐저 2페"],
 },{
@@ -747,24 +1059,53 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 "signature":{
 	"name":"신시어리티",
 	"summary":`휴가 중의 리조트까지 따라온 세리카의 돌격소총.
-	휴가 중이라도 헤이해짐은 없다. 오히려 최고로 성실한 휴가를 즐기기 위해 최상의 상태를 유지한다.
-`},
+	휴가 중이라도 헤이해짐은 없다. 오히려 최고로 성실한 휴가를 즐기기 위해 최상의 상태를 유지한다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>의욕 만만</em>을 <em>의욕 만만+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"의욕 만만+",
+				"content":`
+					공격력 <em>{buff01}</em> 증가
+					추가로 공격속도 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"380", "max":"721"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
+			"field":"D/B/SS"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
 "skills":{
 	"ex":[{
 	"name":"성난 파도", "cost":6,
-	"content":`원형 범위 내의 적에게 공격력 <em>636%</em> 대미지`
+	"content":`원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"636", "max":"1210"}
+		}
 	}],"basic":[{
 	"name":"퐁당퐁당, 퐁당!",
-	"content":`<em>35초</em>마다 원형 범위 내의 적에게 공격력 <em>101%</em> 대미지`
+	"content":`<em>35초</em>마다 원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지`,
+		"values":{
+			"damage":{"min":"101", "max":"187"}
+		}
 	}],"enhance":[{
 	"name":"의욕 만만",
-	"content":`공격력 <em>14%</em> 증가`
+	"content":`공격력 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"앗, 차가워!",
-	"content":`아군의 치명 대미지 <em>9.1%</em> 증가`
+	"content":`아군의 치명 대미지 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"9.1", "max":"17.3"}
+		}
 	}]},
 	"tags":["범위딜"],
 },{
@@ -774,8 +1115,25 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 "signature":{
 	"name":"상식적 수단 + 강습형 건쉽 '물구름 호'",
 	"summary":`사용되는 일이 없실 바라던 아야네의 권총.
-	하지만 그 꿈은 매번 어처구니 없는 일로 깨어진다.
-`},
+	하지만 그 꿈은 매번 어처구니 없는 일로 깨어진다.`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>자동 조준</em>을 <em>자동 조준+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"자동 조준+",
+				"content":`
+					치명 수치 <em>{buff01}</em> 증가
+					추가로 치명 수치 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"100", "max":"190"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"A/S/B"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
@@ -783,23 +1141,39 @@ EX 스킬 코스트 1 감소 (EX 스킬 사용 <em>1회</em>까지) (전투당 <
 	"ex":[{
 	"name":"물구름 호, 출격합니다!", "cost":4,
 	"content":`아야네가 물구름 호에 탑승하여 전투에 등장
-	아야네 공격력의 <em>12.5%</em>를, 치명 수치의 <em>12.5%</em>를 물구름 호가 가진다. (<em>30초</em>간)
-	물구름 호는 <em>12초</em>마다 '호우 미사일'을 발사하여 적 1인에게 공격력 <em>297%</em> 대미지
-	(이 공격은 적의 방어력을 <em>68%</em> 무시)
+	아야네 공격력의 <em>{handover_atk}%</em>를, 치명 수치의 <em>{handover_crt}%</em>를 물구름 호가 가진다. (<em>30초</em>간)
+	물구름 호는 <em>12초</em>마다 '호우 미사일'을 발사하여 적 1인에게 공격력 <em>{damage}%</em> 대미지
+	(이 공격은 적의 방어력을 <em>{ignore_dfs}%</em> 무시)
 	(택티컬 서포트의 탑승물은 중복 등장 불가)
-	`
+	`,
+		"values":{
+			"handover_atk":{"min":"12.5", "max":"47.5"},
+			"handover_crt":{"min":"12.5", "max":"32.6"},
+			"damage":{"min":"297", "max":"401"},
+			"ignore_dfs":{"min":"68", "max":"84"}
+		}
 	}],"basic":[{
 	"name":"공중지원",
-	"content":`<em>30초</em>마다 적 1인에게 공격력 <em>148%</em> 대미지
-	(이 공격은 적의 방어력을 <em>60%</em> 무시)`
+	"content":`<em>30초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+	(이 공격은 적의 방어력을 <em>{ignore_dfs}%</em> 무시)`,
+		"values":{
+			"damage":{"min":"148", "max":"215"},
+			"ignore_dfs":{"min":"68", "max":"84"}
+		}
 	}],"enhance":[{
 	"name":"자동조준",
-	"content":`치명 수치 <em>14%</em> 증가`
+	"content":`치명 수치 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"14", "max":"26.6"}
+		}
 	}],"sub":[{
 	"name":"전황파악",
-	"content":`아군의 치명 대미지 <em>9.1%</em> 증가`
+	"content":`아군의 치명 대미지 <em>{buff}%</em> 증가`,
+		"values":{
+			"buff":{"min":"9.1", "max":"17.3"}
+		}
 	}]},
-	"tags":["방어력 무시"],
+	"tags":["방어무시", "헬리콥터"],
 },{
 "name":"츠카츠키 리오", "variant":"armed",
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/B/D", "fes":false,
