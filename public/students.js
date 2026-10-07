@@ -411,7 +411,7 @@ let students = [
 	"name":"서기의 결단",
 	"summary":`노아가 사용하는 컨버전 키트가 부착된 권총.
 문진으로도 사용할 수 있는 적당한 무게의 이 권총은 노아가 사랑하는 심야의 독서에 곁들이기에 걸맞다.
-`},
+`,
 	"brk_thr":{
 		"t2":{"summary":"강화 스킬 <em>서기의 냉철함</em>를 <em>서기의 냉철함+</em>로 강화",
 			"skill":{"idx":"enhance", "name":"서기의 냉철함+",
@@ -429,7 +429,7 @@ let students = [
 			},
 		"t4":{"summary":"관통 특효 10% 가산"}
 	},
-,
+},
 "uniqueItem":{"name":"",
 "summary":`
 `},
