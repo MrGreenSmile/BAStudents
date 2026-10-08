@@ -2376,7 +2376,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 "weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["로혼치 사본", "만드라고라"],
 "skills":{
 	"ex":[{
-	"name":"꿰뚫는 엘레강스", "cost":4, "cost_reduce":1",
+	"name":"꿰뚫는 엘레강스", "cost":4, "cost_reduce":1,
 	"content":`직선 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
 	적을 관통할 때마다 대미지 <em>10%</em> 감소 (최대 <em>30%</em> 대미지)
 	`,
