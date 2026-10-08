@@ -185,5 +185,15 @@ let students_bio = [
 	"new_year":"새해",
 	"dress":"드레스",
 	}
+},{
+"name":"쿠로다테 하루나", "jp_name":"黒舘 ハルナ", "en_name":"Kurodate Haruna",
+"school":"게헨나 학원", "club":"미식연구부", "grade":3, "age":17, "birthday":"03/01", "height":163, "hobby":"맛집 탐방, 미식 리스트 작성",
+"voice":["이보희", "田所 あずさ(타도코로 아즈사)", "Mace"],
+"illust":{
+	"normal":["whoisshe"]
+	},
+"variant":{
+	"normal":"",
+	}
 }
 ]
