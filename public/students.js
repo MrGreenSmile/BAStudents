@@ -1,5 +1,5 @@
 let students = [
-{"name":"츠카츠키 리오", "variant":"normal",
+{"name":"츠카츠키 리오", "variant":"normal", "release":"2025.07.15",
 "role":"서포터", "position":"SPECIAL","atk_type":"신비", "dfn_type":"탄력장갑", "field":"A/D/S", "fes":true,
 "weapon":"HG", "equipments":["신발", "헤어핀", "손목시계"], "matterials":["디스코 콜간테", "수정 하니와"],
 "signature":{
@@ -62,7 +62,7 @@ let students = [
 	}]},
 	"tags":["퀵드로우", "공격력 증가"],
 },{
-"name":"우시오 노아", "variant":"normal",
+"name":"우시오 노아", "variant":"normal", "release":"2023.03.28",
 "role":"서포터", "position":"MIDDLE","atk_type":"신비", "dfn_type":"특수장갑", "field":"D/B/S", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "부적"], "matterials":["파에스토스 원반", "에테르"],
 "signature":{
@@ -120,7 +120,7 @@ let students = [
 	}]},
 	"tags":["집중공격", "고즈", "예소드"],
 },{
-"name":"하야세 유우카", "variant":"normal",
+"name":"하야세 유우카", "variant":"normal", "release":"2021.11.09",
 "role":"탱커", "position":"FRONT","atk_type":"폭발", "dfn_type":"중장갑", "field":"B/B/A", "fes":false,
 "weapon":"SMG", "equipments":["신발", "배지", "부적"], "matterials":["님루드 렌즈", "안티키테라 장치"],
 "signature":{
@@ -194,7 +194,7 @@ let students = [
 	}]},
 	"tags":["탱커", "회피탱", "보호막"],
 },{
-"name":"쿠로사키 코유키", "variant":"normal",
+"name":"쿠로사키 코유키", "variant":"normal", "release":"2023.09.05",
 "role":"딜러", "position":"BACK","atk_type":"신비", "dfn_type":"중장갑", "field":"S/D/B", "fes":false,
 "weapon":"MG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["보이니치 사본", "수정 하니와"],
 "signature":{
@@ -281,7 +281,7 @@ let students = [
 	}]},
 	"tags":["범위딜", "연타"],
 },{
-"name":"하야세 유우카", "variant":"gym",
+"name":"하야세 유우카", "variant":"gym", "release":"2023.04.26",
 "role":"탱커", "position":"FRONT","atk_type":"신비", "dfn_type":"특수장갑", "field":"B/D/S", "fes":false,
 "weapon":"SMG", "equipments":["신발", "가방", "목걸이"], "matterials":["님루드 렌즈", "위니페소키 스톤"],
 "signature":{
@@ -343,7 +343,7 @@ let students = [
 	}]},
 	"tags":["탱커", "아군 이동"],
 },{
-"name":"하야세 유우카", "variant":"pajamas",
+"name":"하야세 유우카", "variant":"pajamas", "release":"2025.06.10",
 "role":"탱커", "position":"FRONT","atk_type":"폭발", "dfn_type":"중장갑", "field":"D/S/B", "fes":false,
 "weapon":"SMG", "equipments":["신발", "가방", "목걸이"], "matterials":["님루드 렌즈", "고대 전지"],
 "signature":{
@@ -404,7 +404,7 @@ let students = [
 	}]},
 	"tags":["탱커", "경장갑 방감"],
 },{
-"name":"우시오 노아", "variant":"pajamas",
+"name":"우시오 노아", "variant":"pajamas", "release":"2025.06.10",
 "role":"딜러", "position":"MIDDLE","atk_type":"관통", "dfn_type":"경장갑", "field":"B/S/D", "fes":false,
 "weapon":"HG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["머리가 자라는 인형", "파에스토스 원반"],
 "signature":{
@@ -438,21 +438,21 @@ let students = [
 	"name":"소등 후에는 조용히", "cost":5,
 	"content":`적 1인에게 공격력 <em>{damage}%</em> 대미지
 		추가로 약점 파악 효과 적용 (<em>20초</em>간)
-		대상은 효과가 걸려있는 상태에서 피격 당할 때마다 노아(파자마)의 공격력의 <em>{additionanl_damage}%</em> 추가 대미지 (이 대미지는 치명 공격이 발동하지 않음)
+		대상은 효과가 걸려있는 상태에서 피격 당할 때마다 노아(파자마)의 공격력의 <em>{additional_damage}%</em> 추가 대미지 (이 대미지는 치명 공격이 발동하지 않음)
 		(최대 <em>240회</em>까지 적용)`,
 		"values":{
 			"damage":{"min":"759", "max":"1442"},
-			"additionanl_damage":{"min":"17.6", "max":"33.4"},
+			"additional_damage":{"min":"17.6", "max":"33.4"},
 		}
 	},{
 	"name":"쉿, 소등합니다.", "cost":3,
 	"content":`적 1인에게 공격력 <em>{damage}%</em> 대미지
 		추가로 약점 파악 효과 적용 (<em>20초</em>간)
-		대상은 효과가 걸려있는 상태에서 피격 당할 때마다 노아(파자마) 공격력의 <em>{additionanl_damage}%</em> 추가 대미지 (이 대미지는 치명 공격이 발동하지 않음)
+		대상은 효과가 걸려있는 상태에서 피격 당할 때마다 노아(파자마) 공격력의 <em>{additional_damage}%</em> 추가 대미지 (이 대미지는 치명 공격이 발동하지 않음)
 		(최대 <em>240회</em>까지 적용)`,
 		"values":{
 			"damage":{"min":"886", "max":"1683"},
-			"additionanl_damage":{"min":"20.5", "max":"39"},
+			"additional_damage":{"min":"20.5", "max":"39"},
 		}
 	}],"basic":[{
 	"name":"애착 베개",
@@ -476,7 +476,7 @@ let students = [
 	}]},
 	"tags":["메인딜", "누적대미지", "호버크래프트 2페"],
 },{
-"name":"쿠로사키 코유키", "variant":"pajamas",
+"name":"쿠로사키 코유키", "variant":"pajamas", "release":"2026.07.14",
 "role":"서포터", "position":"BACK","atk_type":"신비", "dfn_type":"경장갑", "field":"S/D/B", "fes":false,
 "weapon":"MG", "equipments":["신발", "배지", "손목시계"], "matterials":["고대 전지", "만드라고라"],
 "signature":{
@@ -517,10 +517,10 @@ let students = [
 	}],"basic":[{
 	"name":"와장창 혹은 우당탕",
 	"content":`<em>40초</em>마다 부채꼴범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
-		초대형 대상에게 공격력 <em>{additionanl_damage}%</em> 추가 대미지`,
+		초대형 대상에게 공격력 <em>{additional_damage}%</em> 추가 대미지`,
 		"values":{
 			"damage":{"min":"234", "max":"444"},
-			"additionanl_damage":{"min":"93.6", "max":"177"},
+			"additional_damage":{"min":"93.6", "max":"177"},
 		}
 	}],"enhance":[{
 	"name":"밤샘의 미학",
@@ -537,7 +537,7 @@ let students = [
 	}]},
 	"tags":["시로&쿠로", "디버프 해제", "이속 버프"],
 },{
-"name":"스나오오카미 시로코", "variant":"normal",
+"name":"스나오오카미 시로코", "variant":"normal", "release":"2021.11.09",
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"AR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["파에스토스 원반", "보이니치 사본"],
 "signature":{
@@ -608,7 +608,7 @@ let students = [
 	}]},
 	"tags":["연타", "타켓전환"],
 },{
-"name":"타카나시 호시노", "variant":"normal",
+"name":"타카나시 호시노", "variant":"normal", "release":"2021.11.09",
 "role":"딜러", "position":"FRONT","atk_type":"관통", "dfn_type":"중장갑", "field":"D/S/B", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["네브라 디스크", "님루드 렌즈"],
 "signature":{
@@ -683,18 +683,49 @@ let students = [
 	}]},
 	"tags":["기절", "서브딜", "탱커"],
 },{
-"name":"쿠로미 세리카", "variant":"normal",
+"name":"쿠로미 세리카", "variant":"normal", "release":"2021.11.09",
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"경장갑", "field":"A/D/A", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["파에스토스 원반", "에테르"],
 "signature":{
 	"name":"신시어리티",
 	"summary":`세리카가 아르바이트를 나갈 때 늘 휴대하는 돌격소총.
 세리카의 성실함을 증명하듯 언제나 깨끗이 정비되어 있다.
-`},
+`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>알바생의 근성</em>를 <em>알바생의 근성+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"알바생의 근성+",
+				"content":`
+					공격력 <em>{buff01}</em> 증가
+					추가로 방어력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"339", "max":"643"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"야외 지형 전투력을 B로 강화", 
+			"field":"A/B/A"
+			},
+		"t4":{"summary":"폭발 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"세리카의 스포츠 백",
 "summary":`세리카의 검은색 스포츠 백.
 공부용, 아르바이트용, 운동용, 정비용... 뭐든 집어넣고 꺼낼 수 있는 만능 가방이다.
-`},
+`,
+	"tier":{
+		"t1":"공격 속도 500 증가, 공격력 500 증가",
+		"t2":{"summary":"기본 스킬 <em>조준 사격</em>을 <em>조준 사격+</em>으로 강화",
+			"skill":{"idx":"basic", "name":"조준 사격+",
+				"content":`
+					<em>25초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+					`,
+				"values":{
+					"damage":{"min":"335", "max":"638"}
+				}
+			}
+	}	}
+},
 "skills":{
 	"ex":[{
 	"name":"걸리적거리잖아!", "cost":2,
@@ -724,18 +755,50 @@ let students = [
 	}]},
 	"tags":["평타딜", "카이텐져", "서브딜", "공속"],
 },{
-"name":"이자요이 노노미", "variant":"normal",
+"name":"이자요이 노노미", "variant":"normal", "release":"2021.11.09",
 "role":"딜러", "position":"BACK","atk_type":"관통", "dfn_type":"경장갑", "field":"A/A/D", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["네브라 디스크", "에테르"],
 "signature":{
 	"name":"미니 No.5",
 	"summary":`노노미가 사용하는 기관총.
 <미니 No.5>라는 이름과 어울리지 않게 그 무게는 절대 가볍지 않다.
-`},
+`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>떽~이에요!</em>를 <em>떽~이에요!+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"떽~이에요!+",
+				"content":`
+					치명 대미지 <em>{buff01}</em> 증가
+					추가로 치명 대미지 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"2000", "max":"3800"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 B로 강화", 
+			"field":"A/A/B"
+			},
+		"t4":{"summary":"관통 특효 10% 가산"}
+	},
+},
 "uniqueItem":{"name":"비밀 버킷 리스트",
 "summary":`노노미가 남몰래 작성 중인 노트.
 언젠가 대책위원회의 멤버들과 함께 하고 싶은 일들이 적혀 있다.
-`},
+`,
+	"tier":{
+		"t1":"공격력 500 증가, 명중 수치 500 증가",
+		"t2":{"summary":"기본 스킬 <em>짜안~☆</em>을 <em>짜안~☆+</em>으로 강화",
+			"skill":{"idx":"basic", "name":"짜안~☆+",
+				"content":`
+					<em>30초</em>마다 공격력 <em>{buff1}%</em>, 명중 수치 <em>{buff2}</em> 증가 (<em>20초</em>간)
+					`,
+				"values":{
+					"buff1":{"min":"22.3", "max":"42.4"},
+					"buff2":{"min":"19.3", "max":"36.7"}
+				}
+			}
+	}	}
+},
 "skills":{
 	"ex":[{
 	"name":"혼날 시간이에요~♣", "cost":5,
@@ -764,14 +827,32 @@ let students = [
 	}]},
 	"tags":["범위딜", "스테이지"],
 },{
-"name":"오쿠소라 아야네", "variant":"normal",
+"name":"오쿠소라 아야네", "variant":"normal", "release":"2021.11.09",
 "role":"힐러", "position":"SPECIAL","atk_type":"관통", "dfn_type":"경장갑", "field":"D/A/A", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "목걸이"], "matterials":["네브라 디스크", "볼프세크 강철"],
 "signature":{
 	"name":"상식적 수단",
 	"summary":`귀여운 디자인의 권총.
 아야네 앞에서 상식적인 말과 행동만 한다면 볼 일은 거의 없다.
-`},
+`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>자기계발</em>를 <em>자기계발+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"자기계발+",
+				"content":`
+					치유력 <em>{buff01}</em> 증가
+					추가로 치유력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"942", "max":"1790"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 B로 강화", 
+			"field":"B/A/A"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
 "uniqueItem":{"name":"꽃 모양 머리핀",
 "summary":`아야네가 거의 언제나 하고 있는 머리핀.
 그 수수하고 평범한 부분이, 특히 마음에 들었다는 모양이다.`
@@ -804,7 +885,7 @@ let students = [
 	}]},
 	"tags":["범위힐"],
 },{
-"name":"쿠로미 세리카", "variant":"new_year",
+"name":"쿠로미 세리카", "variant":"new_year", "release":"2022.08.23",
 "role":"서포터", "position":"SPECIAL","atk_type":"관통", "dfn_type":"특수장갑", "field":"C/C/S", "fes":false,
 "weapon":"HG", "equipments":["신발", "가방", "손목시계"], "matterials":["파에스토스 원반", "네브라 디스크"],
 "signature":{
@@ -815,7 +896,7 @@ let students = [
 		"t2":{"summary":"강화 스킬 <em>무녀 알바생의 고집</em>을 <em>무녀 알바생의 고집+</em> 강화",
 			"skill":{"idx":"enhance", "name":"무녀 알바생의 고집+",
 				"content":`공격력 <em>{buff1}</em>
-					추가로 공격력 <em>{buff2>%</em> 증가
+					추가로 공격력 <em>{buff2}%</em> 증가
 				`,
 				"values":{
 					"buff1":{"min":"248", "max":"470"},
@@ -861,7 +942,7 @@ let students = [
 	}]},
 	"tags":["실내 헤세드", "뉴비"],
 },{
-"name":"타카나시 호시노", "variant":"armed/defensive",
+"name":"타카나시 호시노", "variant":"armed/defensive", "release":"2025.01.23",
 "role":"탱커", "position":"FRONT","atk_type":"신비", "dfn_type":"중장갑", "field":"A/S/D", "fes":true,
 "weapon":"SG", "equipments":["모자", "가방", "손목시계"], "matterials":["네브라 디스크", "이스탄불 로켓"],
 "signature":{
@@ -895,7 +976,7 @@ let students = [
 	"ex":[{
 	"name":"방어태세 강화", "cost":4,
 	"content":`지정한 위치로 이동 후 엄폐물의 역할을 하는 방패를 들어올려 엄폐 상태 부여 및 공격력 <em>{buff}%</em> 증가 (<em>40초</em>간)
-호시노(무장) 최대 체력의 <em>{shield}%</em>를 엄폐물이 추가로 가집니다. (엄폐물의 망어 타입은 호시노(무장)과 동일합니다.)`,
+호시노(무장) 최대 체력의 <em>{shield}%</em>를 엄폐물이 추가로 가집니다. (엄폐물의 방어 타입은 호시노(무장)과 동일합니다.)`,
 		"values":{
 			"buff":{"min":"82.5", "max":"156"},
 			"shield":{"min":"39.5", "max":"69.1"},
@@ -922,7 +1003,7 @@ let students = [
 	}]},
 	"tags":["엄폐 상태", "위치이동", "호크마", "예소드2페"],
 },{
-"name":"타카나시 호시노", "variant":"armed/offensive",
+"name":"타카나시 호시노", "variant":"armed/offensive", "release":"2025.01.23",
 "role":"딜러", "position":"FRONT","atk_type":"신비", "dfn_type":"중장갑", "field":"A/S/D", "fes":true,
 "weapon":"SG", "equipments":["모자", "가방", "손목시계"], "matterials":["네브라 디스크", "이스탄불 로켓"],
 "signature":{
@@ -984,7 +1065,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["범위딜", "페로로질라"],
 },{
-"name":"스나오오카미 시로코", "variant":"riding",
+"name":"스나오오카미 시로코", "variant":"riding", "release":"2022.03.30",
 "role":"딜러", "position":"MIDDLE","atk_type":"신비", "dfn_type":"중장갑", "field":"S/B/D", "fes":false,
 "weapon":"AR", "equipments":["장갑", "배지", "손목시계"], "matterials":["파에스토스 원반", "안티키테라 장치"],
 "signature":{
@@ -1042,7 +1123,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["범위딜", "공격력 감소", "호크마", "추가대미지"],
 },{
-"name":"스나오오카미 시로코*테러", "variant":"normal",
+"name":"스나오오카미 시로코*테러", "variant":"normal", "release":"2025.01.23",
 "role":"딜러", "position":"MIDDLE","atk_type":"신비", "dfn_type":"특수장갑", "field":"D/S/A", "fes":true,
 "weapon":"AR", "equipments":["모자", "배지", "손목시계"], "matterials":["로마 12면체", "토템폴"],
 "signature":{
@@ -1114,7 +1195,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["연타", "메인딜"],
 },{
-"name":"타카나시 호시노", "variant":"swimsuit",
+"name":"타카나시 호시노", "variant":"swimsuit", "release":"2023.01.31",
 "role":"서포터", "position":"FRONT","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/A/D", "fes":true,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["네브라 디스크", "토템폴"],
 "signature":{
@@ -1176,7 +1257,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["공격력 버프", "폭발 특효", "코스트 회복력"],
 },{
-"name":"스나오오카미 시로코", "variant":"swimsuit",
+"name":"스나오오카미 시로코", "variant":"swimsuit", "release":"2024.01.23",
 "role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"경장갑", "field":"B/S/D", "fes":false,
 "weapon":"AR", "equipments":["모자", "가방", "손목시계"], "matterials":["파에스토스 원반", "로혼치 사본"],
 "signature":{
@@ -1235,7 +1316,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["디버프", "방어력 감소", "코스트 회복"],
 },{
-"name":"이자요이 노노미", "variant":"swimsuit",
+"name":"이자요이 노노미", "variant":"swimsuit", "release":"2023.01.17",
 "role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/D/B", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["에테르", "로혼치 사본"],
 "signature":{
@@ -1287,14 +1368,14 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 		}
 	}],"sub":[{
 	"name":"차가울 거에요~!",
-	"content":`EX 스킬로 일반 공격이 변경된 상태에서 일반 공격으로 적 공격 시 공격력 <em>{additionanl_damage}%</em> 추가 대미지`,
+	"content":`EX 스킬로 일반 공격이 변경된 상태에서 일반 공격으로 적 공격 시 공격력 <em>{additional_damage}%</em> 추가 대미지`,
 		"values":{
-			"additionanl_damage":{"min":"10.9", "max":"20.9"}
+			"additional_damage":{"min":"10.9", "max":"20.9"}
 		}
 	}]},
 	"tags":["메인딜", "예로니무스", "카이텐저 2페"],
 },{
-"name":"쿠로미 세리카", "variant":"swimsuit",
+"name":"쿠로미 세리카", "variant":"swimsuit", "release":"2024.12.03",
 "role":"딜러", "position":"SPECIAL","atk_type":"신비", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
 "weapon":"AR", "equipments":["장갑", "가방", "손목시계"], "matterials":["에테르", "머리가 자라는 인형"],
 "signature":{
@@ -1350,7 +1431,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["범위딜"],
 },{
-"name":"오쿠소라 아야네", "variant":"swimsuit",
+"name":"오쿠소라 아야네", "variant":"swimsuit", "release":"2023.01.17",
 "role":"TS", "position":"SPECIAL","atk_type":"관통", "dfn_type":"경장갑", "field":"D/S/B", "fes":false,
 "weapon":"HG", "equipments":["장갑", "가방", "손목시계"], "matterials":["볼프세크 강철", "안티키테라 장치"],
 "signature":{
@@ -1416,7 +1497,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["방어무시", "헬리콥터"],
 },{
-"name":"츠카츠키 리오", "variant":"armed",
+"name":"츠카츠키 리오", "variant":"armed", "release":"2026.05.26",
 "role":"딜러", "position":"MIDDLE","atk_type":"폭발", "dfn_type":"특수장갑", "field":"S/B/D", "fes":false,
 "weapon":"HG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["디스코 콜간테", "보이니치 사본"],
 "signature":{
@@ -1472,7 +1553,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["메인딜", "예로니무스", "카이텐저 2페"],
 },{
-"name":"아사기 무츠키", "variant":"normal",
+"name":"아사기 무츠키", "variant":"normal", "release":"2021.11.09",
 "role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"경장갑", "field":"A/A/D", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["보이니치 사본", "에테르"],
 "signature":{
@@ -1528,7 +1609,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["서브딜", "지뢰"],
 },{
-"name":"리쿠하치마 아루", "variant":"normal",
+"name":"리쿠하치마 아루", "variant":"normal", "release":"2021.11.09",
 "role":"딜러", "position":"BACK","atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["로혼치 사본", "토템폴"],
 "signature":{
@@ -1603,7 +1684,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}]},
 	"tags":["메인딜", "폭발 보스전"],
 },{
-"name":"오니카타 카요코", "variant":"normal",
+"name":"오니카타 카요코", "variant":"normal", "release":"2021.11.09",
 "role":"서포터", "position":"MIDDLE", "atk_type":"폭발", "dfn_type":"중장갑", "field":"A/D/A", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "목걸이"], "matterials":["보이니치 사본", "볼프세크 강철"],
 "skills":{
@@ -1636,10 +1717,10 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}],
 	"sub":[{
 	"name":"어쩔 수 없네",
-	"content":`군중 제어 상태인 적 공격 시 공격력 <em>{additionanl_damage}%</em> 추가 대미지
+	"content":`군중 제어 상태인 적 공격 시 공격력 <em>{additional_damage}%</em> 추가 대미지
 	`,
 	"values":{
-		"additionanl_damage":{"min":"74.8", "max":"142"}
+		"additional_damage":{"min":"74.8", "max":"142"}
 	}
 	}]
 },
@@ -1672,7 +1753,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["상태이상", "공포"],
 },{
-"name":"이구사 하루카", "variant":"normal",
+"name":"이구사 하루카", "variant":"normal", "release":"2021.11.09",
 "role":"탱커", "position":"FRONT", "atk_type":"폭발", "dfn_type":"경장갑", "field":"D/B/A", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "부적"], "matterials":["만드라고라", "볼프세크 강철"],
 "skills":{
@@ -1738,7 +1819,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["탱커", "뉴비"],
 },{
-"name":"리쿠하치마 아루", "variant":"new_year",
+"name":"리쿠하치마 아루", "variant":"new_year", "release":"2022.08.09",
 "role":"딜러", "position":"BACK", "atk_type":"관통", "dfn_type":"특수장갑", "field":"D/B/S", "fes":false,
 "weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["토템폴", "로혼치 사본"],
 "skills":{
@@ -1807,7 +1888,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["헤세드 1페"],
 },{
-"name":"아사기 무츠키", "variant":"new_year",
+"name":"아사기 무츠키", "variant":"new_year", "release":"2022.08.09",
 "role":"딜러", "position":"BACK","atk_type":"신비", "dfn_type":"중장갑", "field":"D/S/B", "fes":false,
 "weapon":"MG", "equipments":["장갑", "배지", "손목시계"], "matterials":["보이니치 사본", "안티키테라 장치"],
 "skills":{
@@ -1822,11 +1903,11 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"basic":[{
 	"name":"소악마의 코러스",
 	"content":`<em>50초</em>마다 직선 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
-	소악마가 6중첩 상태일 경우 공격력 <em>{additionanl_damage}%</em> 추가 대미지
+	소악마가 6중첩 상태일 경우 공격력 <em>{additional_damage}%</em> 추가 대미지
 	`,
 	"values":{
 		"damage":{"min":"217", "max":"315"},
-		"additionanl_damage":{"min":"117", "max":"169"}
+		"additional_damage":{"min":"117", "max":"169"}
 	}
 	}],
 	"enhance":[{
@@ -1876,7 +1957,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["광역", "서브딜", "고즈 1페"],
 },{
-"name":"오니카타 카요코", "variant":"new_year",
+"name":"오니카타 카요코", "variant":"new_year", "release":"2023.09.25",
 "role":"서포터", "position":"MIDDLE", "atk_type":"신비", "dfn_type":"특수장갑", "field":"B/D/S", "fes":false,
 "weapon":"HG", "equipments":["신발", "헤어핀", "부적"], "matterials":["볼프세크 강철", "아틀란티스 메달"],
 "skills":{
@@ -1946,7 +2027,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["신비 특효 버프"],
 },{
-"name":"이구사 하루카", "variant":"new_year",
+"name":"이구사 하루카", "variant":"new_year", "release":"2023.09.25",
 "role":"서포터", "position":"SPECIAL", "atk_type":"폭발", "dfn_type":"경장갑", "field":"D/S/D", "fes":false,
 "weapon":"SG", "equipments":["신발", "가방", "손목시계"], "matterials":["만드라고라", "머리가 자라는 인형"],
 "skills":{
@@ -2014,7 +2095,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["치명 디버프", "코스트 버프"],
 },{
-"name":"리쿠하치마 아루", "variant":"dress",
+"name":"리쿠하치마 아루", "variant":"dress", "release":"2024.08.20",
 "role":"서포터", "position":"BACK", "atk_type":"관통", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
 "weapon":"SR", "equipments":["모자", "헤어핀", "목걸이"], "matterials":["이스탄불 로켓", "님루드 렌즈"],
 "skills":{
@@ -2080,7 +2161,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["치명 대미지 버프", "서브힐"],
 },{
-"name":"아사기 무츠키", "variant":"dress",
+"name":"아사기 무츠키", "variant":"dress", "release":"2026.09.15",
 "role":"딜러", "position":"BACK","atk_type":"신비", "dfn_type":"중장갑", "field":"B/S/D", "fes":false,
 "weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["볼프세크 강철", "디스코 콜간테"],
 "skills":{
@@ -2148,7 +2229,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["일대일", "메인딜", "드럼통게 1페"],
 },{
-"name":"오니카타 카요코", "variant":"dress",
+"name":"오니카타 카요코", "variant":"dress", "release":"2024.08.20",
 "role":"딜러", "position":"MIDDLE", "atk_type":"관통", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"HG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["킴바야 유물", "보이니치 사본"],
 "skills":{
@@ -2218,7 +2299,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 },
 "tags":["메인딜", "방어무시"],
 },{
-"name":"이구사 하루카", "variant":"dress",
+"name":"이구사 하루카", "variant":"dress", "release":"2026.09.15",
 "role":"딜러", "position":"FRONT", "atk_type":"폭발", "dfn_type":"경장갑", "field":"S/B/D", "fes":false,
 "weapon":"SG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["파에스토스 원반", "로마 12면체"],
 "skills":{
@@ -2240,7 +2321,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	`,
 	"values":{
 		"buff":{"min":"20.7", "max":"39.4"},
-		"ignore_dfs":{"min":"68.2", "max":"129"}
+		"heal":{"min":"68.2", "max":"129"}
 	}
 	}],
 	"enhance":[{
@@ -2289,5 +2370,72 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["메인딜", "드럼통게 2페"],
+},{
+"name":"쿠로다테 하루나", "variant":"normal", "release":"2021.11.09",
+"role":"딜러", "position":"BACK", "atk_type":"신비", "dfn_type":"중장갑", "field":"S/D/B", "fes":false,
+"weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["로혼치 사본", "만드라고라"],
+"skills":{
+	"ex":[{
+	"name":"꿰뚫는 엘레강스", "cost":4, "cost_reduce":1",
+	"content":`직선 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	적을 관통할 때마다 대미지 <em>10%</em> 감소 (최대 <em>30%</em> 대미지)
+	`,
+	"values":{
+		"damage":{"min":"506", "max":"887"}
+	}
+	}],
+	"basic":[{
+	"name":"폭발하는 엑조틱",
+	"content":`<em>30초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"200", "max":"380"}
+	}
+	}],
+	"enhance":[{
+	"name":"미식가의 기품",
+	"content":`최대 체력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"미식가의 신중함",
+	"content":`이동하지 않으면 공격력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"10", "max":"19.1"}
+	}
+	}]
+},
+"signature":{
+	"name":"Ideal",
+	"summary":`하루나가 다루는 우아한 느낌의 저격소총.
+	그 스코프를 통해 바라보는 건 궁극의 미식에 이르기 위한 길이라고 본인은 주장한다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>미식가의 기품</em>를 <em>미식가의 기품+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"미식가의 기품+",
+				"content":`
+					최대 체력 <em>{buff01}</em> 증가
+					추가로 최대 체력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"3501", "max":"6652"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/D/B"
+			},
+		"t4":{"summary":"신비 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["서브딜", "뉴비"],
 }
 ]
