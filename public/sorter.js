@@ -1,6 +1,7 @@
 let sort_index = true
 let filter4fes = false
 let filter4school = false
+let filter4unique = false
 let current_school_idx = ''
 
 
@@ -12,6 +13,9 @@ function applyFilters(idx = ''){
     }
     if(filter4school){
         filtered = filtered.filter(el => el.bio.school.split('/').at(-1).split(' ')[0] === current_school_idx);
+    }
+    if(filter4unique){
+        filtered = filtered.filter(el => el.uniqueItem.name != "")
     }
 
     tag_ids = [];
@@ -48,6 +52,25 @@ function filter_school(idx){
     }
     else{
         filter4school = true;
+        current_school_idx = idx;
+
+        if(window.event && window.event.currentTarget){
+            window.event.currentTarget.classList.add('active');
+        }
+    }
+    applyFilters();
+}
+function filter_uniqueItem(idx){
+    const buttons = document.querySelectorAll('.sorter-button.uniqueItem');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+
+    if(current_school_idx === idx){
+        filter4unique = false;
+        current_school_idx = "";
+    }
+    else{
+        filter4unique = true;
         current_school_idx = idx;
 
         if(window.event && window.event.currentTarget){
