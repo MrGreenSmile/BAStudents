@@ -341,7 +341,7 @@ let students = [
 			"buff":{"min":"31.1", "max":"59.1"},
 		}
 	}]},
-	"tags":["탱커", "아군 이동"],
+	"tags":["탱커", "아군이동"],
 },{
 "name":"하야세 유우카", "variant":"pajamas", "release":"2025.06.10",
 "role":"탱커", "position":"FRONT","atk_type":"폭발", "dfn_type":"중장갑", "field":"D/S/B", "fes":false,
@@ -2437,5 +2437,488 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["서브딜", "뉴비"],
+},{
+"name":"와니부치 아카리", "variant":"normal", "release":"2021.11.09",
+"role":"딜러", "position":"MIDDLE", "atk_type":"폭발", "dfn_type":"중장갑", "field":"A/B/B", "fes":false,
+"weapon":"AR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["로혼치 사본", "님루드 렌즈"],
+"skills":{
+	"ex":[{
+	"name":"유탄 일발, 가득 담아서!", "cost":4,
+	"content":`원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"392", "max":"744"}
+	}
+	}],
+	"basic":[{
+	"name":"매콤하게, 한 그릇 더!",
+	"content":`일반 공격 시 <em>10%</em> 확률로 공격력 <em>{buff}%</em> 증가 (<em>20초</em>간) (쿨타임 <em>15초</em>)
+	`,
+	"values":{
+		"buff":{"min":"38.7", "max":"73.6"}
+	}
+	}],
+	"enhance":[{
+	"name":"잘 먹었습니다!",
+	"content":`최대 체력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"아직 더 먹을 수 있어요!",
+	"content":`일반 공격 시 <em>10%</em> 확률로 공격력 <em>{buff}%</em> 증가 (<em>26초</em>간) (쿨타임 (<em>18초</em>)
+	`,
+	"values":{
+		"buff":{"min":"34.4", "max":"65.5"}
+	}
+	}]
+},
+"signature":{
+	"name":"탐식의 징표",
+	"summary":`아카리가 애용하는 돌격소총.
+	욕심 많은 대식가인 아카리의 주무장답게 유탄발사기를 포함한 다양한 총기 액세서리가 달려 있다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>잘 먹었습니다!</em>를 <em>잘 먹었습니다!+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"잘 먹었습니다!+",
+				"content":`
+					최대 체력 <em>{buff01}</em> 증가
+					추가로 최대 체력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"3604", "max":"6847"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"야외 지형 전투력을 A로 강화", 
+			"field":"A/A/B"
+			},
+		"t4":{"summary":"폭발 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["서브딜", "그레고리오", "카이텐저1페", "컨트롤"],
+},{
+"name":"시시도우 이즈미", "variant":"normal", "release":"2021.11.09",
+"role":"딜러", "position":"BACK", "atk_type":"폭발", "dfn_type":"경장갑", "field":"S/D/B", "fes":false,
+"weapon":"MG", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["만드라고라", "안티키테라 장치"],
+"skills":{
+	"ex":[{
+	"name":"치즈 초콜릿 햄버거!", "cost":3,
+	"content":`치유력 <em>{heal}%</em> 회복
+	{additional_effect}
+	`,
+	"values":{
+		"heal":{"min":"145", "max":"254"},
+		"additional_effect":{"min":"", "max":"공격 속도 <em>38.4%</em> 증가 (<em>21초</em>간)"}
+	}
+	}],
+	"basic":[{
+	"name":"준비하고, 빠앙!",
+	"content":`일반 공격 시 <em>20%</em> 확률로 적 1인에게 공격력 <em>{damage}%</em> 대미지 (쿨타임 <em>10초</em>)
+	`,
+	"values":{
+		"damage":{"min":"275", "max":"523"}
+	}
+	}],
+	"enhance":[{
+	"name":"또 뭘 먹지?",
+	"content":`받는 회복 효과 강화율 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"맛있는 게 최고야~",
+	"content":`공격 시 자신의 현재 체력에 비례하여 공격력 <em>{damage1}%</em> ~ <em>{damage2}%</em> 추가 대미지
+	`,
+	"values":{
+		"damage1":{"min":"0.4", "max":"0.7"},
+		"damage2":{"min":"2.2", "max":"4.1"}
+	}
+	}]
+},
+"signature":{
+	"name":"데일리 커트러리",
+	"summary":`이즈미가 사용하는 묵직한 기관총.
+	이 총으로 방해하는 문제아들을 해치우면 해치울수록, 그 뒤에 먹는 밥이 맛있어진다는 모양이다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>또 뭘 먹지?</em>를 <em>또 뭘 먹지?+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"또 뭘 먹지?+",
+				"content":`
+					받는 회복 효과 강화율 <em>{buff01}</em> 증가
+					추가로 받는 회복 효과 강화율 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1000", "max":"1900"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/D/B"
+			},
+		"t4":{"summary":"폭발 특효 10% 가산"}
+	},
+},
+"uniqueItem":{"name":"행운의 모형 핫도그",
+"summary":`냄새와 질감이 실제 핫도그와 거의 비슷할 정도로 잘 만들어진 플라스틱 핫도그 모형.
+3D 프린터로 제작. 한 입 베어 문 자국도 있다. 이즈미는 이 모형을 가지고 다니면, 냄새도 좋고, 무언가 맛있는 것을 먹을 수 있게 되는 행운이 자주 발생하여 소지 중이라고 주장한다.
+`,
+	"tier":{
+		"t1":"공격 속도 3000 증가",
+		"t2":{"summary":"기본 스킬 <em>준비하고, 빠앙!</em>을 <em>준비하고, 빠앙!+</em>로 강화",
+			"skill":{"idx":"basic", "name":"준비하고, 빠앙!+",
+				"content":`
+					일반 공격 시 <em>20%</em> 확률로 적 1인에게 공격력 <em>{damage}%</em> 대미지 (쿨타임 <em>10초</em>)
+					`,
+				"values":{
+					"damage":{"min":"431", "max":"820"}
+				}
+			}
+	}	}
+},
+"tags":["연타"],
+},{
+"name":"아카시 준코", "variant":"normal", "release":"2021.11.09",
+"role":"딜러", "position":"MIDDLE", "atk_type":"관통", "dfn_type":"경장갑", "field":"B/A/B", "fes":false,
+"weapon":"AR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["만드라고라", "볼프세크 강철"],
+"skills":{
+	"ex":[{
+	"name":"공복의 분노", "cost":5,
+	"content":`직선 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	자신에게 현재 체력의 <em>25.7%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"746", "max":"1417"}
+	}
+	}],
+	"basic":[{
+	"name":"배고플 땐 말 걸지 마!",
+	"content":`체력이 <em>20%</em> 이하 시 불사 (<em>{duration}초</em>)간)
+	(전투 당 <em>1회</em>)
+	`,
+	"values":{
+		"duration":{"min":"12.8", "max":"24.3"}
+	}
+	}],
+	"enhance":[{
+	"name":"작은 몸의 장점",
+	"content":`회피 수치 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"배고픈 미식가",
+	"content":`공격 시 자신의 잃은 체력에 비례하여 공격력 <em>{damage1}%</em> ~ <em>{damage2}%</em> 추가 대미지
+	`,
+	"values":{
+		"damage1":{"min":"0.9", "max":"1.7"},
+		"damage2":{"min":"4.9", "max":"9.4"}
+	}
+	}]
+},
+"signature":{
+	"name":"식탁 위의 무법자",
+	"summary":`준코가 사용하는 두 정의 돌격소총.
+	강력한 연사력을 지닌 이 총들만 있으면 어떤 상황에서도 식탁을 지배할 수 있다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>작은 몸의 장점</em>를 <em>작은 몸의 장점+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"작은 몸의 장점+",
+				"content":`
+					회피 수치 <em>{buff01}</em> 증가
+					추가로 회피 수치 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"160", "max":"304"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 A로 강화", 
+			"field":"A/A/B"
+			},
+		"t4":{"summary":"관통 특효 10% 가산"}
+	},
+},
+"uniqueItem":{"name":"맛집 순방 수첩",
+"summary":`준코가 애용하는 수첩.
+준코가 다녔던 맛집을 구역별로 평점을 매겨 기록해 둔 특별한 수첩이다.
+`,
+	"tier":{
+		"t1":"공격력 800 증가",
+		"t2":{"summary":"기본 스킬 <em>배고플 땐 말 걸지 마!</em>을 <em>배고플 땐 말 걸지 마!+</em>로 강화",
+			"skill":{"idx":"basic", "name":"배고플 땐 말 걸지 마!+",
+				"content":`
+					체력이 <em>20%</em> 이하 시 불사 (<em>{duration}초</em>)간)
+					{additional_effect}
+					 (전투 당 <em>1회</em>)
+					`,
+				"values":{
+					"duration":{"min":"12.8", "max":"24.3"},
+					"additional_effect":{"min":"추가로 자신의 EX 스킬 코스트 최대 <em>4</em> 감소 (EX 스킬 사용 <em>2회</em>까지",
+						"max":"추가로 자신의 EX 스킬 코스트 최대 <em>4</em> 감소 (EX 스킬 사용 <em>2회</em>까지"}
+				}
+			}
+	}	}
+},
+"tags":["고인물", "페로로질라", "그레고리오"],
+},{
+"name":"시시도우 이즈미", "variant":"swimsuit", "release":"2022.03.22",
+"role":"서포터", "position":"BACK", "atk_type":"폭발", "dfn_type":"경장갑", "field":"B/A/D", "fes":false,
+"weapon":"MG", "equipments":["신발", "가방", "목걸이"], "matterials":["만드라고라", "수정 하니와"],
+"skills":{
+	"ex":[{
+	"name":"시원한 코코넛 주스!", "cost":4,
+	"content":`적 1인에게 코코넛을 던져 공격력 <em>{damage}%</em> 대미지, 대상 주변에 적이 있을 경우 코코넛이 튕기면서 추가 대미지 (대미지량은 <em>10%</em>씩 감소) (최대 <em>5회</em>)
+	기절 (<em>{duration}초</em>간)
+	`,
+	"values":{
+		"damage":{"min":"332", "max":"532"},
+		"duration":{"min":"2.4", "max":"3.1"}
+	}
+	}],
+	"basic":[{
+	"name":"새콤달콤 와삭와삭!",
+	"content":`<em>35초</em>마다 공격력 <em>{buff}%</em> 증가 (<em>30초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"20.2", "max":"38.4"}
+	}
+	}],
+	"enhance":[{
+	"name":"자, 먹고 힘내자~!",
+	"content":`공격 속도 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"맛있는 만큼 어질어질!",
+	"content":`공격 시 <em>10%</em> 확률로 기절 (<em>{duration}초</em>간) (쿨타임 <em>20초</em>)
+	`,
+	"values":{
+		"duration":{"min":"1.23", "max":"2.34"}
+	}
+	}]
+},
+"signature":{
+	"name":"데일리 커트러리",
+	"summary":`이즈미가 사용하는 묵직한 기관총.
+	오늘도 이즈미의 총은 여름의 미식을 찾아 어김없이 불을 뿜는다! 방수 기능도 완비!
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>자, 먹고 힘내자~!</em>를 <em>자, 먹고 힘내자~!+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"자, 먹고 힘내자~!+",
+				"content":`
+					안정 수치 <em>{buff01}</em> 증가
+					추가로 공격 속도 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1000", "max":"1900"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 B로 강화", 
+			"field":"B/A/B"
+			},
+		"t4":{"summary":"폭발 특효 10% 가산"}
+	},
+},
+"uniqueItem":{"name":"한여름의 아이스박스",
+"summary":`한여름의 아이스박스.
+여름의 과일과 음료수와...... 이즈미가 손수 만든 특제 비법 향신료가 가득 들어있다고 한다.
+`,
+	"tier":{
+		"t1":"공격 속도 1500 증가, 공격력 300 증가",
+		"t2":{"summary":"기본 스킬 <em>새콤달콤 와삭와삭!</em>을 <em>새콤달콤 와삭와삭!+</em>로 강화",
+			"skill":{"idx":"basic", "name":"새콤달콤 와삭와삭!+",
+				"content":`
+					<em>35초</em>마다 공격력 <em>{buff}%</em> 증가 (<em>30초</em>간)
+					`,
+				"values":{
+					"buff":{"min":"31.7", "max":"60.2"}
+				}
+			}
+	}	}
+},
+"tags":["기절", "카이텐저1페"],
+},{
+"name":"쿠로다테 하루나", "variant":"gym", "release":"2024.03.21",
+"role":"힐러", "position":"SPECIAL", "atk_type":"진동", "dfn_type":"중장갑", "field":"S/B/D", "fes":false,
+"weapon":"SR", "equipments":["신발", "가방", "목걸이"], "matterials":["수정 하니와", "황금 양모"],
+"skills":{
+	"ex":[{
+	"name":"미식가의 제안", "cost":3,
+	"content":`원형 범위 내의 아군 4인을 지정한 위치로 이동 후 치유력 <em>{heal}%</em> 회복
+	`,
+	"values":{
+		"heal":{"min":"63", "max":"119"}
+	}
+	}],
+	"basic":[{
+	"name":"신중한 접근법",
+	"content":`<em>40초</em>마다 적 6인에게 공격력 <em>{damage}%</em> 대미지
+	방어력 <em>{debuff}%</em> 감소 (<em>20초</em>간)
+	`,
+	"values":{
+		"damage":{"min":"161", "max":"306"},
+		"debuff":{"min":"5.8", "max":"11"}
+	}
+	}],
+	"enhance":[{
+	"name":"프로마주 블랑",
+	"content":`치유력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"스포츠 정찬",
+	"content":`아군의 공격력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"9.1", "max":"17.3"}
+	}
+	}]
+},
+"signature":{
+	"name":"Ideal",
+	"summary":`하루나의 저격소총.
+	날카로운 시선으로, 운동 중이든 언제든, 미식으로의 길을 그녀는 찾아낸다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>프로마주 블랑</em>를 <em>프로마주 블랑+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"프로마주 블랑+",
+				"content":`
+					치유력 <em>{buff01}</em> 증가
+					추가로 치유력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1044", "max":"1984"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/B/D"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
+"uniqueItem":{"name":"나비 모양 날개 장식",
+"summary":`하루나의 날개 장식.
+상황과 기분, 의미에 따라 그때그때 다른 날개 장식을 착용한다는 것 같다.
+`,
+	"tier":{
+		"t1":"주는 회복효과 강화율 2000 증가",
+		"t2":{"summary":"기본 스킬 <em>신중한 접근법</em>을 <em>신중한 접근법+</em>로 강화",
+			"skill":{"idx":"basic", "name":"신중한 접근법+",
+				"content":`
+					<em>40초</em>마다 적 6인에게 공격력 <em>{damage}%</em> 대미지
+					방어력 <em>{debuff}%</em> 감소 (<em>20초</em>간)
+					5명 이상의 적에게 적중 시 다음 1회 EX 스킬에 치유력 <em>{heal}%</em> 지속 회복 (<em>20초</em>간) 효과 추가
+					`,
+				"values":{
+					"damage":{"min":"190", "max":"362"},
+					"debuff":{"min":"7.9", "max":"15"},
+					"heal":{"min":"3.7", "max":"7.1"}
+				}
+			}
+	}	}
+},
+"tags":["아군이동", "고즈1페", "예소드2페"],
+},{
+"name":"쿠로다테 하루나", "variant":"new_year", "release":"2023.06.27",
+"role":"딜러", "position":"BACK", "atk_type":"폭발", "dfn_type":"경장갑", "field":"D/S/B", "fes":false,
+"weapon":"SR", "equipments":["장갑", "헤어핀", "손목시계"], "matterials":["만드라고라", "고대 전지"],
+"skills":{
+	"ex":[{
+	"name":"미식가의 분노", "cost":5,
+	"content":`적 최대 5인에게 번갈아가며 각각 공격력 <em>{damage1}%</em> 대미지를 주고, 주변 원형 범위 내의 적에게 공격력 <em>{damage2}%</em> 대미지
+	`,
+	"values":{
+		"damage1":{"min":"106", "max":"202"},
+		"damage2":{"min":"52", "max":"98.7"}
+	}
+	}],
+	"basic":[{
+	"name":"미식가의 신념",
+	"content":`<em>40초</em>마다 공격력 <em>{buff}%</em> 증가 (<em>30초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"15.9", "max":"30.3"}
+	}
+	}],
+	"enhance":[{
+	"name":"신년의 비앙드",
+	"content":`공격력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"송별의 데세르",
+	"content":`공격 시 <em>20%</em> 확률로 방어력 <em>{debuff}%</em> 감소 (<em>17초</em>간) (쿨타임 <em>5초</em>)
+	`,
+	"values":{
+		"buff":{"min":"7.8", "max":"14.8"}
+	}
+	}]
+},
+"signature":{
+	"name":"Ideal",
+	"summary":`하루나가 다루는 저격소총.
+	새해에도 계속되는 그녀의 미식 탐구에, 이 총만큼 어울리는 파트너는 없을 것이다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>신년의 비앙드</em>를 <em>신년의 비앙드+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"신년의 비앙드+",
+				"content":`
+					폭발 특효 <em>{buff01}%</em> 증가
+					추가로 공격력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"26", "max":"49.4"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"야외 지형 전투력을 SS로 강화", 
+			"field":"D/SS/B"
+			},
+		"t4":{"summary":"폭발 특효 10% 가산"}
+	},
+},
+"uniqueItem":{"name":"",
+"summary":`
+`,
+	"tier":{
+		"t1":"주는 회복효과 강화율 2000 증가",
+		"t2":{"summary":"기본 스킬 <em>신중한 접근법</em>을 <em>신중한 접근법+</em>로 강화",
+			"skill":{"idx":"basic", "name":"신중한 접근법+",
+				"content":`
+					<em>40초</em>마다 적 6인에게 공격력 <em>{damage}%</em> 대미지
+					방어력 <em>{debuff}%</em> 감소 (<em>20초</em>간)
+					5명 이상의 적에게 적중 시 다음 1회 EX 스킬에 치유력 <em>{heal}%</em> 지속 회복 (<em>20초</em>간) 효과 추가
+					`,
+				"values":{
+					"damage":{"min":"190", "max":"362"},
+					"debuff":{"min":"7.9", "max":"15"},
+					"heal":{"min":"3.7", "max":"7.1"}
+				}
+			}
+	}	}
+},
+"tags":["범위딜", "카이텐저1페", "PVP"],
 }
 ]
