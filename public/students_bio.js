@@ -190,7 +190,43 @@ let students_bio = [
 "school":"게헨나 학원", "club":"미식연구부", "grade":3, "age":17, "birthday":"03/01", "height":163, "hobby":"맛집 탐방, 미식 리스트 작성",
 "voice":["이보희", "田所 あずさ(타도코로 아즈사)", "Mace"],
 "illust":{
-	"normal":["whoisshe"]
+	"normal":["whoisshe"],
+	"gym":["whoisshe"],
+	"new_year":["whoisshe"]
+	},
+"variant":{
+	"normal":"",
+	"gym":"체육복",
+	"new_year":"새해",
+	}
+},{
+"name":"와니부치 아카리", "jp_name":"鰐渕 アカリ", "en_name":"Wanibuchi Akari",
+"school":"게헨나 학원", "club":"미식연구부", "grade":3, "age":17, "birthday":"12/09", "height":167, "hobby":"많이 먹기",
+"voice":["박이서", "森嶋 優花(모리시마 유카)", "闲踏梧桐(시안타우통)"],
+"illust":{
+	"normal":["9ml"]
+	},
+"variant":{
+	"normal":"",
+	}
+},{
+"name":"시시도우 이즈미", "jp_name":"獅子堂 イズミ", "en_name":"Shishidou Izumi",
+"school":"게헨나 학원", "club":"미식연구부", "grade":2, "age":16, "birthday":"05/11", "height":161, "hobby":"괴식 만들기, 괴식 먹기",
+"voice":["박하진", "久保 ユリカ(쿠보 유리카)", "贾尔(가이얼)"],
+"illust":{
+	"normal":["Mx2J"],
+	"swimsuit":["Mx2J"]
+	},
+"variant":{
+	"normal":"",
+	"swimsuit":"수영복"
+	}
+},{
+"name":"아카시 준코", "jp_name":"赤司 ジュンコ", "en_name":"Akashi Junko",
+"school":"게헨나 학원", "club":"미식연구부", "grade":1, "age":15, "birthday":"12/27", "height":149, "hobby":"맛집 탐방",
+"voice":["신온유", "金元 寿子(카네모토 히사코)", "伍凯立(우카이리)"],
+"illust":{
+	"normal":["DoReMi"]
 	},
 "variant":{
 	"normal":"",
