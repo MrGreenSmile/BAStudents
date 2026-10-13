@@ -204,10 +204,12 @@ let students_bio = [
 "school":"게헨나 학원", "club":"미식연구부", "grade":3, "age":17, "birthday":"12/09", "height":167, "hobby":"많이 먹기",
 "voice":["박이서", "森嶋 優花(모리시마 유카)", "闲踏梧桐(시안타우통)"],
 "illust":{
-	"normal":["9ml"]
+	"normal":["9ml"],
+	"new_year":["9ml"]
 	},
 "variant":{
 	"normal":"",
+	"new_year":"새해"
 	}
 },{
 "name":"시시도우 이즈미", "jp_name":"獅子堂 イズミ", "en_name":"Shishidou Izumi",
@@ -215,21 +217,25 @@ let students_bio = [
 "voice":["박하진", "久保 ユリカ(쿠보 유리카)", "贾尔(가이얼)"],
 "illust":{
 	"normal":["Mx2J"],
-	"swimsuit":["Mx2J"]
+	"swimsuit":["Mx2J"],
+	"new_year":["Mx2J"]
 	},
 "variant":{
 	"normal":"",
-	"swimsuit":"수영복"
+	"swimsuit":"수영복",
+	"new_year":"새해"
 	}
 },{
 "name":"아카시 준코", "jp_name":"赤司 ジュンコ", "en_name":"Akashi Junko",
 "school":"게헨나 학원", "club":"미식연구부", "grade":1, "age":15, "birthday":"12/27", "height":149, "hobby":"맛집 탐방",
 "voice":["신온유", "金元 寿子(카네모토 히사코)", "伍凯立(우카이리)"],
 "illust":{
-	"normal":["DoReMi"]
+	"normal":["DoReMi"],
+	"new_year":["DoReMi"]
 	},
 "variant":{
 	"normal":"",
+	"new_year":"새해"
 	}
 }
 ]

@@ -2936,14 +2936,6 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	}
 	}],
 	"basic":[{
-	"name":"특별한 유탄, 마음 가득히!",
-	"content":`급양추진차량에 탑승한 아카리는 <em>13초</em>마다 '특별한 유탄, 마음 가득히!'를 발동하여 원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
-	(급양추진차량의 능력치로 계산)
-	`,
-	"values":{
-		"damage":{"min":"409", "max":"553"}
-	}
-	},{
 	"name":"이런 건 어떠신가요?",
 	"content":`<em>40초</em>마다 체력이 가장 낮은 아군 중심으로 원형 범위 내의 아군에게 <em>{buff}%</em> 증가 (<em>30초</em>간)
 	(범위 내에 있는 동안에만 효과 유지)
@@ -2951,8 +2943,23 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"values":{
 		"buff":{"min":"12.8", "max":"24.4"}
 	}
+	},{
+	"name":"특별한 유탄, 마음 가득히!",
+	"content":`급양추진차량에 탑승한 아카리는 <em>13초</em>마다 '특별한 유탄, 마음 가득히!'를 발동하여 원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	(급양추진차량의 능력치로 계산)
+	`,
+	"values":{
+		"damage":{"min":"409", "max":"553"}
+	}
 	}],
 	"enhance":[{
+	"name":"잘 먹겠습니다!",
+	"content":`최대 체력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	},{
 	"name":"오늘은 그런 기분이니까요?",
 	"content":`급양추진차량이 전투에 등장하는 동안 자신을 중심으로 원형 범위 내의 자신을 제외한 아군에게 공격 속도 <em>{buff1}%</em> 증가, 신비 특효 <em>{buff2}%</em> 가산
 	(범위 내에 있는 동안에만 효과 유지)
@@ -2960,13 +2967,6 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"values":{
 		"buff1":{"min":"28.9", "max":"39"},
 		"buff2":{"min":"23.3", "max":"31.5"}
-	}
-	},{
-	"name":"잘 먹겠습니다!",
-	"content":`최대 체력 <em>{buff}%</em> 증가
-	`,
-	"values":{
-		"buff":{"min":"14", "max":"26.6"}
 	}
 	}],
 	"sub":[{
@@ -2995,7 +2995,7 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 					"buff1":{"min":"14", "max":"26.6"}
 				}
 			}},
-		"t3":{"summary":"야외 지형 전투력을 S로 강화", 
+		"t3":{"summary":"야외 지형 전투력을 SS로 강화", 
 			"field":"B/SS/D"
 			},
 		"t4":{"summary":"코스트 상한 +0.5"}
@@ -3006,5 +3006,146 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["신비 특효", "공속"],
+},{
+"name":"시시도우 이즈미", "variant":"new_year", "release":"2025.08.19",
+"role":"딜러", "position":"SPECIAL", "atk_type":"폭발", "dfn_type":"경장갑", "field":"S/D/B", "fes":false,
+"weapon":"MG", "equipments":["신발", "배지", "목걸이"], "matterials":["만드라고라", "네브라 디스크"],
+"skills":{
+	"ex":[{
+	"name":"모두를 위한 타코야키!", "cost":5,
+	"content":`원형 범위 내의 아군에게 치유력 <em>{heal}%</em> 회복
+	`,
+	"values":{
+		"heal":{"min":"111", "max":"144"}
+	}
+	}],
+	"basic":[{
+	"name":"찹쌀떡이야!",
+	"content":`<em>30초</em>마다 아군 1인에게 찹쌀떡을 던져 치명 수치 <em>{buff}%</em> 증가 (<em>20초</em>간)
+	대상 주변에 다른 아군이 있을 경우 찹쌀떡이 튕기면서 효과 적용 (최대 <em>6회</em>)
+	`,
+	"values":{
+		"buff":{"min":"21.6", "max":"34.6"}
+	}
+	}],
+	"enhance":[{
+	"name":"인생은 모험!",
+	"content":`치유력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	},{
+	"name":"푸짐한 한 상!",
+	"content":`이즈미(새해)를 중심으로 원형 범위 내에 있는 아군의 공격력 <em>{buff}%</em> 증가 (<em>30초</em>간)
+	(범위 내에 있는 동안에만 효과 유지)
+	`,
+	"values":{
+		"buff":{"min":"21.6", "max":"34.6"}
+	}
+	}],
+	"sub":[{
+	"name":"함께 떠나자!",
+	"content":`아군의 받는 회복 효과 강화율 <em>{buff}%</em> 가산
+	`,
+	"values":{
+		"buff":{"min":"9.1", "max":"17.3"}
+	}
+	}]
+},
+"signature":{
+	"name":"데일리 커트러리",
+	"summary":`이즈미의 기관총.
+	새로운 맛을 찾아 떠나는 그녀에게, 이 총만큼 든든한 동반자도 없을 것이다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>인생은 모험!</em>를 <em>인생은 모험!+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"인생은 모험!+",
+				"content":`
+					치유력 <em>{buff01}</em> 증가
+					추가로 치유력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"710", "max":"1349"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/D/B"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["범위힐", "세트의분노"],
+},{
+"name":"아카시 준코", "variant":"new_year", "release":"2023.06.27",
+"role":"딜러", "position":"MIDDLE", "atk_type":"신비", "dfn_type":"중장갑", "field":"B/B/B", "fes":false,
+"weapon":"AR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["수정 하니와", "님루드 렌즈"],
+"skills":{
+	"ex":[{
+	"name":"먹을 것에 대한 원한", "cost":2,
+	"content":`원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"344", "max":"653"}
+	}
+	}],
+	"basic":[{
+	"name":"먹고 싶었는데.....",
+	"content":`일반 공격 <em>21회</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"400", "max":"760"}
+	}
+	}],
+	"enhance":[{
+	"name":"빨리 끝낼게!",
+	"content":`공격 속도 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"한 벌 뿐이라고!",
+	"content":`EX 스킬 및 기본 스킬 발동과 동시에 침여 수치 <em>{buff}%</em> 증가 (<em>20초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"10.4", "max":"19.9"}
+	}
+	}]
+},
+"signature":{
+	"name":"식탁 위의 무법자",
+	"summary":`준코가 다루는 두 정의 돌격소총.
+	그녀의 미식을 방해하는 자가 있다면, 뜨거운 맛을 보게 될 것이다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>빨리 끝낼게!</em>를 <em>빨리 끝낼게!+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"빨리 끝낼게!+",
+				"content":`
+					공격 속도 <em>{buff01}</em> 증가
+					추가로 공격 속도 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1400", "max":"2660"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 A로 강화", 
+			"field":"A/B/B"
+			},
+		"t4":{"summary":"신비 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["뉴비"],
 }
 ]
