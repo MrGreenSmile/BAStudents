@@ -35,6 +35,12 @@ font-family:"GG_bold";
 .test4{
 font-family:"GG_dd";
 }
+
+#standing{
+display:flex;
+align-items:flex-end;
+font-size:20px;
+}
 </style>
 </head>
 <body>
@@ -42,5 +48,37 @@ font-family:"GG_dd";
 <div class="test2">test2</div>
 <div class="test3">test3</div>
 <div class="test4">test4</div>
+<div id="standing"></div>
+
+
+<script src="./students.js" charset="utf-8"></script>
+<script src="./students_bio.js" charset="utf-8"></script>
+<script  charset="utf-8">
+const standing = document.getElementById('standing')
+//let students_bio = students_bio
+
+
+for(var i=0; i<students_bio.length; i++){
+	let name = students_bio[i].name.includes('*')
+		? students_bio[i].name.split(' ')[1].replace('*', ' ')
+		: students_bio[i].name.split(' ')[1]
+
+	let img_set = document.createElement('div')
+	img_set.className = 'standing'
+	img_set.width = students_bio[i].height * 0.5
+	let img_frame = document.createElement('img')
+	img_frame.src = './assets/students/' + name + '/standing.webp'
+	img_frame.height = students_bio[i].height * 2
+
+	let height = document.createElement('div')
+	height.innerText = students_bio[i].height + 'cm'
+
+	img_set.appendChild(img_frame)
+	img_set.appendChild(height)
+	standing.appendChild(img_set)
+}
+console.log('dodo')
+
+</script>
 </body>
 </html>
