@@ -248,7 +248,7 @@ function skill_cell(student, skill_category){
 				let ex_tr_summary = document.createElement('div')
 				ex_tr_summary.innerHTML = student.skills[skill_type][v].content.replace(/\t/gi, "").replace(
 						/\{(\w+)\}/g,
-						(_, key) => student.skills[skill_type][0].values[key]["max"]
+						(_, key) => student.skills[skill_type][v].values[key]["max"]
 					).split('\n').map((par) => "<p>" + par + "</p>").join("")
 				ex_tr_summary.className = "skill_summary"
 
