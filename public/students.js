@@ -3147,5 +3147,215 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["뉴비"],
+},{
+"name":"키리후지 나기사", "variant":"normal", "release":"2023.08.22",
+"role":"딜러", "position":"SPECIAL", "atk_type":"폭발", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
+"weapon":"HG", "equipments":["모자", "가방", "손목시계"], "matterials":["볼프세크 강철", "에테르"],
+"skills":{
+	"ex":[{
+	"name":"Time On Target", "cost":3,
+	"content":`원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	대상이 경장갑인 경우 공격 전 방어력 <em>{debuff}%</em> 감소 (<em>15초</em>간)
+	`,
+	"values":{
+		"damage":{"min":"482", "max":"772"},
+		"debuff":{"min":"30.9", "max":"40.2"}
+	}
+	}],
+	"basic":[{
+	"name":"Afternoon Tea",
+	"content":`<em>50초</em>마다 체력이 가장 낮은 아군 1인에게 치유력 <em>{heal1}%</em> 회복
+	대상이 트리니티 학원 소속일 경우 치유력 <em>{heal2}%</em> 회복
+	`,
+	"values":{
+		"heal1":{"min":"147", "max":"279"},
+		"heal2":{"min":"207", "max":"393"}
+	}
+	}],
+	"enhance":[{
+	"name":"Pride of Tea Party",
+	"content":`공격력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"Nobless Oblige",
+	"content":`폭발 타입 아군의 치명 대미지 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"12.7", "max":"24.2"}
+	}
+	}]
+},
+"signature":{
+	"name":"로얄 블렌드",
+	"summary":`나기사가 애용하는 단축형 권총.
+	클래식한 디자인 덕분에 기품 있는 다과회에서도 튀지 않고 자연스럽게 호스트와 어우러진다. 다과회의 품의를 떨어트리는 불청객을 쫓는 용도로도 자주 사용된다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>Pride of Tea Party</em>를 <em>Pride of Tea Party+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"Pride of Tea Party+",
+				"content":`
+					치명 대미지 <em>{buff01}</em> 증가
+					추가로 공격력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"2000", "max":"3800"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
+			"field":"D/B/SS"
+			},
+		"t4":{"summary":"신비 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["범위딜", "서브힐", "방어력 감소"],
+},{
+"name":"미소노 미카", "variant":"normal", "release":"2023.07.25",
+"role":"딜러", "position":"FRONT", "atk_type":"관통", "dfn_type":"경장갑", "field":"D/A/S", "fes":true,
+"weapon":"SMG", "equipments":["모자", "배지", "손목시계"], "matterials":["에테르", "님루드 렌즈"],
+"skills":{
+	"ex":[{
+	"name":"Kyrie Eleison", "cost":6,
+	"content":`적 1인에게 공격력 <em>{damage}%</em> 대미지
+	(대상의 현재 체력에 비례하여 대미지가 <em>1~2배</em>로 변경)
+	(대상의 체력이 많을수록 대미지 증가)
+	`,
+	"values":{
+		"damage":{"min":"810", "max":"1540"}
+	}
+	}],
+	"basic":[{
+	"name":"별의 부름",
+	"content":`일반 공격 <em>5회</em>마다 적 1인에게 공격력 <em>{damage1}%</em> 대미지
+	기본 스킬 발동 3회마다 운석이 떨어져 공격력 <em>{damage2}%</em> 추가 대미지
+	`,
+	"values":{
+		"damage1":{"min":"89.4", "max":"169"},
+		"damage2":{"min":"178", "max":"339"}
+	}
+	}],
+	"enhance":[{
+	"name":"Gloria Patri",
+	"content":`공격력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"Benedictio",
+	"content":`모든 공격을 확정 치명으로 변경
+	자신이 주는 대미지량 <em>{buff1}%</em> 증가, 받는 대미지량 <em>{buff2}%</em> 감소
+	`,
+	"values":{
+		"buff1":{"min":"12.7", "max":"24.2"},
+		"buff2":{"min":"6.4", "max":"12.2"}
+	}
+	}]
+},
+"signature":{
+	"name":"Quis ut Deus",
+	"summary":`미카가 애용하는 기관단총.
+	원래는 특별할 것 없는 평범한 트리니티제 기관단총이지만, 미카가 평소 여러모로 정설 들여 꾸민 덕에, 지금은 어두운 곳이라면 별처럼 반짝이는 특별한 외관을 갖게 된 물건. 언제나 어디서나 미카의 손이 되어 활약한다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>Gloria Patri</em>를 <em>Gloria Patri+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"Gloria Patri+",
+				"content":`
+					관통 특효 <em>{buff01}%</em> 증가
+					추가로 공격력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"26", "max":"49.4"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
+			"field":"D/A/SS"
+			},
+		"t4":{"summary":"관통 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["메인딜", "서브탱", "1대1"],
+},{
+"name":"유리조노 세이아", "variant":"normal", "release":"2025.07.08",
+"role":"서포터", "position":"MIDDLE", "atk_type":"관통", "dfn_type":"탄력장갑", "field":"B/D/S", "fes":false,
+"weapon":"HG", "equipments":["신발", "헤어핀", "목걸이"], "matterials":["로마 12면체", "네브라 디스크"],
+"skills":{
+	"ex":[{
+	"name":"감싸 안는 정원", "cost":3,
+	"content":`자신을 제외한 아군 1인의 EX 스킬 코스트 최대 <em>50%</em> 감소 (EX 스킬 사용 <em>{count}회</em>까지) (단, 감소치는 소수점 이하 절삭)
+	자신의 코스트 회복력 <em>{cost}</em> 증가 (<em>15초</em>간)
+	`,
+	"values":{
+		"count":{"min":"1", "max":"2"},
+		"cost":{"min":"378", "max":"718"}
+	}
+	}],
+	"basic":[{
+	"name":"예리한 어드바이스",
+	"content":`<em>35초</em>마다 자신을 제외한 아군 1인에게 자신의 관통 특효 <em>{buff}%</em> 가산 (<em>25초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"26.2", "max":"49.8"}
+	}
+	}],
+	"enhance":[{
+	"name":"평온한 마음",
+	"content":`치유력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"감싸 안는 직감",
+	"content":`EX 스킬 <em>3회</em> 사용 시마다 자신과 EX 스킬 3회째 대상에게 치유력 <em>{shield}%</em> 보호막 (<em>25초</em>간)
+	`,
+	"values":{
+		"shield":{"min":"102", "max":"195"}
+	}
+	}]
+},
+"signature":{
+	"name":"예리한 광채",
+	"summary":`세이아가 애용하는 권총.
+	티파티의 멤버다운 기품과 안정감이 돋보이는 디자인이다. 때로는 독설도 주저하지 않는 세이아처럼, 항시 장전된 상태.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>평온한 마음</em>을 <em>평온한 마음+</em>으로 강화",
+			"skill":{"idx":"enhance", "name":"평온한 마음+",
+				"content":`
+					이로운 효과 유지력 <em>{buff01}%</em> 증가
+					추가로 치유력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1000", "max":"1900"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
+			"field":"B/D/SS"
+			},
+		"t4":{"summary":"관통 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["코스트 감소", "관통 특효 버프", "보호막"],
 }
 ]
