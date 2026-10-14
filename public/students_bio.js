@@ -237,5 +237,35 @@ let students_bio = [
 	"normal":"",
 	"new_year":"새해"
 	}
+},{
+"name":"키리후지 나기사", "jp_name":"桐藤 ナギサ", "en_name":"Kirifuji Nagisa",
+"school":"트리니티 종합학원", "club":"티파티", "grade":3, "age":17, "birthday":"07/04", "height":160, "hobby":"찻잎 수집, 과자 만들기, 정원 손질",
+"voice":["김순미", "早見 沙織(하야미 사오리)", "木雅瑞林(무야루이린)"],
+"illust":{
+	"normal":["fame", "DoReMi"]
+	},
+"variant":{
+	"normal":"",
+	}
+},{
+"name":"미소노 미카", "jp_name":"聖園 ミカ", "en_name":"Misono Mika",
+"school":"트리니티 종합학원", "club":"티파티", "grade":3, "age":17, "birthday":"05/08", "height":157, "hobby":"수다 떨기, 액세서리 수집",
+"voice":["강은애", "東山 奈央(토야마 나오)", "龟娘(구이냥)"],
+"illust":{
+	"normal":["YutokaMizu"]
+	},
+"variant":{
+	"normal":"",
+	}
+},{
+"name":"유리조노 세이아", "jp_name":"百合園 セイア", "en_name":"Yurizono Seia",
+"school":"트리니티 종합학원", "club":"티파티", "grade":3, "age":17, "birthday":"09/29", "height":149, "hobby":"수수께끼 풀기, 독서",
+"voice":["이이로", "種﨑 敦美(타네자키 아츠미)", "花玲(화링)"],
+"illust":{
+	"normal":["kokosando"]
+	},
+"variant":{
+	"normal":"",
+	}
 }
 ]
