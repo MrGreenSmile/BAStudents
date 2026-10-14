@@ -84,6 +84,7 @@
 	<div class="sorter-button filter-button school" onclick="filter_school(`밀레니엄`)">밀레니엄</div>
 	<div class="sorter-button filter-button school" onclick="filter_school(`아비도스`)">아비도스</div>
 	<div class="sorter-button filter-button school" onclick="filter_school(`게헨나`)">게헨나</div>
+	<div class="sorter-button filter-button school" onclick="filter_school(`트리니티`)">트리니티</div>
 	</div>
 	<div class="filter_column">
 	<div>기타</div>
@@ -324,7 +325,7 @@ for (var i=0; i<students.length; i++){
 	position_type.innerText = students[i].position
 	atk_type.innerText = students[i].atk_type
 	dfn_type.innerText = students[i].dfn_type
-	position_type.className = "position"
+	position_type.className = students[i].position === "SPECIAL" ? "position position-special" : "position position-striker"
 	atk_type.className = students[i].atk_type
 	dfn_type.className = students[i].dfn_type
 	
