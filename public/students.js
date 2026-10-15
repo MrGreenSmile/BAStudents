@@ -3357,5 +3357,75 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["코스트 감소", "관통 특효 버프", "보호막"],
+},{
+"name":"키리후지 나기사", "variant":"swimsuit", "release":"2025.12.23",
+"role":"서포터", "position":"SPECIAL", "atk_type":"진동", "dfn_type":"탄력장갑", "field":"S/A/D", "fes":true,
+"weapon":"HG", "equipments":["신발", "가방", "손목시계"], "matterials":["볼프세크 강철", "이스탄불 로켓"],
+"skills":{
+	"ex":[{
+	"name":"Teatime in Wartime", "cost":3,
+	"content":`아군 1인에게 코스트 과부하 부여 (<em>26초</em>간)
+	치명 대미지 <em>{buff}%</em> 증가 (<em>26초</em>간)
+	(코스트 과부하 : 학생이 편성 가능한 최대 수만큼 편성되었고 아무도 퇴각하지 않은 경우, 보유 코스트를 5코스트까지 초과하여 사용 가능, 초과분은 음수 코스트로 전환)
+	`,
+	"values":{
+		"buff":{"min":"54.2", "max":"78.6"}
+	}
+	}],
+	"basic":[{
+	"name":"Crush, Tear, Curl",
+	"content":`<em>35초</em>마다 적 1인의 치명 대미지 저항률 <em>{debuff}%</em> 감소 (<em>27초</em>간)
+	공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"debuff":{"min":"20.1", "max":"38.2"},
+		"damage":{"min":"198", "max":"376"}
+	}
+	}],
+	"enhance":[{
+	"name":"Work & Seaside Balance",
+	"content":`치명 대미지 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"Lazy Ladies",
+	"content":`아군의 치명 대미지 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"9.1", "max":"17.3"}
+	}
+	}]
+},
+"signature":{
+	"name":"로얄 블렌드",
+	"summary":`나기사가 애용하는 고급스러운 단축형 권총.
+	소금기와 모래가 가득한 해변에서도 기품을 잃지 않는다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>Work & Seaside Balance</em>를 <em>Work & Seaside Balance+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"Work & Seaside Balance+",
+				"content":`
+					이로운 효과 유지력 <em>{buff01}%</em> 증가
+					추가로 치명 대미지 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1000", "max":"1900"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/A/D"
+			},
+		"t4":{"summary":"코스트 상한 +0.5"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["코스트 과부하"],
 }
 ]
