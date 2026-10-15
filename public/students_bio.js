@@ -242,10 +242,12 @@ let students_bio = [
 "school":"트리니티 종합학원", "club":"티파티", "grade":3, "age":17, "birthday":"07/04", "height":160, "hobby":"찻잎 수집, 과자 만들기, 정원 손질",
 "voice":["김순미", "早見 沙織(하야미 사오리)", "木雅瑞林(무야루이린)"],
 "illust":{
-	"normal":["fame", "DoReMi"]
+	"normal":["fame", "DoReMi"],
+	"swimsuit":["kokosando"]
 	},
 "variant":{
 	"normal":"",
+	"swimsuit":"수영복"
 	}
 },{
 "name":"미소노 미카", "jp_name":"聖園 ミカ", "en_name":"Misono Mika",
