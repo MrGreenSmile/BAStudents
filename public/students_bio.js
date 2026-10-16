@@ -254,10 +254,12 @@ let students_bio = [
 "school":"트리니티 종합학원", "club":"티파티", "grade":3, "age":17, "birthday":"05/08", "height":157, "hobby":"수다 떨기, 액세서리 수집",
 "voice":["강은애", "東山 奈央(토야마 나오)", "龟娘(구이냥)"],
 "illust":{
-	"normal":["YutokaMizu"]
+	"normal":["YutokaMizu"],
+	"swimsuit":["kokosando"]
 	},
 "variant":{
 	"normal":"",
+	"swimsuit":"수영복"
 	}
 },{
 "name":"유리조노 세이아", "jp_name":"百合園 セイア", "en_name":"Yurizono Seia",

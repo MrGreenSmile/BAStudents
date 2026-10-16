@@ -540,34 +540,44 @@ function eventer(){
 			tags.style.display = 'none';
 		})
 	}
-	for(let ids of skill_ids){									//skill-content event
-		let skill_cell_one = document.getElementById(ids)
+	skill_ids.forEach((ids, index) => {							//skill-content event
+		let skill_cell_one = document.getElementById(ids);
+		let skillContent = skill_cell_one.querySelector('.skill_content');
+
+		if (index >= skill_ids.length - 8) {
+			if (skillContent) {
+				skillContent.classList.add('last');
+			}
+		}
+
 		skill_cell_one.addEventListener('mouseenter', (event) => {
-			skill_cell_one.querySelector('.skill_content').style.display = 'block';
-		})
+			if (skillContent) skillContent.style.display = 'block';
+		});
 		skill_cell_one.addEventListener('mouseleave', (event) => {
-			skill_cell_one.querySelector('.skill_content').style.display = 'none';
-		})
-	}
-	for(let ids of sig_ids){
-		let signature_detail = document.getElementById(ids)
+			if (skillContent) skillContent.style.display = 'none';
+		});
+	});
+		
+	sig_ids.forEach((ids, index) => {
+		let signature_detail = document.getElementById(ids);
+
 		signature_detail.addEventListener('mouseenter', (event) => {
 			signature_detail.querySelector('.signature_contain').style.display = 'block';
 		})
 		signature_detail.addEventListener('mouseleave', (event) => {
 			signature_detail.querySelector('.signature_contain').style.display = 'none';
 		})
-	}
+	});
+	unique_ids.forEach((ids, index) => {
+		let unique_detail = document.getElementById(ids)
 
-	for(let ids of unique_ids){
-		let signature_detail = document.getElementById(ids)
-		signature_detail.addEventListener('mouseenter', (event) => {
-			signature_detail.querySelector('.unique_content').style.display = 'block';
+		unique_detail.addEventListener('mouseenter', (event) => {
+			unique_detail.querySelector('.unique_content').style.display = 'block';
 		})
-		signature_detail.addEventListener('mouseleave', (event) => {
-			signature_detail.querySelector('.unique_content').style.display = 'none';
+		unique_detail.addEventListener('mouseleave', (event) => {
+			unique_detail.querySelector('.unique_content').style.display = 'none';
 		})
-	}
+	});
 }
 
 

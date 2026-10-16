@@ -179,7 +179,7 @@ margin:-10px;
 min-width:1500px;
 }
 #Cells{
-margin-bottom:300px;
+margin-bottom:100px;
 }
 .cells{
 position:relative;
@@ -308,7 +308,7 @@ transform:skewX(var(--slop));
 
 .skills{
 display:flex;
-
+position:relative;
 z-index:-1;
 }
 .skill{
@@ -339,9 +339,9 @@ font-size:17px;
 z-index:-1;
 }
 .skill img{
+width:45px;
 height:50px;
-width:50px;
-border-radius:50%;
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .신비{
 background-color:#00498c;
@@ -376,22 +376,28 @@ background-color:#9a45a8;
 border:1px solid #9a45a8;
 }
 
+
 .skill_content{
 display:none;
 position:absolute;
 
-margin-top:5px;
 width:300px;
 left:0;
-top:105%;
+top:calc(100% + 5px);
 z-index:1;
 
+margin-top:0;
 padding:5px;
 border:1px solid blue;
 border-radius:5px;
 background-color:white;
 white-space:pre-wrap;
 text-indent:5px;
+}
+.skill_content.last {
+top: auto;
+bottom: calc(100% + 5px);
+left: 0;
 }
 .skill_content p{
 margin:0;

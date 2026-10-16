@@ -3427,5 +3427,88 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["코스트 과부하"],
+},{
+"name":"미소노 미카", "variant":"swimsuit", "release":"2025.12.23",
+"role":"딜러", "position":"FRONT", "atk_type":"진동", "dfn_type":"특수장갑", "field":"S/A/D", "fes":true,
+"weapon":"SMG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["님루드 렌즈", "위니페소키 스톤"],
+"skills":{
+	"ex":[{
+	"name":"밤하늘의 유성", "cost":4,
+	"content":`적 1인에게 공격력 <em>{damage}%</em> 대미지
+	연사 태세일 경우 항상 EX 스킬을 즉시 드로우하지만 사용 횟수에 따라 밤하늘의 유성의 기본 코스트 변경
+	(1~2번째 : <em>4</em> 코스트 / 3~4번째 : <em>6</em> 코스트 / 5번째 이후 : <em>10</em> 코스트)
+	`,
+	"values":{
+		"damage":{"min":"827", "max":"1571"}
+	}
+	},{
+	"name":"조용한 다짐", "cost":2,
+	"content":`EX 스킬 즉시 드로우 후 연사 태세로 전환 (<em>30초</em>간)
+	(연사 태세 해제 시 EX 스킬 카드를 덱 최후미로 이동하고 기본 코스트 변경 효과를 초기화합니다.)
+	`,
+	"values":{
+	}
+	},{
+	"name":"조금은 여유롭게", "cost":0,
+	"content":`연사 태세를 즉시 해제합니다.
+	(EX 스킬 카드를 덱 최후미로 이동하고 기본 코스트 변경 효과를 초기화합니다.)
+	`,
+	"values":{
+	}
+	}],
+	"basic":[{
+	"name":"예쁜 아이 발견☆",
+	"content":`<em>40초</em>마다 진동 특효 <em>{buff}%</em> 가산 (<em>33초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"31.5", "max":"59.8"}
+	}
+	}],
+	"enhance":[{
+	"name":"Pax Vobiscum",
+	"content":`일반 공격 사거리 <em>100</em>, 공격력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"11.2", "max":"21.2"}
+	}
+	}],
+	"sub":[{
+	"name":"Sursum Corda",
+	"content":`모든 공격을 확정 치명으로 변경
+	진동 특효 <em>{buff}%</em> 가산
+	`,
+	"values":{
+		"buff":{"min":"25.92", "max":"49.25"}
+	}
+	}]
+},
+"signature":{
+	"name":"Quis ut Deus",
+	"summary":`미카가 애용하는 기관단총.
+	정성 들인 손질 덕에, 바닷가에서도 별처럼 빛난다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>Pax Vobiscum</em>를 <em>Pax Vobiscum+</em>로 강화",
+			"skill":{"idx":"enhance", "name":"Pax Vobiscum+",
+				"content":`
+					치명 대미지 <em>{buff01}%</em> 증가
+					추가로 일반 공격 사거리 100, 공격력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"2000", "max":"3800"},
+					"buff1":{"min":"11.2", "max":"21.2"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/A/D"
+			},
+		"t4":{"summary":"진동 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["메인딜", "퀵드로우", "1대1"],
 }
 ]
