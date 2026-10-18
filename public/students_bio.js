@@ -266,10 +266,12 @@ let students_bio = [
 "school":"트리니티 종합학원", "club":"티파티", "grade":3, "age":17, "birthday":"09/29", "height":149, "hobby":"수수께끼 풀기, 독서",
 "voice":["이이로", "種﨑 敦美(타네자키 아츠미)", "花玲(화링)"],
 "illust":{
-	"normal":["kokosando"]
+	"normal":["kokosando"],
+	"swimsuit":["kokosando"]
 	},
 "variant":{
 	"normal":"",
+	"swimsuit":"수영복"
 	}
 }
 ]
