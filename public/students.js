@@ -3510,5 +3510,72 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["메인딜", "퀵드로우", "1대1"],
+},{
+"name":"유리조노 세이아", "variant":"swimsuit", "release":"2025.12.16",
+"role":"서포터", "position":"MIDDLE", "atk_type":"관통", "dfn_type":"특수장갑", "field":"S/B/D", "fes":false,
+"weapon":"HG", "equipments":["장갑", "헤어핀", "목걸이"], "matterials":["네브라 디스크", "디스코 콜간테"],
+"skills":{
+	"ex":[{
+	"name":"낭만의 해변", "cost":3,
+	"content":`자신을 제외한 아군 1인에게 주는 EX 스킬 대미지량 <em>{buff}%</em> 가산 (<em>25초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"39", "max":"74.1"}
+	}
+	}],
+	"basic":[{
+	"name":"결정적 순간 포착",
+	"content":`일반 공격 <em>12회</em>마다 자기 자신을 제외한 체력이 가장 낮은 아군 1인에게 치유력 <em>{heal}%</em> 회복
+	자신은 치유력 <em>{heal}%</em> 회복
+	`,
+	"values":{
+		"heal":{"min":"64.9", "max":"103"}
+	}
+	}],
+	"enhance":[{
+	"name":"휴양지 기분",
+	"content":`치유력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"시티 팝 스타",
+	"content":`EX 스킬 발동과 동시에 공격 속도 <em>{buff}%</em> 증가 (<em>26초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"16.3", "max":"31"}
+	}
+	}]
+},
+"signature":{
+	"name":"예리한 광채",
+	"summary":`세이아가 애용하는 권총.
+	옷차림이 가벼워졌다 한들 특유의 화법도, 화력도 무뎌지지 않았다. 일신한 차림새만큼이나, 과감한 파지법을 선보이고 있다.
+	`,
+	"brk_thr":{
+		"t2":{"summary":"강화 스킬 <em>휴양지 기분</em>을 <em>휴양지 기분+</em>으로 강화",
+			"skill":{"idx":"enhance", "name":"휴양지 기분+",
+				"content":`
+					이로운 효과 유지력 <em>{buff01}%</em> 증가
+					추가로 치유력 <em>{buff1}%</em> 증가
+				`,
+				"values":{
+					"buff01":{"min":"1000", "max":"1900"},
+					"buff1":{"min":"14", "max":"26.6"}
+				}
+			}},
+		"t3":{"summary":"시가지 지형 전투력을 SS로 강화", 
+			"field":"SS/B/D"
+			},
+		"t4":{"summary":"관통 특효 10% 가산"}
+	},
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["EX버프", "서브힐"],
 }
 ]
