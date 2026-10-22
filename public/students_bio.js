@@ -1,5 +1,16 @@
 //illust:{"이격":["디자인", "일러스트"]}
 
+let students_variation = {
+	"armed":"무장",
+	"pajamas":"파자마",
+	"gym":"체육복",
+	"swimsuit":"수영복",
+	"dress":"드레스",
+	"new_year":"새해",
+
+	"riding":"라이딩"
+}
+
 let students_bio = [
 {"name":"츠카츠키 리오", "jp_name":"調月 リオ", "en_name":"Tsukatsuki Rio",
 "school":"밀레니엄 사이언스 스쿨", "club":"세미나", "grade":3, "age":17, "birthday":"06/06", "height":171, "hobby":"디자인",
