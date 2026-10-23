@@ -54,6 +54,8 @@ font-size:17px;
 }
 .sorter-button{
 cursor:pointer;
+border:1px solid blue;
+border-width:0 0 0 1px;
 }
 #filter-button{
 width:100px;
