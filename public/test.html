@@ -20,7 +20,7 @@ font-family:"GG_dd";
 src:url("./TTF/경기천년제목V_Bold.ttf") format("truetype");
 }
 
-body{
+#font-test{
 font-size:30px;
 }
 .test1{
@@ -45,18 +45,29 @@ align-items:flex-end;
 font-size:20px;
 text-align:center;
 }
+#status{
+display:flex;
+}
+#status > div{
+margin-right:10px;
+}
 </style>
 </head>
 <body>
+<div id="font-test">
 <div class="test1">test1</div>
 <div class="test2">test2</div>
 <div class="test3">test3</div>
 <div class="test4">test4</div>
+</div>
 <div id="standing"></div>
+
+<div id="status"></div>
 
 
 <script src="./students.js" charset="utf-8"></script>
 <script src="./students_bio.js" charset="utf-8"></script>
+<script src="./students_details.js" charset="utf-8"></script>
 <script  charset="utf-8">
 const standing = document.getElementById('standing')
 //let students_bio = students_bio
@@ -80,6 +91,39 @@ for(var i=0; i<students_bio.length; i++){
 	img_set.appendChild(height)
 	standing.appendChild(img_set)
 }
+
+
+
+const status = document.getElementById('status')
+
+for(i=0; i<students_details.length; i++){
+	students_bio.map(st => st.name === students_details[i].name ? students_details[i]['bio'] = st : null)
+	let full_name = students_details[i].variant === "normal" ?
+		students_details[i].name : 
+		students_details[i].name + "(" + students_details[i].bio.variant[students_details[i].variant] + ")"
+
+	let values = students_details[i]['skills']['ex'][0]['values']
+	let value_ = values['buff'] ? values['buff']
+		: values['debuff'] ? values['debuff']
+		: values['cost'] ? values['cost']
+		: values['damage'] ? values['damage']
+		: []
+
+	let stats_each = document.createElement('div')
+	let s_name = document.createElement('div')
+	s_name.innerText = full_name
+	stats_each.appendChild(s_name)
+
+	for(v=0; v<value_.length; v++){
+		let status_detail = document.createElement("div")
+		status_detail.innerText = value_[v]
+		stats_each.appendChild(status_detail)
+	}
+
+	console.log(students_details[i]['skills']['ex'][0]['values'])
+	status.appendChild(stats_each)
+}
+
 
 
 </script>
