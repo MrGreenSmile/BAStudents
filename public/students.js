@@ -128,7 +128,7 @@ let students = [
 	"summary":`유우카가 사용하는 두 정의 기관단총.
 유우카가 합리적이고 이성적인 판단을 내릴 때 도움을 준다.
 `,
-	"brk_thr":{
+	"tier":{
 		"t2":{"summary":"강화 스킬 <em>최적해 도출</em>를 <em>최적해 도출+</em>로 강화",
 			"skill":{"idx":"enhance", "name":"최적해 도출+",
 				"content":`
