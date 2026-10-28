@@ -23,6 +23,9 @@ src:url("./TTF/경기천년제목V_Bold.ttf") format("truetype");
 #font-test{
 font-size:30px;
 }
+#font-test img{
+height:1em;
+}
 .test1{
 font-family:"GG_light";
 }
@@ -55,13 +58,14 @@ margin-right:10px;
 </head>
 <body>
 <div id="font-test">
-<div class="test1">test1</div>
+<div class="test1">te<img src="./assets/field-A.webp">st1</div>
 <div class="test2">test2</div>
 <div class="test3">test3</div>
 <div class="test4">test4</div>
 </div>
 <div id="standing"></div>
 
+<div>EX</div>
 <div id="status"></div>
 
 
@@ -102,17 +106,25 @@ for(i=0; i<students_details.length; i++){
 		students_details[i].name : 
 		students_details[i].name + "(" + students_details[i].bio.variant[students_details[i].variant] + ")"
 
-	let values = students_details[i]['skills']['ex'][0]['values']
+	let values = students_details[i]['skills']['ex'][0]['values1']['stats'].length > 1 ?
+		students_details[i]['skills']['ex'][0]['values1']
+		: students_details[i]['skills']['ex'][0]['values2']
+	let value_ = values['stats']
+/*
 	let value_ = values['buff'] ? values['buff']
 		: values['debuff'] ? values['debuff']
 		: values['cost'] ? values['cost']
 		: values['damage'] ? values['damage']
 		: []
-
+*/
 	let stats_each = document.createElement('div')
 	let s_name = document.createElement('div')
 	s_name.innerText = full_name
 	stats_each.appendChild(s_name)
+
+	let skill_name = document.createElement('div')
+	skill_name.innerText = values['type']
+	stats_each.appendChild(skill_name)
 
 	for(v=0; v<value_.length; v++){
 		let status_detail = document.createElement("div")
@@ -120,10 +132,10 @@ for(i=0; i<students_details.length; i++){
 		stats_each.appendChild(status_detail)
 	}
 
-	console.log(students_details[i]['skills']['ex'][0]['values'])
+	console.log(students_details[i]['skills']['ex'][0]['values1'])
 	status.appendChild(stats_each)
 }
-
+//console.log(students_details[0]['skills']['ex'][0]['desc'])
 
 
 </script>
