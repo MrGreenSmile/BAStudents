@@ -85,7 +85,8 @@ for(var i=0; i<students_bio.length; i++){
 	let img_set = document.createElement('div')
 	img_set.className = 'standing'
 	let img_frame = document.createElement('img')
-	img_frame.src = './assets/students/' + name + '/standing.webp'
+	img_frame.src = './assets/students/' + name + '/standing1.webp'
+	img_frame.onerror = function () { this.src = './assets/students/' + name + '/standing.webp' }
 	img_frame.height = students_bio[i].height * 2
 
 	let height = document.createElement('div')
