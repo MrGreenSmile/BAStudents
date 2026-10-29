@@ -38,6 +38,26 @@ em{
 color:#0eb4fc;
 }
 
+#menubar{
+padding:10px;
+margin:-10px;
+
+background-color:#ced4da;
+}
+.icon-table{
+display:grid;
+grid-template-columns:55px 100px 500px;
+border-collapse: collapse;
+}
+.icon-table div{
+border:1px solid black;
+border-collapse:collapse;
+align-content:center;
+}
+.icon-table img{
+width:50px;
+}
+
 
 .sorter{
 display:flex;
