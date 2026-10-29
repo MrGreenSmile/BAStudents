@@ -39,10 +39,20 @@ color:#0eb4fc;
 }
 
 #menubar{
+display:flex;
 padding:10px;
 margin:-10px;
 
 background-color:#ced4da;
+}
+#menubar a{
+color:black;
+}
+#menubar div{
+padding:0 10px 0 10px;
+}
+.main-contain{
+margin-top:30px;
 }
 .icon-table{
 display:grid;
@@ -188,13 +198,14 @@ margin:5px;
 }
 #inform-fields .right > div{
 border:1px solid black;
+align-content:center;
 }
 
 
 
 
 #footer{
-padding:10px;
+padding:20px;
 background-color:#ced4da;
 font-size:15px;
 margin:-10px;
