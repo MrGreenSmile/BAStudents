@@ -13,7 +13,7 @@ let = students_details = [
 "status":{
 	"hp":[3664, 30119], "atk":[268, 3056], "def":[109, 599], "heal":[1803, 6202],
 	"accuracy":714, "evation":1151, "critical":238, "critical_damage":20000, "penetration":0, "stability":1201,
-	"range":1000, "cost":700, "cost_max":0, "effectiveness":20000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
+	"range":1000, "cost":700, "cost_max":0, "effectiveness":10000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
 	"buff_retention":10000, "debuff_retention":10000,
 }, "skills":{
 	"normal":{},
@@ -29,12 +29,12 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"1", "type":"quick_draw", "duration":0, "buff_type":"0", "probability":100,
 			"condition":[],
-			"stats":[], "unit":"",
+			"stats":[], "unit":"", "stack":1,
 		},
 		"values2":{
 			"target":"friendly", "target_num":"1", "type":"buff", "duration":20, "buff_type":"atk", "probability":100,
 			"condition":[],
-			"stats":[35.4, 38.1, 43.4, 46.1, 51.4], "unit":"%",
+			"stats":[35.4, 38.1, 43.4, 46.1, 51.4], "unit":"%", "stack":1,
 		}
 	}],"basic":[{
 	"name":"유일한 진실",
@@ -45,12 +45,12 @@ let = students_details = [
 		"values1":{
 			"target":"enemy", "target_num":"1", "type":"debuff", "duration":19, "cooltime":30, "buff_type":"def", "probability":100,
 			"condition":[],
-			"stats":[19.6, 19.6, 19.6, 21.5, 21.5, 21.5, 23.5, 23.5, 23.5, 25.5], "unit":"%",
+			"stats":[19.6, 19.6, 19.6, 21.5, 21.5, 21.5, 23.5, 23.5, 23.5, 25.5], "unit":"%", "stack":1,
 		},
 		"values2":{
 			"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
 			"condition":[],
-			"stats":[185, 195, 204, 223, 232, 241, 260, 269, 278, 297], "unit":"%",
+			"stats":[185, 195, 204, 223, 232, 241, 260, 269, 278, 297], "unit":"%", "stack":1,
 		}
 	}],"enhance":[{
 	"name":"별을 쫓는 자",
@@ -58,7 +58,7 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 			"condition":[],
-			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 		}
 	}],"sub":[{
 	"name":"아방가르드",
@@ -66,7 +66,7 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"all", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 			"condition":[],
-			"stats":[9.1, 9.5, 10, 11.8, 12.3, 12.7, 14.5, 15, 15.5, 17.3], "unit":"%",
+			"stats":[9.1, 9.5, 10, 11.8, 12.3, 12.7, 14.5, 15, 15.5, 17.3], "unit":"%", "stack":1,
 		}
 	}]},
 "signature":{
@@ -80,19 +80,19 @@ let = students_details = [
 			"values1":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"buff_retention", "probability":100,
 				"condition":[],
-				"stats":[1000, 1050, 1100, 1300, 1350, 1400, 1600, 1650, 1700, 1900], "unit":"",
+				"stats":[1000, 1050, 1100, 1300, 1350, 1400, 1600, 1650, 1700, 1900], "unit":"", "stack":1,
 			},
 			"values2":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 				"condition":[],
-				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 			}}
 		},
 	"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
 		"field":"A/D/SS"
 		},
 	"t4":{"summary":"코스트 상한 +0.5",
-		"status":["cost_max", 0.5], "unit":"",
+		"status":["cost_max", 0.5], "unit":"", "stack":1,
 		}
 	}
 }, "uniqueItem":{
@@ -104,7 +104,7 @@ let = students_details = [
 "status":{
 	"hp":[2498, 31653], "atk":[132, 1511], "def":[19, 108], "heal":[1660, 5710],
 	"accuracy":100, "evation":1090, "critical":201, "critical_damage":20000, "penetration":0, "stability":988,
-	"range":550, "cost":700, "cost_max":0, "effectiveness":20000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
+	"range":550, "cost":700, "cost_max":0, "effectiveness":10000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
 	"buff_retention":10000, "debuff_retention":10000,
 }, "skills":{
 	"normal":{
@@ -118,12 +118,12 @@ let = students_details = [
 		"values1":{
 			"target":"enemy", "target_num":"1", "type":"taunt", "duration":40, "buff_type":"", "probability":100,
 			"condition":[],
-			"stats":[], "unit":"",
+			"stats":[], "unit":"", "stack":1,
 		},
 		"values2":{
 			"target":"enemy", "target_num":"1", "type":"debuff", "duration":40, "buff_type":"def", "probability":100,
 			"condition":[],
-			"stats":[21.3, 24.5, 30.9, 34.1, 40.5], "unit":"%",
+			"stats":[21.3, 24.5, 30.9, 34.1, 40.5], "unit":"%", "stack":1,
 		}
 	}],"basic":[{
 	"name":"허점 발견!",
@@ -131,7 +131,7 @@ let = students_details = [
 		"values1":{
 			"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
 			"condition":[],
-			"stats":[399, 419, 439, 519, 539, 559, 638, 658, 678, 758], "unit":"%",
+			"stats":[399, 419, 439, 519, 539, 559, 638, 658, 678, 758], "unit":"%", "stack":1,
 		}
 	}],"enhance":[{
 	"name":"서기의 여유",
@@ -139,7 +139,7 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"hp", "probability":100,
 			"condition":[],
-			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 		}
 	}],"sub":[{
 	"name":"서기의 고집",
@@ -147,7 +147,7 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":13, "cooltime":0, "buff_type":"debuff_retention", "probability":100,
 			"condition":["기본 스킬 사용 시"],
-			"stats":[16.9, 17.7, 18.6, 22, 22.8, 23.6, 27, 27.9, 28.7, 32.1], "unit":"%",
+			"stats":[16.9, 17.7, 18.6, 22, 22.8, 23.6, 27, 27.9, 28.7, 32.1], "unit":"%", "stack":1,
 		}
 	}]},
 "signature":{
@@ -165,19 +165,19 @@ let = students_details = [
 			"values1":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 				"condition":[],
-				"stats":[130, 137, 143, 169, 175, 182, 208, 214, 221, 270], "unit":"",
+				"stats":[130, 137, 143, 169, 175, 182, 208, 214, 221, 270], "unit":"", "stack":1,
 			},
 			"values2":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"hp", "probability":100,
 				"condition":[],
-				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 			}}
 		},
 	"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
 		"field":"D/B/SS"
 		},
 	"t4":{"summary":"신비 특효 10% 가산",
-		"status":["mystic_effectiveness", 1000], "unit":"",
+		"status":["mystic_effectiveness", 1000], "unit":"", "stack":1,
 		}
 	}
 }, "uniqueItem":{
@@ -189,7 +189,7 @@ let = students_details = [
 "status":{
 	"hp":[2498, 31653], "atk":[132, 1511], "def":[19, 108], "heal":[1660, 5710],
 	"accuracy":100, "evation":1440, "critical":200, "critical_damage":20000, "penetration":0, "stability":1396,
-	"range":350, "cost":700, "cost_max":0, "effectiveness":20000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
+	"range":350, "cost":700, "cost_max":0, "effectiveness":10000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
 	"buff_retention":10000, "debuff_retention":10000,
 }, "skills":{
 	"normal":{
@@ -202,12 +202,12 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"sheild", "duration":0, "buff_type":"", "probability":100,
 			"condition":[],
-			"stats":[190, 219, 220, 245, 248], "unit":"%",
+			"stats":[190, 219, 220, 245, 248], "unit":"%", "stack":1,
 		},
 		"values2":{
 			"target":"friendly", "target_num":"self", "type":"duration", "duration":0, "buff_type":"", "probability":100,
 			"condition":[],
-			"stats":[15, 15, 20, 20, 20], "unit":"",
+			"stats":[15, 15, 20, 20, 20], "unit":"", "stack":1,
 		}
 	}],"basic":[{
 	"name":"I.F.F",
@@ -215,7 +215,7 @@ let = students_details = [
 		"values1":{
 			"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "cooltime":15, "buff_type":"", "probability":100,
 			"condition":[""],
-			"stats":[301, 317, 332, 392, 407, 422, 483, 498, 513, 573], "unit":"%",
+			"stats":[301, 317, 332, 392, 407, 422, 483, 498, 513, 573], "unit":"%", "stack":1,
 		}
 	}],"enhance":[{
 	"name":"최적해 도출",
@@ -223,7 +223,7 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"def", "probability":100,
 			"condition":[],
-			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 		}
 	}],"sub":[{
 	"name":"고속 암산",
@@ -231,7 +231,7 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"heal", "duration":0, "cooltime":0, "buff_type":"", "probability":100,
 			"condition":["엄폐 시"],
-			"stats":[75, 78.7, 82.5, 97.5, 101, 105, 120, 123, 127, 142], "unit":"%",
+			"stats":[75, 78.7, 82.5, 97.5, 101, 105, 120, 123, 127, 142], "unit":"%", "stack":1,
 		}
 	}]},
 "signature":{
@@ -249,12 +249,12 @@ let = students_details = [
 			"values1":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"block_rate", "probability":100,
 				"condition":[],
-				"stats":[1000, 1050, 1100, 1300, 1350, 1400, 1600, 1650, 1700, 1900], "unit":"",
+				"stats":[1000, 1050, 1100, 1300, 1350, 1400, 1600, 1650, 1700, 1900], "unit":"", "stack":1,
 			},
 			"values2":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"def", "probability":100,
 				"condition":[],
-				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 			}}
 		},
 	"t3":{"summary":"시가지 지형 전투력을 A로 강화", 
@@ -271,7 +271,7 @@ let = students_details = [
 	`,
 	"tier":{
 	"t1":{"summary":"방어력 500 증가",
-		"status":["def", 500], "unit":"",
+		"status":["def", 500], "unit":"", "stack":1,
 	},
 	"t2":
 		{"summary":"기본 스킬 <em>IFF</em>을 <em>IFF+</em>로 강화",
@@ -283,12 +283,12 @@ let = students_details = [
 			"values1":{
 				"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "cooltime":15, "buff_type":"", "probability":100,
 				"condition":[""],
-				"stats":[329, 345, 362, 428, 444, 461, 527, 543, 560, 625], "unit":"%",
+				"stats":[329, 345, 362, 428, 444, 461, 527, 543, 560, 625], "unit":"%", "stack":1,
 			},
 			"values2":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":10, "cooltime":15, "buff_type":"evation", "probability":100,
 				"condition":[],
-				"stats":[26, 26, 26, 28.6, 28.6, 28.6, 31.2, 31.2, 31.2, 33.8], "unit":"%",
+				"stats":[26, 26, 26, 28.6, 28.6, 28.6, 31.2, 31.2, 31.2, 33.8], "unit":"%", "stack":1,
 			}
 		}}
 	}}
@@ -297,7 +297,7 @@ let = students_details = [
 "status":{
 	"hp":[2398, 22818], "atk":[424, 4828], "def":[76, 418], "heal":[1724, 5934],
 	"accuracy":104, "evation":190, "critical":209, "critical_damage":20000, "penetration":0, "stability":1332,
-	"range":750, "cost":700, "cost_max":0, "effectiveness":20000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
+	"range":750, "cost":700, "cost_max":0, "effectiveness":10000, "cc":100, "cc_resist":100, "atk_speed":10000, "speed":200,
 	"buff_retention":10000, "debuff_retention":10000,
 }, "skills":{
 	"normal":{
@@ -313,17 +313,17 @@ let = students_details = [
 		"values1":{
 			"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "buff_type":"", "probability":33.33,
 			"condition":[],
-			"stats":[233, 268, 339, 374, 444], "unit":"%",
+			"stats":[233, 268, 339, 374, 444], "unit":"%", "stack":1,
 		},
 		"values2":{
 			"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "buff_type":"", "probability":33.33,
 			"condition":[],
-			"stats":[221, 255, 321, 354, 421], "unit":"%",
+			"stats":[221, 255, 321, 354, 421], "unit":"%", "stack":1,
 		},
 		"values3":{
 			"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "buff_type":"", "probability":33.33,
 			"condition":[],
-			"stats":[209, 241, 304, 335, 398], "unit":"%",
+			"stats":[209, 241, 304, 335, 398], "unit":"%", "stack":1,
 		}
 	}],"basic":[{
 	"name":"하나? 혹은 둘!",
@@ -333,12 +333,12 @@ let = students_details = [
 		"values1":{
 			"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
 			"condition":[],
-			"stats":[202, 212, 223, 263, 273, 283, 324, 334, 344, 385], "unit":"%",
+			"stats":[202, 212, 223, 263, 273, 283, 324, 334, 344, 385], "unit":"%", "stack":1,
 		},
 		"values2":{
 			"target":"enemy", "target_num":"2", "type":"damage", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
 			"condition":["주변에 있을 경우"],
-			"stats":[202, 212, 223, 263, 273, 283, 324, 334, 344, 385], "unit":"%",
+			"stats":[202, 212, 223, 263, 273, 283, 324, 334, 344, 385], "unit":"%", "stack":1,
 		},
 		"values3":{
 			"target":"friendly", "target_num":"self", "type":"reload", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
@@ -351,7 +351,7 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 			"condition":[],
-			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 		}
 	}],"sub":[{
 	"name":"나비효과",
@@ -362,17 +362,17 @@ let = students_details = [
 		"values1":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 			"condition":["EX 사용 시", "EX 총탄 발동시"],
-			"stats":[15.3, 16.1, 16.8, 19.9, 20.6, 21.4, 24.5, 25.2, 26, 29.1], "unit":"%",
+			"stats":[15.3, 16.1, 16.8, 19.9, 20.6, 21.4, 24.5, 25.2, 26, 29.1], "unit":"%", "stack":1,
 		},
 		"values2":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 			"condition":["EX 사용 시", "EX 전기장 발동시"],
-			"stats":[14.5, 15.2, 15.9, 18.8, 19.6, 20.3, 23.2, 23.9, 24.6, 27.5], "unit":"%",
+			"stats":[14.5, 15.2, 15.9, 18.8, 19.6, 20.3, 23.2, 23.9, 24.6, 27.5], "unit":"%", "stack":1,
 		},
 		"values3":{
 			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 			"condition":["EX 사용 시", "EX 화염 발동시"],
-			"stats":[13.7, 14.4, 15, 17.8, 18.5, 19.2, 21.9, 22.6, 23.3, 26], "unit":"%",
+			"stats":[13.7, 14.4, 15, 17.8, 18.5, 19.2, 21.9, 22.6, 23.3, 26], "unit":"%", "stack":1,
 		}
 	}]},
 "signature":{
@@ -390,19 +390,19 @@ let = students_details = [
 			"values1":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 				"condition":[],
-				"stats":[417, 438, 459, 542, 563, 583, 667, 688, 708 ,792], "unit":"",
+				"stats":[417, 438, 459, 542, 563, 583, 667, 688, 708 ,792], "unit":"", "stack":1,
 			},
 			"values2":{
 				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
 				"condition":[],
-				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%",
+				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
 			}}
 		},
 	"t3":{"summary":"시가지 지형 전투력을 A로 강화", 
 		"field":"A/B/A"
 		},
 	"t4":{"summary":"폭발 특효 10% 가산",
-		"status":["explosion_effectiveness", 1000], "unit":"%",
+		"status":["explosion_effectiveness", 1000], "unit":"%", "stack":1,
 		}
 	}
 }, "uniqueItem":{
@@ -412,7 +412,7 @@ let = students_details = [
 	`,
 	"tier":{
 	"t1":{"summery":"공격력 500 증가",
-		"status":["atk", 500], "unit":"",
+		"status":["atk", 500], "unit":"", "stack":1,
 	},
 	"t2":{"summary":"기본 스킬 <em>하나? 혹은 둘!</em>을 <em>하나? 혹은 둘!+</em>로 강화",
 		"skill":{"idx":"basic", "name":"하나? 혹은 둘!+",
@@ -425,19 +425,117 @@ let = students_details = [
 			"values1":{
 				"target":"enemy", "target_num":"1", "type":"damage", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
 				"condition":[],
-				"stats":[243, 256, 268, 317, 329, 341, 390, 402, 414, 463], "unit":"%",
+				"stats":[243, 256, 268, 317, 329, 341, 390, 402, 414, 463], "unit":"%", "stack":1,
 			},
 			"values2":{
 				"target":"enemy", "target_num":"3", "type":"damage", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
 				"condition":["주변에 있을 경우"],
-				"stats":[243, 256, 268, 317, 329, 341, 390, 402, 414, 463], "unit":"%",
+				"stats":[243, 256, 268, 317, 329, 341, 390, 402, 414, 463], "unit":"%", "stack":1,
 			},
 			"values3":{
 				"target":"friendly", "target_num":"self", "type":"cost_reduction", "duration":0, "cooltime":30, "buff_type":"", "probability":100,
 				"condition":[],
-				"stats":[3, 3, 3, 3, 3, 3, 3, 3, 3, 3], "unit":"",
+				"stats":[3, 3, 3, 3, 3, 3, 3, 3, 3, 3], "unit":"", "stack":1,
 			}
 		}}
 	}}
+},,{
+"name":"하야세 유우카", "variant":"gym",
+"status":{
+	"hp":[3087, 46750], "atk":[174, 1983], "def":[27, 151], "heal":[1778, 6119],
+	"accuracy":108, "evation":1323, "critical":216, "critical_damage":20000, "penetration":0, "stability":1284,
+	"range":450, "cc":100, "cc_resist":100, "cost":700, "cost_max":0, "effectiveness":10000, "atk_speed":10000, "speed":200,
+	"buff_retention":10000, "debuff_retention":10000,
+}, "skills":{
+	"normal":{
+		"load":25, "shots":5,
+		"ready_sec":1, "shot_sec":0.83, "delay_sec":1, "reload_sec":1.67
+	},
+	"ex":[{
+	"name":"R.S.G!", "cost":3,
+	"content":`지정한 위치로 이동 후 치유력 <em>{values1}%</em> 보호막 (<em>25초</em>간)
+		깃발을 소환하여 자신을 제외한 아군 3인을 깃발 위치로 이동시키고, 깃발에 도착한 대상에게 치유력 <em>{values3}%</em> 보호막 (<em>25초</em>간)`,
+		"values1":{
+			"target":"friendly", "target_num":"self", "type":"shield", "duration":25, "buff_type":"", "probability":100,
+			"condition":[],
+			"stats":[168, 193, 244, 269, 320], "unit":"%", "stack":1,
+		},
+		"values2":{
+			"target":"friendly", "target_num":"3", "type":"move", "duration":0, "buff_type":"", "probability":100,
+			"condition":[],
+			"stats":[], "unit":"%", "stack":1,
+		},
+		"values3":{
+			"target":"friendly", "target_num":"3", "type":"damage", "duration":25, "buff_type":"", "probability":100,
+			"condition":[],
+			"stats":[168, 193, 244, 269, 320], "unit":"%", "stack":1,
+		}
+	}],"basic":[{
+	"name":"수분 보충",
+	"content":`
+		<em>30초</em>마다 자신에게 보호막이 없을 경우 치유력 <em>{values1}%</em> 보호막 (<em>23초</em>간)
+		보호막이 있을 경우 치유력 <em>{values2}%</em> 증가 (<em>90초</em>간)
+		(치유력 증가 효과는 최대 <em>3회</em> 중첩)`,
+		"values1":{
+			"target":"friendly", "target_num":"self", "type":"shield", "duration":23, "cooltime":30, "buff_type":"", "probability":100,
+			"condition":["보호막이 없을 경우"],
+			"stats":[115, 121, 127, 150, 156, 162, 185, 191, 197, 220], "unit":"%", "stack":1,
+		},
+		"values2":{
+			"target":"friendly", "target_num":"self", "type":"buff", "duration":90, "cooltime":30, "buff_type":"heal", "probability":100,
+			"condition":["보호막이 있을 경우"],
+			"stats":[12.3, 12.9, 13.6, 16, 16.6, 17.3, 19.7, 20.4, 21, 23.4], "unit":"%", "stack":3,
+		}
+	}],"enhance":[{
+	"name":"수학적 경기전략",
+	"content":`공격 속도 <em>{values1}%</em> 증가`,
+		"values1":{
+			"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk_speed", "probability":100,
+			"condition":[],
+			"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
+		}
+	}],"sub":[{
+	"name":"최적 동선 산출",
+	"content":`이동 후 정지하면 신비 특효 <em>{values1}%</em> 가산 (<em>20초</em>간)`,
+		"values1":{
+			"target":"friendly", "target_num":"self", "type":"buff", "duration":20, "cooltime":0, "buff_type":"mystic_effectiveness", "probability":100,
+			"condition":["EX 사용 시", "EX 총탄 발동시"],
+			"stats":[31.1, 32.6, 34.2, 40.4, 42, 43.5, 49.7, 51.3, 52.8, 59.1], "unit":"%", "stack":1,
+		}
+	}]},
+"signature":{
+	"name":"로직 앤 리즌",
+	"summary":`유우카가 사용하는 두 정의 기관단총.
+	이번 황륜대제에서도 로직 앤 리즌은 유우카의 합리적이고 이성적인 판단을 대변한다.
+	`,
+	"tier":{
+	"t2":{"summary":"강화 스킬 <em>수학적 경기전략</em>를 <em>수학적 경기전략+</em>로 강화",
+		"skill":{"idx":"enhance", "name":"수학적 경기전략+",
+			"content":`
+				치유력 <em>{values1}</em> 증가
+				추가로 공격 속도 <em>{values2}%</em> 증가
+			`,
+			"values1":{
+				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
+				"condition":[],
+				"stats":[606, 636, 666, 787, 818, 848, 969, 999, 1029, 1150], "unit":"", "stack":1,
+			},
+			"values2":{
+				"target":"friendly", "target_num":"self", "type":"buff", "duration":0, "cooltime":0, "buff_type":"atk", "probability":100,
+				"condition":[],
+				"stats":[14, 14.7, 15.4, 18.2, 18.9, 19.6, 22.4, 23.1, 23.8, 26.6], "unit":"%", "stack":1,
+			}}
+		},
+	"t3":{"summary":"실내 지형 전투력을 SS로 강화", 
+		"field":"B/D/SS"
+		},
+	"t4":{"summary":"신비 특효 10% 가산",
+		"status":["mystic_effectiveness", 1000], "unit":"%", "stack":1,
+		}
+	}
+}, "uniqueItem":{
+	"name":"",
+	"summary":``
+},
 }
 ]
