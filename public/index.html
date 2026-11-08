@@ -449,7 +449,7 @@ for (var i=0; i<students.length; i++){
 		unique_img.src = "./assets/students/" + last_name + "/애용품.webp"
 		unique_img_cont.appendChild(unique_img)
 		let unique_summary = document.createElement('div')
-		unique_summary.innerHTML = students[i].uniqueItem.summary.split('\n').map((el) => "<p>" + el + "</p>").join('')
+		unique_summary.innerHTML = students[i].uniqueItem.summary.replace(/\t/gi, "").split('\n').map((el) => "<p>" + el + "</p>").join('')
 
 
 		unique_content.appendChild(unique_itemName)
@@ -522,6 +522,13 @@ function eventer(){
 		
 	sig_ids.forEach((ids, index) => {
 		let signature_detail = document.getElementById(ids);
+		let signature_contain = signature_detail.querySelector('.signature_contain');
+
+		if (index >= sig_ids.length - 1) {
+			if (signature_contain) {
+				signature_contain.classList.add('last');
+			}
+		}
 
 		signature_detail.addEventListener('mouseenter', (event) => {
 			signature_detail.querySelector('.signature_contain').style.display = 'block';
@@ -532,6 +539,13 @@ function eventer(){
 	});
 	unique_ids.forEach((ids, index) => {
 		let unique_detail = document.getElementById(ids)
+		let unique_content = unique_detail.querySelector('.unique_content');
+		
+		if (index >= unique_ids.length - 1) {
+			if (unique_content) {
+				unique_content.classList.add('last');
+			}
+		}
 
 		unique_detail.addEventListener('mouseenter', (event) => {
 			unique_detail.querySelector('.unique_content').style.display = 'block';

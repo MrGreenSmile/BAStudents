@@ -479,6 +479,11 @@ transform:skewX(var(--mslop));
 margin-left:10px;
 height:80px;
 }
+.signature_contain.last {
+top: auto;
+bottom: calc(100% + 5px);
+left: 0;
+}
 .weapon_name{
 position:absolute;
 margin:5px;
@@ -552,6 +557,10 @@ border:1px solid blue;
 border-radius:5px;
 white-space:pre-wrap;
 text-indent:5px;
+}
+.unique_content.last {
+top: auto;
+bottom: calc(100% + 5px);
 }
 .unique_name{
 font-size:20px;

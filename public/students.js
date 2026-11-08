@@ -3577,5 +3577,365 @@ EX 스킬 및 기본 스킬 사용 시 즉시 재장전 후, 최초의 일반 �
 	"summary":``
 },
 "tags":["EX버프", "서브힐"],
+},{
+"name":"시로미 이오리", "variant":"normal", "release":"2021.11.09",
+"role":"딜러", "position":"BACK", "atk_type":"관통", "dfn_type":"중장갑", "field":"D/D/S", "fes":false,
+"weapon":"SR", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["보이니치 사본", "볼프세크 강철"],
+"skills":{
+	"ex":[{
+	"name":"일망타진", "cost":3,
+	"content":`3발의 탄환을 발사하여 공격한 적과 그 뒤 부채꼴 범위 내의 적에게 각각 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"350", "max":"666"}
+	}
+	}],
+	"basic":[{
+	"name":"현상수배",
+	"content":`<em>25초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"229", "max":"436"}
+	}
+	}],
+	"enhance":[{
+	"name":"일발필중",
+	"content":`명중 수치 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"선도부원의 담력",
+	"content":`자신이 비엄폐 상태에서 공격 시 공격력 <em>{additional_damage}%</em> 추가 대미지
+	`,
+	"values":{
+		"additional_damage":{"min":"22.6", "max":"43.1"}
+	}
+	}]
+},
+"signature":{
+	"name":"크랙 샷",
+	"summary":`이오리가 규칙 위반자들을 선도할 때 사용하는 저격소총.
+	스코프도 달려 있지 않은 단순한 형태의 저격소총이지만, 스페셜리스트는 도구를 가리지 않는다.
+	`,
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["메인딜", "단일딜", "광역딜"],
+},{
+"name":"소라사키 히나", "variant":"normal", "release":"2021.11.09",
+"role":"딜러", "position":"BACK", "atk_type":"폭발", "dfn_type":"중장갑", "field":"S/D/D", "fes":false,
+"weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["보이니치 사본", "보이니치 사본"],
+"skills":{
+	"ex":[{
+	"name":"종막 : 이스보셋", "cost":7,
+	"content":`부채꼴 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"636", "max":"1208"}
+	}
+	}],
+	"basic":[{
+	"name":"리로드 앤 디스트로이",
+	"content":`탄약 모두 소모 시 즉시 재장전
+	공격력 <em>{buff}%</em> 증가 (<em>16초</em>)
+	`,
+	"values":{
+		"buff":{"min":"21", "max":"39.9"}
+	}
+	}],
+	"enhance":[{
+	"name":"선도부의 냉철",
+	"content":`공격 속도 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"철두철미",
+	"content":`공격 시 엄폐하지 않은 적에게 공격력 <em>{additional_damage}%</em> 추가 대미지
+	`,
+	"values":{
+		"additional_damage":{"min":"2.7", "max":"5.2"}
+	}
+	}]
+},
+"signature":{
+	"name":"종막의 디스트로이어",
+	"summary":`히나가 수족처럼 다루는 다목적 기관총.
+	교칙을 어기고 풍기를 어지럽히는 것은 전부 파괴해버리는 무자비함을 자랑한다.
+	`,
+},
+"uniqueItem":{
+	"name":"히나의 선도부 완장",
+	"summary":`히나가 평소 착용하고 있는 선도부의 완장.
+	누군가에겐 단순히 선도부 소속임을 보여주는 물건일지도 모르지만, 히나에게 있어서 만큼은 선도부장으로서 책임감을 일깨워주는 물건. 그 완장에 담긴 무게는 결코 가볍지 않다.
+	`
+},
+"tags":["메인딜", "광역딜", "경장갑_쿠로카게", "평타딜"],
+},{
+"name":"아마우 아코", "variant":"normal", "release":"2022.06.28",
+"role":"서포터", "position":"SPECIAL", "atk_type":"신비", "dfn_type":"중장갑", "field":"D/B/S", "fes":false,
+"weapon":"HG", "equipments":["장갑", "배지", "목걸이"], "matterials":["파에스토스 원반", "고대 전지"],
+"skills":{
+	"ex":[{
+	"name":"정찰의 결과입니다.", "cost":3,
+	"content":`아군 1인에게 치명 수치 <em>{buff1}</em> 증가, 치명 대미지 <em>{buff2}%</em> 증가 (<em>16초</em>간)
+	`,
+	"values":{
+		"buff1":{"min":"27.2", "max":"39.5"},
+		"buff2":{"min":"50.5", "max":"73.3"}
+	}
+	}],
+	"basic":[{
+	"name":"보급 작전 플랜 B",
+	"content":`<em>45초</em>마다 아군 1인에게 치유력 <em>{heal}%</em> 회복
+	`,
+	"values":{
+		"heal":{"min":"129", "max":"245"}
+	}
+	}],
+	"enhance":[{
+	"name":"보급 지원, 시작합니다.",
+	"content":`치유력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"전술 보조, 시작합니다.",
+	"content":`아군의 치명 대미지 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"9.1", "max":"17.3"}
+	}
+	}]
+},
+"signature":{
+	"name":"핫 샷",
+	"summary":`아코가 가지고 있는 권총.
+	각고의 노력 끝에 행정관 위치에 오른 아코를 위해 특별히 수여된 권총. 항상 가지고 다니면서 늘 소중히 다루고 있다.
+	`,
+},
+"uniqueItem":{
+	"name":"",
+	"summary":`
+	`
+},
+"tags":["치명 버프", "치명댐 버프", "서브힐"],
+},{
+"name":"히노미야 치나츠", "variant":"normal", "release":"2021.11.09",
+"role":"힐러", "position":"SPECIAL", "atk_type":"관통", "dfn_type":"경장갑", "field":"B/B/B", "fes":false,
+"weapon":"HG", "equipments":["신발", "헤어핀", "목걸이"], "matterials":["로혼치 사본", "님루드 렌즈"],
+"skills":{
+	"ex":[{
+	"name":"전술 치료 시행", "cost":4,
+	"content":`아군 1인에게 치유력 <em>{heal}%</em> 회복
+	{additional_effect}
+	`,
+	"values":{
+		"heal":{"min":"195", "max":"342"},
+		"additional_effect":{"min":"해로운 효과 <em>1개</em> 제거", "max":"해로운 효과 <em>1개</em> 제거"}
+	}
+	}],
+	"basic":[{
+	"name":"재정비",
+	"content":`<em>40초</em>마다 체력이 낮은 아군 1인의 회피 수치 <em>{buff}%</em> 증가 (<em>30초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"50.9", "max":"67"}
+	}
+	}],
+	"enhance":[{
+	"name":"의료 지원 강화",
+	"content":`치유력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"방어 지원 강화",
+	"content":`아군의 방어력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"9.1", "max":"17.3"}
+	}
+	}]
+},
+"signature":{
+	"name":"서포트 포인터",
+	"summary":`치나츠가 애용하는 권총.
+	누군가를 쏠 때보다 뭔가를 가리킬 때 사용하는 경우가 더 많다.
+	`,
+},
+"uniqueItem":{
+	"name":"치나츠의 의학가방",
+	"summary":`치나츠가 응급의학부 시절 때부터 지니고 있던 커다란 가방.
+	한가득 담겨 있는 의료 용품들만큼, 주변을 살피는 치나츠의 배려심도 느낄 수 있다.
+	`
+},
+"tags":["순수힐", "디버프해제"],
+},{
+"name":"소라사키 히나", "variant":"swimsuit", "release":"2022.03.22",
+"role":"딜러", "position":"BACK", "atk_type":"폭발", "dfn_type":"중장갑", "field":"B/S/D", "fes":false,
+"weapon":"MG", "equipments":["모자", "헤어핀", "손목시계"], "matterials":["보이니치 사본", "파에스토스 원반"],
+"skills":{
+	"ex":[{
+	"name":"해변의 이스보셋", "cost":3,
+	"content":`부채꼴 범위 내의 적 최대 5인에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"232", "max":"441"}
+	}
+	}],
+	"basic":[{
+	"name":"쓰로우 앤 녹아웃",
+	"content":`<em>20초</em>마다 적 1인에게 공격력 <em>{damage}%</em>의 대미지
+	기절 (<em>{duration}초</em>간)
+	`,
+	"values":{
+		"damage":{"min":"141", "max":"226"},
+		"duration":{"min":"1.6", "max":"2"}
+	}
+	}],
+	"enhance":[{
+	"name":"선도부의 냉혹",
+	"content":`치명 수치 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"풍기 집행",
+	"content":`EX 스킬 사용 시 공격력 <em>{buff}%</em> 증가 (최대 <em>5회</em>까지 중첩)
+	`,
+	"values":{
+		"buff":{"min":"8.7", "max":"16.5"}
+	}
+	}]
+},
+"signature":{
+	"name":"종막의 디스트로이어",
+	"summary":`히나가 수족처럼 다루는 다목적 기관총.
+	평소의 게헨나 학원이 아닌 다소 들뜬 분위기를 풍기는 바다에 찾아왔어도 그 엄격함은 변하지 않는다.
+	`,
+},
+"uniqueItem":{
+	"name":"선도부 비품용 튜브",
+	"summary":`게헨나 선도부에서 정식으로 채택하고 있는 비품용 튜브.
+	선도부 물건답게 평범한 튜브와는 다른 재질, 기능을 갖추고 있다. 아직 수영에 익숙하지 않은 히나가 언제나 의지하고 있는 고마운 물건이기도 하다.
+	`
+},
+"tags":["범위딜", "기절"],
+},{
+"name":"시로미 이오리", "variant":"swimsuit", "release":"2022.04.05",
+"role":"딜러", "position":"BACK", "atk_type":"폭발", "dfn_type":"특수장갑", "field":"B/S/D", "fes":false,
+"weapon":"SR", "equipments":["신발", "배지", "손목시계"], "matterials":["님루드 렌즈", "볼프세크 강철"],
+"skills":{
+	"ex":[{
+	"name":"질풍노도", "cost":4,
+	"content":`원형 범위 내의 적에게 공격력 <em>{damage}%</em> 대미지
+	`,
+	"values":{
+		"damage":{"min":"463", "max":"880"}
+	}
+	}],
+	"basic":[{
+	"name":"쾌도난마",
+	"content":`<em>25초</em>마다 적 1인에게 공격력 <em>{damage}%</em> 대미지
+	공격력 <em>{dot}%</em> 오한 지속 대미지 (<em>20초</em>간)
+	`,
+	"values":{
+		"damage":{"min":"186", "max":"297"},
+		"dot":{"min":"51", "max":"66.3"}
+	}
+	}],
+	"enhance":[{
+	"name":"정밀 조준",
+	"content":`공격력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"스페셜리스트의 위압",
+	"content":`공격 시 <em>25%</em> 확률로 공격력 <em>{dot}%</em> 오한 지속 대미지 (<em>20초</em>간) (쿨타임 <em>10</em>초)
+	`,
+	"values":{
+		"dot":{"min":"34.1", "max":"64.8"}
+	}
+	}]
+},
+"signature":{
+	"name":"크랙 샷",
+	"summary":`이오리가 규칙 위반자들을 선도할 때 사용하는 저격소총.
+	탄산음료 병 모양의 총류탄을 더해 위력을 강화했다.
+	`,
+},
+"uniqueItem":{
+	"name":"보들보들 담요",
+	"summary":`게헨나 학원 마크가 새겨진 담요.
+	평소 다목적으로 활용하고 있다. 조금쯤은 이오리의 온기가 남아있을지도......
+	`
+},
+"tags":["서브딜", "오한", "총력전"],
+},{
+"name":"히노미야 치나츠", "variant":"onsen", "release":"2022.07.12",
+"role":"서포터", "position":"MIDDLE", "atk_type":"신비", "dfn_type":"경장갑", "field":"D/B/S", "fes":false,
+"weapon":"HG", "equipments":["신발", "배지", "부적"], "matterials":["만드라고라", "로혼치 사본"],
+"skills":{
+	"ex":[{
+	"name":"A형 전투 자극제", "cost":2,
+	"content":`자신을 제외한 아군 1인의 공격 속도 <em>{buff}%</em> 증가 (<em>30초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"31.5", "max":"60"}
+	}
+	}],
+	"basic":[{
+	"name":"전투 지원 강화",
+	"content":`<em>25초</em>마다 자신을 제외한 아군 1인의 공격 속도 <em>{buff}%</em> 증가 (<em>20초</em>간)
+	`,
+	"values":{
+		"buff":{"min":"18.4", "max":"35"}
+	}
+	}],
+	"enhance":[{
+	"name":"휴양의 즐거움",
+	"content":`최대 체력 <em>{buff}%</em> 증가
+	`,
+	"values":{
+		"buff":{"min":"14", "max":"26.6"}
+	}
+	}],
+	"sub":[{
+	"name":"보건 담당의 신중함",
+	"content":`EX 스킬 사용 시 치유력 <em>{sheild}%</em> 보호막 (<em>30초</em>간)
+	`,
+	"values":{
+		"sheild":{"min":"108", "max":"205"}
+	}
+	}]
+},
+"signature":{
+	"name":"서포트 포인터",
+	"summary":`치나츠가 애용하는 권총.
+	작고 가벼워 휴대가 편리한 치나츠의 권총은 온천장에서의 잠입 임무에 매우 적합하다.
+	`,
+},
+"uniqueItem":{
+	"name":"",
+	"summary":``
+},
+"tags":["공속버프", "보호막"],
 }
 ]

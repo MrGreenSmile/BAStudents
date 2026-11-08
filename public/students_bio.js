@@ -275,7 +275,7 @@ let students_bio = [
 },{
 "name":"유리조노 세이아", "jp_name":"百合園 セイア", "en_name":"Yurizono Seia",
 "school":"트리니티 종합학원", "club":"티파티", "grade":3, "age":17, "birthday":"09/29", "height":149, "hobby":"수수께끼 풀기, 독서",
-"voice":["이이로", "種﨑 敦美/타네자키 아츠미)", "花玲/화링"],
+"voice":["이이로", "種﨑 敦美/타네자키 아츠미", "花玲/화링"],
 "illust":{
 	"normal":["kokosando"],
 	"swimsuit":["kokosando"]
@@ -283,6 +283,52 @@ let students_bio = [
 "variant":{
 	"normal":"",
 	"swimsuit":"수영복"
+	}
+},{
+"name":"시로미 이오리", "jp_name":"銀鏡 イオリ", "en_name":"Shiromi Iori",
+"school":"게헨나 학원", "club":"선도부", "grade":2, "age":16, "birthday":"11/08", "height":157, "hobby":"순찰, 매도하기",
+"voice":["강규리", "佐倉 綾音/사쿠라 아야네", "兰笛Saku/란디사쿠"],
+"illust":{
+	"normal":["Mx2J"],
+	"swimsuit":["Mx2J"]
+	},
+"variant":{
+	"normal":"",
+	"swimsuit":"수영복"
+	}
+},{
+"name":"소라사키 히나", "jp_name":"空崎 ヒナ", "en_name":"Sorasaki Hina",
+"school":"게헨나 학원", "club":"정보부/선도부", "grade":3, "age":17, "birthday":"02/19", "height":142, "hobby":"수면, 휴식",
+"voice":["박신희", "広橋 涼/히로하시 료", "王雅欣/왕야신"],
+"illust":{
+	"normal":["DoReMi"],
+	"swimsuit":["DoReMi"]
+	},
+"variant":{
+	"normal":"",
+	"swimsuit":"수영복"
+	}
+},{
+"name":"아마우 아코", "jp_name":"天雨 アコ", "en_name":"Amau Ako",
+"school":"게헨나 학원", "club":"선도부", "grade":3, "age":17, "birthday":"12/22", "height":165, "hobby":"히나",
+"voice":["김예림", "高野 麻里佳/코우노 마리카", "括号君/쿼하오쥔"],
+"illust":{
+	"normal":["DoReMi"],
+	},
+"variant":{
+	"normal":"",
+	}
+},{
+"name":"히노미야 치나츠", "jp_name":"火宮 チナツ", "en_name":"Hinomiya Chinatsu",
+"school":"게헨나 학원", "club":"응급의학부/선도부", "grade":1, "age":15, "birthday":"08/22", "height":159, "hobby":"철학서적 읽기",
+"voice":["김현지", "香月 はるか/코우즈키 하루카", "陈章/천장"],
+"illust":{
+	"normal":["Mx2J"],
+	"onsen":["Mx2J"],
+	},
+"variant":{
+	"normal":"",
+	"onsen":"온천",
 	}
 }
 ]
