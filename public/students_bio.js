@@ -302,11 +302,13 @@ let students_bio = [
 "voice":["박신희", "広橋 涼/히로하시 료", "王雅欣/왕야신"],
 "illust":{
 	"normal":["DoReMi"],
-	"swimsuit":["DoReMi"]
+	"swimsuit":["DoReMi"],
+	"dress":["DoReMi"]
 	},
 "variant":{
 	"normal":"",
-	"swimsuit":"수영복"
+	"swimsuit":"수영복",
+	"dress":"드레스"
 	}
 },{
 "name":"아마우 아코", "jp_name":"天雨 アコ", "en_name":"Amau Ako",
@@ -314,9 +316,11 @@ let students_bio = [
 "voice":["김예림", "高野 麻里佳/코우노 마리카", "括号君/쿼하오쥔"],
 "illust":{
 	"normal":["DoReMi"],
+	"dress":["DoReMi"]
 	},
 "variant":{
 	"normal":"",
+	"dress":"드레스"
 	}
 },{
 "name":"히노미야 치나츠", "jp_name":"火宮 チナツ", "en_name":"Hinomiya Chinatsu",

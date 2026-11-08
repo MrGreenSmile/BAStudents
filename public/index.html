@@ -38,10 +38,6 @@
 <div id="filter-button">필터</div>
 <div class="filter_container" id="inform-filter">
 	<div class="filter_column">
-	<div>페스</div>
-	<div class="sorter-button filter-button fes" onclick="filter_fes(`fes`)">페스</div>
-	</div>
-	<div class="filter_column">
 	<div>학교</div>
 	<div class="sorter-button filter-button school" onclick="filter_school(`밀레니엄`)">밀레니엄</div>
 	<div class="sorter-button filter-button school" onclick="filter_school(`아비도스`)">아비도스</div>
@@ -50,6 +46,7 @@
 	</div>
 	<div class="filter_column">
 	<div>기타</div>
+	<div class="sorter-button filter-button fes" onclick="filter_fes(`fes`)">페스</div>
 	<div class="sorter-button filter-button uniqueItem" onclick="filter_uniqueItem(`uniqueItem`)">애용품</div>
 	</div>
 </div>
@@ -556,7 +553,7 @@ function eventer(){
 	});
 }
 
-
+//students.sort((a, b) => {if(a.release < b.release){return -1}})
 main(students)
 eventer()
 
