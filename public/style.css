@@ -341,7 +341,7 @@ transform:skewX(var(--slop));
 
 .skills{
 display:flex;
-position:relative;
+
 z-index:-1;
 }
 .skill{
