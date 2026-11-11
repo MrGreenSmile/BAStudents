@@ -57,7 +57,7 @@ margin-top:30px;
 }
 .icon-table{
 display:grid;
-grid-template-columns:55px 100px 500px;
+grid-template-columns:55px 200px 500px;
 border-collapse: collapse;
 }
 .icon-table div{
