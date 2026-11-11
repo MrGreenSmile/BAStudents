@@ -49,9 +49,13 @@ background-color:#ced4da;
 #menubar a{
 color:black;
 }
+#menubar a:hover{
+color:blue;
+}
 #menubar div{
 padding:0 10px 0 10px;
 }
+
 .main-contain{
 margin-top:30px;
 }
