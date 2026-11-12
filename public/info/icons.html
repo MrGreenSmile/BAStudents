@@ -2,9 +2,10 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../assets/icon/buff/공격력 증가.png">
 
 </head>
-<body>
+<body class="overflow">
 
 <div id="menubar">
 <a href="../index.html"><div>홈</div></a>
@@ -13,7 +14,9 @@
 </div>
 
 
-<div class="main-contain">
+<div class="icon-contain">
+
+<div class="container buff">
 <h2>버프</h2>
 
 <div class="icon-table">
@@ -26,17 +29,137 @@
 <div><img src="../assets/icon/buff/회피 증가.png"></div><div>회피 증가</div><div>회피 증가.</div>
 <div><img src="../assets/icon/buff/치명 수치 증가.png"></div><div>치명 수치 증가</div><div>치명 수치 증가.</div>
 <div><img src="../assets/icon/buff/치명 수치 저항 증가.png"></div><div>치명 수치 저항 증가</div><div>치명 수치 저항 증가.</div>
-<div><img src="../assets/icon/buff/치명타 대미지 증가.png"></div><div>치명타 대미지 증가</div><div>치명타 대미지 증가.</div>
-<div><img src="../assets/icon/buff/치명타 대미지 저항 증가.png"></div><div>치명타 대미지 저항 증가</div><div>치명타 대미지 저항 증가.</div>
+<div><img src="../assets/icon/buff/치명 대미지 증가.png"></div><div>치명 대미지 증가</div><div>치명 대미지 증가.</div>
+<div><img src="../assets/icon/buff/치명 대미지 저항 증가.png"></div><div>치명 대미지 저항 증가</div><div>치명 대미지 저항 증가.</div>
 <div><img src="../assets/icon/buff/사거리 증가.png"></div><div>사거리 증가</div><div>사거리 증가.</div>
-<div><img src="../assets/icon/buff/군중 제어 강화력 증가.png"></div><div>군중 제어 강화력 증가</div><div>군중 제어 강화력 증가.</div>
-<div><img src="../assets/icon/buff/군중 제어 저항력 증가.png"></div><div>군중 제어 저항력 증가</div><div>군중 제어 저항력 증가.</div>
+<div><img src="../assets/icon/buff/군중 제어 강화력 증가.png"></div><div>군중 제어 강화력 증가</div><div>주는 군중 제어(CC) 확률 또는 지속시간 증가.</div>
+<div><img src="../assets/icon/buff/군중 제어 저항력 증가.png"></div><div>군중 제어 저항력 증가</div><div>받는 군중 제어(CC) 확률 감소.</div>
 <div><img src="../assets/icon/buff/받는 회복 효과 강화.png"></div><div>받는 회복 효과 강화</div><div>대상이 받는 회복 효과 강화.</div>
-<div><img src="../assets/icon/buff/공격 속도 증가.png"></div><div>공격 속도 증가</div><div>공격 속도 증가. 공격 준비, 공격, 공격 딜레이, 재장전 속도에 영향을 주며, 스킬로 인한 행동에는 영향 없다.</div>
+<div><img src="../assets/icon/buff/공격 속도 증가.png"></div><div>공격 속도 증가</div><div>공격 속도 증가.<br>공격 준비, 공격, 공격 딜레이, 재장전 속도에 영향을 주며, 스킬로 인한 행동에는 영향 없다.</div>
 <div><img src="../assets/icon/buff/이동 속도 증가.png"></div><div>이동 속도 증가</div><div>이동 속도 증가.</div>
 <div><img src="../assets/icon/buff/안정 수치 증가.png"></div><div>안정 수치 증가</div><div>안정 수치 증가.</div>
 <div><img src="../assets/icon/buff/장탄수 증가.png"></div><div>장탄수 증가</div><div>장탄수 증가.</div>
 <div><img src="../assets/icon/buff/코스트 회복력 증가.png"></div><div>코스트 회복력 증가</div><div>코스트 회복력 증가.</div>
+<div><img src="../assets/icon/buff/블락 성공률 증가.png"></div><div>블락 성공률 증가</div><div>블락 성공률 증가.</div>
+<div><img src="../assets/icon/buff/방어 관통 수치 증가.png"></div><div>방어 관통 수치 증가</div><div>방어 관통 수치 증가.</div>
+<div><img src="../assets/icon/buff/이로운 효과 유지력 증가.png"></div><div>이로운 효과 유지력 증가</div><div>버프(빨간색 아이콘) 지속시간 증가.</div>
+<div><img src="../assets/icon/buff/해로운 효과 유지력 증가.png"></div><div>해로운 효과 유지력 증가</div><div>디버프(파란색 아이콘) 지속시간 증가.</div>
+<div><img src="../assets/icon/buff/군중 제어 효과 유지력 증가.png"></div><div>군중 제어 효과 유지력 증가</div><div>군중 제어(CC, 보라색 아이콘) 지속시간 증가.</div>
+
+<div><img src="../assets/icon/buff/집중 공격.png"></div><div>집중 공격</div><div>지정된 적에게 아군의 기본 공격 및 공격 스킬의 타겟이 고정. EX 스킬은 해당 없음.</div>
+<div><img src="../assets/icon/buff/코스트 감소.png"></div><div>코스트 감소</div><div>EX 스킬 사용 시 필요한 코스트 감소.</div>
+<div><img src="../assets/icon/buff/추가 소모 코스트 감소.png"></div><div>추가 소모 코스트 감소</div><div>EX 스킬 중, 코스트를 추가로 소모하는 효과를 가진 EX 스킬의 추가된 코스트 감소.</div>
+<div><img src="../assets/icon/buff/코스트 오버.png"></div><div>코스트 오버</div><div>코스트를 최대 5까지 초과하여 소비 가능. 초과분은 마이너스로 계산.</div>
+<div><img src="../assets/icon/buff/EX 스킬 대미지 증가.png"></div><div>EX 스킬 대미지 증가</div><div>EX 스킬로 가하는 대미지 증가.</div>
+
+<div><img src="../assets/icon/buff/가하는 피해 증가.png"></div><div>가하는 피해 증가</div><div>가하는 모든 대미지 증가.</div>
+<div><img src="../assets/icon/buff/받는 피해 감소.png"></div><div>받는 피해 감소</div><div>받는 모든 대미지 감소.</div>
+<div><img src="../assets/icon/buff/보호막.png"></div><div>보호막</div><div>보호막 적용.</div>
+<div><img src="../assets/icon/buff/피격시 회복.png"></div><div>피격시 회복</div><div>대미지 피격 시, 치유력에 비례해 회복.</div>
+<div><img src="../assets/icon/buff/기본기 숙련.png"></div><div>기본기 숙련</div><div>일반 공격, 기본 스킬, 서브 스킬로 가하는 대미지 증가.</div>
+
+<div><img src="../assets/icon/buff/폭발 특효 강화.png"></div><div>폭발 특효 강화</div><div>폭발 특효 강화.<br></div>
+<div><img src="../assets/icon/buff/관통 특효 강화.png"></div><div>관통 특효 강화</div><div>관통 특효 강화.</div>
+<div><img src="../assets/icon/buff/신비 특효 강화.png"></div><div>신비 특효 강화</div><div>신비 특효 강화.</div>
+<div><img src="../assets/icon/buff/진동 특효 강화.png"></div><div>진동 특효 강화</div><div>진동 특효 강화.</div>
+
+<div><img src="../assets/icon/buff/구호의 마음가짐.png"></div><div>구호의 마음가짐</div><div>미네 전용.<br>보유 시 지속 회복, 해제 시 주변에 대미지 및 방어력, 회피 감소.</div>
+</div>
+</div>
+
+
+<div class="container debuff">
+<h2>디버프</h2>
+
+<div class="icon-table">
+<div>아이콘</div><div>명칭</div><div>설명</div>
+<div><img src="../assets/icon/debuff/공격력 감소.png"></div><div>공격력 감소</div><div>공격력 감소.</div>
+<div><img src="../assets/icon/debuff/체력 감소.png"></div><div>체력 감소</div><div>체력(HP) 감소.</div>
+<div><img src="../assets/icon/debuff/방어력 감소.png"></div><div>방어력 감소</div><div>방어력 감소.</div>
+<div><img src="../assets/icon/debuff/명중 감소.png"></div><div>명중 감소</div><div>명중 감소.</div>
+<div><img src="../assets/icon/debuff/회피 감소.png"></div><div>회피 감소</div><div>회피 감소.</div>
+<div><img src="../assets/icon/debuff/치명 수치 감소.png"></div><div>치명 수치 감소</div><div>치명 수치 감소.</div>
+<div><img src="../assets/icon/debuff/치명 수치 저항 감소.png"></div><div>치명 수치 저항 감소</div><div>치명 수치 저항 감소.</div>
+<div><img src="../assets/icon/debuff/치명 대미지 감소.png"></div><div>치명 대미지 감소</div><div>치명 대미지 감소.</div>
+<div><img src="../assets/icon/debuff/치명 대미지 저항 감소.png"></div><div>치명 대미지 저항 감소</div><div>치명 대미지 저항 감소.</div>
+<div><img src="../assets/icon/debuff/사거리 감소.png"></div><div>사거리 감소</div><div>사거리 감소.</div>
+<div><img src="../assets/icon/debuff/군중 제어 저항력 감소.png"></div><div>군중 제어 저항력 감소</div><div>받는 군중 제어(CC) 확률 증가.</div>
+<div><img src="../assets/icon/debuff/받는 회복률 감소.png"></div><div>받는 회복률 감소</div><div>받는 회복량 감소.</div>
+<div><img src="../assets/icon/debuff/공격 속도 감소.png"></div><div>공격 속도 감소</div><div>공격 속도 감소.<br>공격 준비, 공격, 공격 딜레이, 재장전 속도에 영향을 주며, 스킬로 인한 행동에는 영향 없다.</div>
+<div><img src="../assets/icon/debuff/이동 속도 감소.png"></div><div>이동 속도 감소</div><div>이동 속도 감소.</div>
+<div><img src="../assets/icon/debuff/안정 수치 감소.png"></div><div>안정 수치 감소</div><div>안정 수치 감소.</div>
+<div><img src="../assets/icon/debuff/코스트 회복력 감소.png"></div><div>코스트 회복력 감소</div><div>코스트 회복력 감소.</div>
+<div><img src="../assets/icon/debuff/받는 피해 증가.png"></div><div>받는 피해 증가</div><div>받는 모든 대미지 증가.</div>
+
+<div><img src="../assets/icon/debuff/집중 공격.png"></div><div>집중 공격</div><div>지정된 아군에게 적의 기본 공격 및 공격 스킬의 타겟이 고정. EX 스킬은 해당 없음.</div>
+<div><img src="../assets/icon/debuff/약점 파악.png"></div><div>약점 파악</div><div>1회 피격 시 1회의 추가 대미지.</div>
+<div><img src="../assets/icon/debuff/화상.png"></div><div>화상</div><div>화상 상태 부여 및 지속 대미지.</div>
+<div><img src="../assets/icon/debuff/중독.png"></div><div>중독</div><div>중독 상태 부여 및 지속 대미지.</div>
+<div><img src="../assets/icon/debuff/오한.png"></div><div>오한</div><div>오한 상태 부여 및 지속 대미지.</div>
+<div><img src="../assets/icon/debuff/오한 대미지 증가.png"></div><div>오한 대미지 증가</div><div>오한 상태일 때 대미지량 증가.</div>
+<div><img src="../assets/icon/debuff/감전.png"></div><div>감전</div><div>감전 상태 부여 및 지속 대미지.</div>
+<div><img src="../assets/icon/debuff/응원의 열기.png"></div><div>응원의 열기</div><div>히비키(응원단) 전용.<br>응원의 열기 상태 부여 및 지속 대미지.</div>
+
+<div><img src="../assets/icon/debuff/저주.png"></div><div>저주</div><div>예로니무스 전용.<br>지속 대미지 부여 및 일정 시간 후 폭발하여 대미지. 대상의 체력이 100% 도달 시 해제.</div>
+</div>
+</div>
+
+
+<div class="container cc">
+<h2>군중 제어</h2>
+
+<div class="icon-table">
+<div>아이콘</div><div>명칭</div><div>설명</div>
+<div><img src="../assets/icon/cc/도발.png"></div><div>도발</div><div>스킬 사용자에게 강제적으로 집중 공격을 유발. EX 스킬을 비롯한 스킬을 사용할 수 없으며, 시전중이던 스킬은 중단된다.</div>
+<div><img src="../assets/icon/cc/기절.png"></div><div>기절</div><div>이동 및 공격 불가. 시전중이던 스킬은 중단된다.</div>
+<div><img src="../assets/icon/cc/공포.png"></div><div>공포</div><div>이동 및 공격이 불가능해지며, 스킬 사용자의 반대 방향으로 도망친다. 시전중이던 스킬은 중단된다.</div>
+<div><img src="../assets/icon/cc/혼란.png"></div><div>혼란</div><div>가까운 아군을 공격한다. 일반 공격만 가능하며, 아군이 없을 경우 적을 공격한다. 시전중이던 스킬은 중단된다.</div>
+<div><img src="../assets/icon/cc/침묵.png"></div><div>침묵</div><div>EX 스킬 및 기본 스킬 사용 불가.</div>
+<div><img src="../assets/icon/cc/감전.png"></div><div>감전</div><div>이동 및 공격 불가. 시전중이던 스킬은 중단된다.</div>
+</div>
+</div>
+
+
+<div class="container cc">
+<h2>특수</h2>
+
+<div class="icon-table">
+<div>아이콘</div><div>명칭</div><div>설명</div>
+<div><img src="../assets/icon/special/분노.png"></div><div>분노</div><div>네루 전용.<br>분노 상태일 때 회피 및 공격력 증가.</div>
+<div><img src="../assets/icon/special/불사신.png"></div><div>불사신</div><div>체력을 초과하는 대미지를 받아도 후퇴하지 않는다.</div>
+<div><img src="../assets/icon/special/에너지 충전 0단계.png"></div><div>에너지 충전 0단계</div><div>아리스 전용.<br>단계에 따라 EX 스킬 강화.</div>
+<div><img src="../assets/icon/special/에너지 충전 1단계.png"></div><div>에너지 충전 1단계</div><div>아리스 전용.<br>단계에 따라 EX 스킬 강화.</div>
+<div><img src="../assets/icon/special/에너지 충전 2단계.png"></div><div>에너지 충전 2단계</div><div>아리스 전용.<br>단계에 따라 EX 스킬 강화.</div>
+<div><img src="../assets/icon/special/대미지 축적.png"></div><div>대미지 축적</div><div>지속 시간 동안 받은 대미지를 축적하여, 지속 시간 후 추가 대미지.</div>
+<div><img src="../assets/icon/special/악행.png"></div><div>악행</div><div>아루(새해) 전용.<br>EX 스킬 사용 시, 스택 보유 수만큼 코스트 획득.</div>
+<div><img src="../assets/icon/special/소악마.png"></div><div>소악마</div><div>무츠키(새해) 전용.<br>스택 당 치명 대미지 증가 및 기본 스킬 사용시 추가 대미지.</div>
+<div><img src="../assets/icon/special/부적.png"></div><div>부적</div><div>카요코(새해) 전용.<br>서브 스킬 발동 시, 부적이 부여된 아군에게 신비 특효 가산.</div>
+<div><img src="../assets/icon/special/칭찬 도장.png"></div><div>칭찬 도장</div><div>코코나 전용.<br>일정량 획득 시 모든 아군의 EX 코스트 1 감소.</div>
+<div><img src="../assets/icon/special/성야의 축복.png"></div><div>성야의 축복</div><div>세리나(크리스마스), 하나에(크리스마스) 전용.<br>스택 당 EX 스킬의 효과 강화.</div>
+<div><img src="../assets/icon/special/세례의 증표.png"></div><div>세례의 증표</div><div>사쿠라코 전용.<br>일반 공격 시 추가 대미지.</div>
+<div><img src="../assets/icon/special/아비 에슈흐 게이지.png"></div><div>아비 에슈흐 게이지</div><div>토키 전용.<br>아비 에슈흐 모드 진입 시, 남은 EX 스킬 횟수 표시.</div>
+
+<div><img src="../assets/icon/special/명경지수.png"></div><div>명경지수</div><div>카호 전용.<br>공격 시 추가 대미지.</div>
+<div><img src="../assets/icon/special/실마리.png"></div><div>실마리</div><div>우이(수영복) 전용.<br>일정량 도달 시, 관통 특효 가산.</div>
+<div><img src="../assets/icon/special/드릴.png"></div><div>드릴</div><div>카스미 전용.<br>일정량 도달 시, EX 스킬에 추가 대미지.</div>
+<div><img src="../assets/icon/special/기원.png"></div><div>기원</div><div>유카리 전용.<br>일정량 도달 시마다, EX 스킬에 확정 치명 대미지 추가.</div>
+<div><img src="../assets/icon/special/열정.png"></div><div>열정</div><div>렌게 전용.<br>공격 시 추가 대미지.</div>
+<div><img src="../assets/icon/special/풍림화산.png"></div><div>풍림화산</div><div>키쿄 전용.<br>일정량 도달 시, 아군의 EX 코스트 감소.</div>
+<div><img src="../assets/icon/special/따끈한 군고구마.png"></div><div>따끈한 군고구마</div><div>하레(캠핑) 전용.<br>공격 시, 보유량 만큼 추가 대미지.</div>
+<div><img src="../assets/icon/special/경호 성공.png"></div><div>경호 성공</div><div>아코(드레스) 전용.<br>공격력 증가 및 기본 스킬 대미지 증가.</div>
+<div><img src="../assets/icon/special/잠입 행동.png"></div><div>잠입 행동</div><div>카요코(드레스) 전용.<br>전투 진입 시 부여 및 피격 시 해제. 보유 시 치명 대미지 증가 및 EX 스킬을 확정 치명으로 변경</div>
+<div><img src="../assets/icon/special/슈가러시.png"></div><div>슈가러시</div><div>아이리(밴드), 나츠(밴드), 카즈사(밴드), 요시미(밴드) 전용.<br>보유량에 따라 스킬 강화.</div>
+<div><img src="../assets/icon/special/리듬 업.png"></div><div>리듬 업</div><div>나츠(밴드) 전용.<br>일정량의 슈가러시 보유 시 획득. 공격 시 확률적으로 보유량에 따라 적 공격력 감소.</div>
+<div><img src="../assets/icon/special/방탄 플레이트.png"></div><div>방탄 플레이트</div><div>호시노(무장)(방어형) 전용.<br>보유 시 받는 대미지량 감소. 25회 피격 시 해제.</div>
+<div><img src="../assets/icon/special/제압 사격.png"></div><div>제압 사격</div><div>호시노(무장)(공격형) 전용.<br>EX 스킬 및 기본 스킬 사용 후, 첫 일반 공격을 부채꼴 범위로 전환.</div>
+<div><img src="../assets/icon/special/퇴각 유예.png"></div><div>퇴각 유예</div><div>시로코*테러 전용.<br>현재 체력을 초과하는 대미지를 받을 경우, 후퇴하지 않고 생존. 지속 시간 동안 체력을 100% 회복하지 못할 경우 퇴각.</div>
+<div><img src="../assets/icon/special/전단지.png"></div><div>전단지</div><div>토모에(치파오) 전용.<br>아군 전체의 보유량에 따라, 공격력이 가장 높은 아군의 공격력 증가.</div>
+<div><img src="../assets/icon/special/지속 대미지 강화(오한).png"></div><div>지속 대미지 강화(오한)</div><div>레이죠 전용.<br>적용 시 오한 대미지 강화.</div>
+<div><img src="../assets/icon/special/지속 대미지 강화(중독).png"></div><div>지속 대미지 강화(중독)</div><div>레이죠 전용.<br>적용 시 중독 대미지 강화.</div>
+<div><img src="../assets/icon/special/팬서비스.png"></div><div>팬서비스</div><div>마리(아이돌) 전용.<br>일정량 보유 시, 아군의 EX 코스트 감소.</div>
+<div><img src="../assets/icon/special/응원봉.png"></div><div>응원봉</div><div>미네(아이돌) 전용.<br>보유량에 따라, 대상에게 대미지 및 공격력 감소.</div>
+
+</div>
 </div>
 
 </div>
